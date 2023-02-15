@@ -1,0 +1,13 @@
+name: DROPS_User_Guide
+title: DROPS_User_Guide
+username:
+account: sigmaleuven
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7936478
+bundleId: 6667504
+url: https://sigmaleuven.shinyapps.io/DROPS_User_Guide/
+when: 1671794353.94495
+lastSyncTime: 1671794353.94504
+asMultiple: FALSE
+asStatic: FALSE

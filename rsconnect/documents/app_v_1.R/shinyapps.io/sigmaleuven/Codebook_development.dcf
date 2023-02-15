@@ -1,0 +1,14 @@
+name: Codebook_development
+title: Codebook_development
+username:
+account: sigmaleuven
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8073143
+bundleId: 6764424
+url: https://sigmaleuven.shinyapps.io/Codebook_development/
+when: 1674488333.83298
+lastSyncTime: 1674488333.83307
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app_v_0_31.R|code/codeboook_table.R|DROPS.bib|drops.png|dropsguide_20221220.aux|dropsguide_20221220.html|dropsguide_20221220.md|dropsguide_20221220.out|dropsguide_20221220.pdf|dropsguide_20221220.Rmd|flowchart.png|fortranslation.xlsx|old/app_v_0_3.R|old/app_v_0_31.R|old/app_v0_2.R|SIGMA_DataDictionary_2022-10-24_needs_translation.xlsx|SigmaCovid19_DataDictionary_2023-01-13.csv

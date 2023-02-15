@@ -1,0 +1,14 @@
+name: SIGMA_Codebook
+title: SIGMA_Codebook
+username:
+account: benjamin-imsa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7915619
+bundleId: 6652697
+url: https://benjamin-imsa.shinyapps.io/SIGMA_Codebook/
+when: 1671439862.54692
+lastSyncTime: 1671439862.54699
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|app_v0_2.R|app.R|code/codeboook_table.R|fortranslation.xlsx|sigma_codebook/app.R|SIGMA_DataDictionary_2022-10-24_needs_translation.xlsx

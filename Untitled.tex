@@ -1,0 +1,1115 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+V1.1\_20221021
+\includegraphics{RackMultipart20221220-1-9i7noz_html_c17ef1b6749dd55a.png}
+
+\hypertarget{user-guide}{%
+\section{User guide}\label{user-guide}}
+
+\textbf{\protect\hyperlink{_up3x7w38quym}{Welcome to DROPS} 2}
+
+\protect\hyperlink{_paicald3w2xf}{What is DROPS?} 2
+
+\protect\hyperlink{_6eanlztnrvpa}{Which data can be requested through
+DROPS?} 2
+
+\protect\hyperlink{_wqj08dx9lskp}{Who runs DROPS?} 2
+
+\protect\hyperlink{_6pnjc4fh9u9i}{Why do we use DROPS?} 3
+
+\textbf{\protect\hyperlink{_iryi1psurnbs}{How does DROPS work?} 4}
+
+\protect\hyperlink{_w61ki29hp26j}{The DROPS system} 4
+
+\protect\hyperlink{_c0rqoo2n1ad5}{Abstract submission} 6
+
+\protect\hyperlink{_d60pemtq0onl}{Registering your study} 7
+
+\protect\hyperlink{_j9vo6i2gjp6q}{For non-ESM studies} 7
+
+\protect\hyperlink{_9l6plnofve8}{OSF registrations} 7
+
+\protect\hyperlink{_dypi9oxebkkg}{AsPredicted registrations} 7
+
+\protect\hyperlink{_4priwppr2d24}{For ESM studies} 8
+
+\protect\hyperlink{_c7z830chg34n}{OSF registrations} 8
+
+\protect\hyperlink{_7fg39v7hd0te}{AsPredicted registrations} 8
+
+\protect\hyperlink{_qlx2etgrq9hr}{Power analysis} 9
+
+\protect\hyperlink{_rnzjcirxyvgf}{Statistical power} 9
+
+\protect\hyperlink{_bwod4c38xqma}{How to estimate statistical power} 9
+
+\protect\hyperlink{_7h6c6a2xjdz9}{Requesting a subsample of data to
+calculate power} 9
+
+\protect\hyperlink{_2dzt9xeysbee}{Variable access request} 10
+
+\protect\hyperlink{_45gpzwmgy9bj}{Receiving data} 10
+
+\protect\hyperlink{_pcdajm75pc8x}{Special cases} 12
+
+\protect\hyperlink{_ffqkpx648yj2}{Registered Reports using DROPS} 12
+
+\protect\hyperlink{_frgb5bv2wcbm}{About Registered Reports} 12
+
+\protect\hyperlink{_6or3tby42f75}{Registered Reports and DROPS} 12
+
+\protect\hyperlink{_q6nxcc4a4n2f}{Exploratory studies} 13
+
+\textbf{\protect\hyperlink{_zc50z372ij74}{Frequently Asked Questions}
+13}
+
+\hypertarget{welcome-to-drops}{%
+\section{Welcome to DROPS}\label{welcome-to-drops}}
+
+\hypertarget{what-is-drops}{%
+\subsection{What is DROPS?}\label{what-is-drops}}
+
+Data cuRation for Open Science (DROPS) is a data checkout system. It
+allows researchers to request data from several datasets collected by
+the Center of Contextual Psychiatry at KU Leuven and tracks who
+requested and accessed which data, and when, in a detailed way. In this
+manual, you can find an overview of the steps necessary for obtaining
+data from the DROPS system.
+
+\hypertarget{which-data-can-be-requested-through-drops}{%
+\subsection{Which data can be requested through
+DROPS?}\label{which-data-can-be-requested-through-drops}}
+
+As of now, you can use DROPS to request data from the four following
+studies:
+
+\begin{itemize}
+\item
+  \href{https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp/research-1/social-interaction/sigma/index.htm}{\emph{SIGMA}}
+  --⁠ a longitudinal study that combined questionnaires and ecological
+  momentary assessment data to assess the relationships between social
+  risk factors, psychological mechanisms and psychopathology in an
+  initial sample of 1,913 adolescents. So far, the data from the first
+  and second wave, as well as the additional COVID wave are available in
+  DROPS. The contact persons for the SIGMA dataset are
+  \href{https://www.kuleuven.be/wieiswie/nl/person/00115655}{Robin
+  Achterhof} and
+  \href{https://www.kuleuven.be/wieiswie/nl/person/00117419}{Olivia
+  Kirtley}. The protocol for the SIGMA study can be found
+  \href{https://psyarxiv.com/jp2fk/}{here}\href{https://www.zotero.org/google-docs/?agskoG}{(Kirtley,
+  Achterhof, et al., 2021)}. \href{https://osf.io/xwvc5/}{Click here}to
+  access an Open Science Framework repository with information about the
+  studies published using SIGMA data and the measures included in the
+  study.
+\item
+  \href{https://pubmed.ncbi.nlm.nih.gov/31878966/}{\emph{Interact}} -- a
+  study aimed at evaluating the efficacy of Acceptance and Commitment
+  Therapy in Daily Life, an ecological momentary intervention. Broadly,
+  the dataset contains variables related to psychotic experiences,
+  psychopathology, and global and social functioning. The contact person
+  for the Interact study is
+  \href{https://www.kuleuven.be/wieiswie/nl/person/00106722}{Thomas}\href{https://www.kuleuven.be/wieiswie/nl/person/00106722}{Vaessen}.
+\item
+  \emph{EXPOSS} -- A (non-ESM) pilot study of 371 first-year Psychology
+  students to develop the exposure to self-harm and suicide scale
+  (EXPOSS; Kirtley, De Roover, \& Dumon, 2020), a new measure of direct
+  and media exposure to self-harm and suicide. Additional variables
+  include depression, anxiety, stress, defeat, entrapment, social
+  support, negative life events, positive and negative affect, and
+  attitudes towards data sharing. The contact person for the EXPOSS
+  dataset is
+  \href{https://www.kuleuven.be/wieiswie/nl/person/00117419}{Olivia
+  Kirtley}.
+\item
+  The \_Methodology\_dataset contains the data used for a project that
+  investigated various methodological aspects of ESM research, including
+  the effect of ESM questionnaire length and sampling frequency on
+  participant burden on data quality (paper available
+  \href{https://journals.sagepub.com/doi/10.1177/1073191120957102}{here};
+  \href{https://www.zotero.org/google-docs/?UNkfRy}{Eisele et al.,
+  2020)}, affective structure and measurement invariance (paper
+  available
+  \href{https://www.sciencedirect.com/science/article/pii/S0092656621000313?casa_token=Z6l7hIkmucUAAAAA:VLP3vqtJO_7lx2BKclkfVwFGg3F1LkEuTUvHGo8DLSna_pBUR-pjJVbuMHkbfafEnijEkHmfEcQ}{here};
+  \href{https://www.zotero.org/google-docs/?rllNl0}{Eisele et al.,
+  2021)}.
+\end{itemize}
+
+\hypertarget{who-runs-drops}{%
+\subsection{Who runs DROPS?}\label{who-runs-drops}}
+
+The DROPS system is run by the
+\href{https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp}{Cente}\href{https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp}{r
+for Contextual Psychiatry} at KU Leuven. The only person who can access
+the datasets and share them with researchers is the data manager,
+\href{https://www.kuleuven.be/wieiswie/en/person/00007576}{Dr Martien
+Wampers}. Additionally, there is a `triage' committee for each of the
+datasets --⁠ one or more researchers that do not by default have the
+access to the data, but who keep track of what data have been used by
+whom and what studies are in progress using data from a particular
+project. The triage committee is in charge of approving abstract
+submissions and variable access requests.
+
+\hypertarget{why-do-we-use-drops}{%
+\subsection{Why do we use DROPS?}\label{why-do-we-use-drops}}
+
+Using DROPS provides the following benefits to both individual
+researchers and science in general:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{It makes the use of data more efficient.} A lot of time and
+  resources goes into collecting data at the Center for Contextual
+  Psychiatry. As such, we want to use the data efficiently and make it
+  available to other researchers, so that they can use it to answer
+  their own research questions.
+\item
+  \emph{It prevents waste of time.} DROPS saves researchers time by
+  preventing studies with identical research questions being conducted
+  on the same datasets. If a researcher requests data to investigate a
+  set of questions another person/team is already working on, they will
+  be notified in early stages of their research process.
+\item
+  \emph{It facilitates confirmatory approach to secondary data
+  analysis.} It is important to be able to show which analytical
+  decisions were based on what information. When you plan and register
+  your analyses before the data are collected, it is easy to distinguish
+  between the analytical decisions that were made prior to and after you
+  could see the data. Nonetheless, in secondary data analysis, the line
+  between exploratory and confirmatory analysis can get blurry. By
+  adding an extra step to the data sharing process, DROPS allows for a
+  confirmatory approach to secondary data analysis.
+\item
+  \emph{It facilitates credibility in research.} Before obtaining the
+  data for their secondary analyses, researchers are asked to clearly
+  state the aims of their study and develop and pre-register a detailed
+  analysis plan. Each step of the data release process is logged in a
+  transparent way. As such, the researchers are provided with a series
+  of receipts that prove they did not have access to the data before
+  analyzing them. This improves the evidential value of secondary data
+  analyses, increases the reusability of datasets and facilitates the
+  transparency of research.
+\end{itemize}
+
+\hypertarget{section}{%
+\section{}\label{section}}
+
+\hypertarget{how-does-drops-work}{%
+\section{How does DROPS work?}\label{how-does-drops-work}}
+
+\hypertarget{section-1}{%
+\subsection{}\label{section-1}}
+
+\hypertarget{the-drops-system}{%
+\subsection{The DROPS system}\label{the-drops-system}}
+
+In this section, we will briefly walk you through the process of
+obtaining data from DROPS. The whole workflow is also illustrated in
+Figure 1 (below), and described in more detail in the following
+sections.
+
+The first step of the process is
+\protect\hyperlink{_c0rqoo2n1ad5}{drafting and submitting
+an}\protect\hyperlink{_c0rqoo2n1ad5}{\textbf{abstract}} (steps 1 and 2
+in the flowchart) --⁠ a brief description of your research questions and
+analysis plans. Before drafting your abstract, be sure to acquaint
+yourself with the codebook of the study you are planning to request data
+from, so that you have a clear idea about the sample and available
+variables. After your abstract is approved by the relevant triage
+committee, you will automatically receive an email with a link to the
+\protect\hyperlink{_2dzt9xeysbee}{\textbf{variable}} access request form
+(steps 3 and 4), which will prompt you to provide the details of the
+variables you require (from the codebook). All researchers wishing to
+use data from the CCP are required to register their study on the Open
+Science Framework (OSF) or AsPredicted. Therefore you will also be asked
+to provide a link to the
+\protect\hyperlink{_d60pemtq0onl}{\textbf{registration of your study}}
+in the variable access request form (steps 5 and 6). The
+post-registration should contain a more detailed version of the
+information contained in your abstract. After the triage committee
+approves your variable access request, the data manager will
+\protect\hyperlink{_kciim8tnzl6e}{send you a
+link}\protect\hyperlink{_kciim8tnzl6e}{to access the data}, along with a
+confirmation message of data transmission (steps 7 and 8).
+
+It is also possible to use the DROPS system to
+\protect\hyperlink{_uquq4hhmcg15}{conduct a study following the
+Registered Reports publication format}, to
+\protect\hyperlink{_qlx2etgrq9hr}{request a subsample of the data} to
+obtain parameter estimates for power analysis or to
+\protect\hyperlink{_q6nxcc4a4n2f}{request data for exploratory studies}.
+We describe the procedures for these specific situations in more detail
+below.
+
+\includegraphics{RackMultipart20221220-1-9i7noz_html_2fcce4a48b3c9234.png}
+
+\emph{Figure 1: A flowchart of the DROPS data request process.}
+
+\hypertarget{section-2}{%
+\subsection{}\label{section-2}}
+
+\hypertarget{abstract-submission}{%
+\subsection{Abstract submission}\label{abstract-submission}}
+
+The first step in requesting data through DROPS is filling out the DROPS
+\href{https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4}{abstract
+submission form}. Together with your co-author team (e.g., your
+supervisors and collaborators), you draft an abstract for your study in
+which you briefly describe the background rationale (including key
+references), clearly state your research questions and hypotheses, and
+give a brief overview of the analyses you are planning to conduct. You
+will also be asked to provide a precise description of the sample you
+want to request from DROPS (e.g.~``all participants aged 12 years
+old''), and list all variables you are planning to use.
+
+To make the process of drafting the abstract with your co-authors
+easier, we recommend using
+\href{https://docs.google.com/document/d/1WmAHdhIU37RJest4ozNItDl_Ygml4BUomt8a_EJ8yNs/edit}{this
+template}. After completing the draft, you can easily copy-paste the
+text from the template into the corresponding text box in the DROPS
+submission form, which will also allow you to indicate which study you
+are requesting data from.
+
+After submission, you can download a date and time-stamped overview of
+your abstract submission.
+
+\emph{IMPORTANT!} After submitting the abstract in DROPS, it is no
+longer possible to make any changes to the abstract. Therefore, please
+make sure that the entire abstract is approved by all researchers
+involved in the study and that you have thoroughly proofread it before
+submitting it to DROPS.
+
+After submission, the triage committee will review the abstract and
+decide whether the abstract meets the required criteria:
+
+\begin{itemize}
+\tightlist
+\item
+  the abstract should not have substantial overlap with other planned or
+  ongoing work on the same datasets
+\item
+  the abstract should contain a sufficient amount of details and no
+  required information should be missing
+\item
+  the authors only request variables that are included in the dataset.
+\end{itemize}
+
+Abstracts will be either rejected or given a revise and resubmit when
+they overlap with ongoing or planned work, or when they contain errors.
+In case your abstract is rejected or given a revise and resubmit, you
+are welcome to either adapt the abstract accordingly and resubmit, or
+submit an abstract for a new study.
+
+\hypertarget{registering-your-study}{%
+\subsection{Registering your study}\label{registering-your-study}}
+
+\hypertarget{for-non-esm-studies}{%
+\subsubsection{For non-ESM studies}\label{for-non-esm-studies}}
+
+After the approval of your abstract (step 3 in the flowchart), you will
+be asked to provide a registration of your study (step 5) as a part of
+the variable access request (step 4). In this part of the user guide, we
+provide guidance on the paper registration process.
+
+\hypertarget{osf-registrations}{%
+\paragraph{OSF registrations}\label{osf-registrations}}
+
+The Open Science Framework (OSF) is a free-to-use platform for
+facilitating open science practices. The OSF is one of the most
+widely-used platforms to register a research study. Either prior to data
+collection (pre-registration) or before accessing and analyzing already
+collected data (post-registration), you can register your research
+questions and analytical plans and receive a time and date-stamped
+confirmation of this. If you want to learn more about the reasons for
+and the benefits of registration, we recommend
+\href{https://www.pnas.org/doi/epdf/10.1073/pnas.1708274114}{this
+paper}\href{https://www.zotero.org/google-docs/?E8wJIv}{(Nosek et al.,
+2018)}. Below, you can find more resources on how to register your
+studies on OSF and how to register secondary data analyses. For more
+information about the differences between pre-registration and
+post-registration, we refer the reader to
+\href{https://psycnet.apa.org/doiLanding?doi=10.1037\%2Fabn0000451}{this
+paper about the registration
+continuum}\href{https://www.zotero.org/google-docs/?z1Lw8r}{(Benning et
+al., 2019)}.
+
+Please note that while the resources mentioned above often talk about
+\_pre-\_registration, we refer to \_post-\_registration in this user
+guide. Similar to pre-registration, post-registration is the practice of
+registering your hypotheses and analysis plans prior to accessing the
+data and conducting any analyses; in post-registration, however, the
+data are already collected at the time of the registration.
+
+For more information about the registration of studies using preexisting
+data, please refer to the
+\href{https://open.lnu.se/index.php/metapsychology/article/view/2625}{template
+and tutorial} by \href{https://www.zotero.org/google-docs/?wZgHX5}{Van
+den Akker et al.~(2021)}.
+
+When you start a new registration on OSF, there is now an option for
+``secondary data registration''.
+
+More information on how to register a study on the OSF:
+\url{https://help.osf.io/hc/en-us/articles/360019738834-Create-a-Preregistration}
+
+More information on how to make a view-only link to the registration:
+\url{https://help.osf.io/hc/en-us/articles/360042097853-Create-a-View-only-Link-for-a-Registration}
+
+General OSF help page about registrations:
+\url{https://help.osf.io/hc/en-us/categories/360001550953-Registrations}
+
+\hypertarget{aspredicted-registrations}{%
+\paragraph{AsPredicted registrations}\label{aspredicted-registrations}}
+
+If you are requesting to use data for a non-ESM study, you can also
+register your study on the AsPredicted site (aspredicted.com). This is
+an easy and brief way to pre-register your study and make your study
+registration available for others to read. To pre-register your study at
+AsPredicted, you are asked to answer nine short questions about the
+research plan, hypotheses and analyses.
+
+If you intend to request data from DROPS, we advise that you answer
+Question 1 \emph{``Have any data been collected for this study
+already?''} of the AsPredicted template by selecting the following
+option:
+
+``\emph{It's complicated. We have already collected some data but
+explain in Question 8 why readers may consider this a valid
+pre-registration nevertheless.''} In Question 8, you can then briefly
+explain that you are planning to use pre-existing data which you will
+access through a data-access system which time-stamps your access.
+Similarly to OSF, after registration, you can also create an anonymous
+version (PDF) of your registration for e.g.~reviewers if you do not want
+to make your registration public yet.
+
+\hypertarget{section-3}{%
+\subsubsection{}\label{section-3}}
+
+\hypertarget{for-esm-studies}{%
+\subsubsection{For ESM studies}\label{for-esm-studies}}
+
+\hypertarget{osf-registrations-1}{%
+\paragraph{OSF registrations}\label{osf-registrations-1}}
+
+If you are requesting to use ESM data from DROPS, please use the
+\href{https://osf.io/2chmu/}{registration template for ESM
+research}\href{https://www.zotero.org/google-docs/?ORGIOC}{(Kirtley,
+Lafit, et al., 2021)}. The template is adapted from the original
+\href{https://osf.io/x5w7h/}{Pre-Registration Challenge} (Mellor et al.,
+2019) and
+\href{https://open.lnu.se/index.php/metapsychology/article/view/2625}{pre-registration
+of pre-existing
+data}\href{https://www.zotero.org/google-docs/?EKoiMH}{(Van den Akker et
+al., 2021)} templates. The template includes questions that have been
+developed or adapted to be specifically relevant for ESM studies. This
+OSF page also includes two examples of how to complete the template,
+including a pre-registration (registering a study prior to data
+collection; Example 1) and a post-registration (registering a study of
+already collected data prior to accessing and analyzing them; Example
+2).
+
+For detailed instructions on using the template, please refer to the
+\href{https://journals.sagepub.com/doi/abs/10.1177/2515245920924686}{tutorial
+paper}\href{https://www.zotero.org/google-docs/?pBAwde}{(Kirtley, Lafit,
+et al., 2021)}.
+
+If you require additional information about any of the studies in DROPS
+to complete your pre-registration, we advise that you contact the DROPS
+data manager,
+\href{https://www.kuleuven.be/wieiswie/en/person/00007576}{Dr Martien
+Wampers}. She will provide you with more details.
+
+\hypertarget{aspredicted-registrations-1}{%
+\paragraph{AsPredicted
+registrations}\label{aspredicted-registrations-1}}
+
+For those less familiar with pre-registration (e.g., master students)
+who do not wish to pre-register their study at OSF, we recommend the
+shorter registration at AsPredicted. If you decide to use AsPredicted
+for your registration, please use Question 3: ``\emph{Describe the key
+dependent variable(s) specifying how they will be measured''} to
+indicate which of the variables you are requesting are ESM variables and
+which are non-ESM variables. We also advise that when describing your
+ESM variables, you explain if and how any transformation or indices such
+as sum scores or averages will be constructed from them.
+
+\hypertarget{power-analysis}{%
+\subsubsection{Power analysis}\label{power-analysis}}
+
+\hypertarget{statistical-power}{%
+\paragraph{Statistical power}\label{statistical-power}}
+
+In the process of registering your secondary data analysis, you will be
+asked to specify the statistical power of your planned analyses. Put
+simply, statistical power is the probability of rejecting the null
+hypothesis in your study, given that there is a real effect present
+\href{https://www.zotero.org/google-docs/?xgNmjx}{(i.e., the null
+hypothesis is
+false}\href{https://www.zotero.org/google-docs/?xgNmjx}{;}\href{https://www.zotero.org/google-docs/?xgNmjx}{Cohen,
+1992)}. Conducting studies with only a small probability of finding an
+effect when it actually exists can result in a waste of time and
+resources, and it makes even significant effects harder to interpret. As
+such, there is a push for psychologists to base their sample size plans
+on a priori estimation of statistical power. However, given the complex
+nature of the analyses used for ESM data, only about 2\% of ESM studies
+on psychopathology report a power calculation
+\href{https://www.zotero.org/google-docs/?eipiiN}{(Trull \&
+Ebner-Priemer, 2020)}.
+
+We require registrations of (confirmatory) studies to include an a
+priori power analysis in order to contribute to the robustness of mental
+health research, make the interpretation of results straightforward, and
+prevent resource wastage.
+
+\hypertarget{how-to-estimate-statistical-power}{%
+\paragraph{How to estimate statistical
+power}\label{how-to-estimate-statistical-power}}
+
+Of course, given that the data included in DROPS is already collected,
+you cannot influence the available sample size. Still, it is very useful
+to have an idea about the probability of your study in finding the
+smallest effect size of interest, and potentially adjusting your
+analytical plans (e.g., simplifying your statistical models or
+designating some research questions as exploratory) if the statistical
+power is insufficient.
+
+For the analysis of non-ESM data using statistical techniques such as
+\emph{t}-tests, ANOVA or regression, we recommend using either the
+software
+\href{https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower}{G-power}\href{https://www.zotero.org/google-docs/?wcD7sK}{(Faul
+et al., 2009)} or the R package
+\href{https://cran.r-project.org/web/packages/pwr/pwr.pdf}{\emph{pwr}}\href{https://www.zotero.org/google-docs/?zgqomC}{(Champely
+et al., 2018)}\emph{.} For mediation analyses, widely used in mental
+health research, power analysis is more complicated
+\href{https://www.zotero.org/google-docs/?ZJP55s}{(Perugini et al.,
+2018)}: under specific assumptions, analytical solutions are available
+in the R package
+\href{https://cran.r-project.org/web/packages/powerMediation/index.html}{\emph{powerMediation}}\href{https://www.zotero.org/google-docs/?dHtGlO}{(Qiu,
+2021)}; in other scenarios, using simulations is the most feasible way
+of assessing statistical power. Similarly, in the case of more complex
+multilevel or longitudinal models using ESM data, calculating power is
+often only possible via simulation methods. We recommend using the
+\href{https://journals.sagepub.com/doi/full/10.1177/2515245920978738}{interactive
+Shiny app and accompanying tutorial
+paper}\href{https://www.zotero.org/google-docs/?nap5qJ}{(Lafit et al.,
+2020)} that makes the simulation approach to power analysis for
+(auto-regressive) multilevel models more straightforward.
+
+\hypertarget{requesting-a-subsample-of-data-to-calculate-power}{%
+\paragraph{Requesting a subsample of data to calculate
+power}\label{requesting-a-subsample-of-data-to-calculate-power}}
+
+Regardless of which approach to power analysis you choose, you will
+likely need to have an idea about some characteristics of your data.
+Even in the relatively simple multilevel autoregressive(1) model used
+for estimating inertia from ESM data, you will need to specify the
+standard error of level 1 errors, random slopes and random intercepts.
+These parameters can usually not be easily derived from the literature.
+
+As a convenient solution for this, DROPS allows you to request a small
+subsample of the dataset you are planning to analyze, to estimate the
+parameters necessary for power analysis. The process of obtaining the
+subsample is a simplified version of the standard DROPS workflow: you
+will still have to submit an abstract (in which you clearly state that
+you are only requesting a subsample of the data), but it is not
+necessary to upload a registration at this point.
+
+\hypertarget{variable-access-request}{%
+\subsection{Variable access request}\label{variable-access-request}}
+
+After the triage committee approves your abstract, you will
+automatically receive a link to the variable access request form. You
+will then be asked to provide a view-only link to the registration of
+your study. In the following parts of this manual, you can find all the
+information you need about registering your study and generating
+view-only links.
+
+If you are using the Open Science Framework (OSF) to register your
+study, please provide a view-only link to the pre-registration itself,
+not to the whole OSF project. The view-only link for the OSF project
+does not provide access to the pre-registration.
+
+You will also be asked to provide a list of the exact variables that you
+will use in your study. Please, refer to the variables by their name in
+the codebook of the dataset that you are requesting data from. For
+example, if you want to request data on participants' ages from the
+SIGMA study, you need to list the variable as ``agl\_ado\_age'', not
+``participant age''. The codebooks are available at . If you are
+requesting data from multiple measurement points, please specify which
+variables you need for every measurement point. Similarly, clearly
+mention if you only need a subset of the data, e.g.~for power
+calculations.
+
+You will also need to specify the format in which you want to receive
+the data. R, Stata, SAS and SPSS users can request a .csv file with code
+to label the data. Users of other statistical software can request a
+.csv file with only the raw data, a .csv file with labels or a CDISC
+ODM-XML file. You can only choose one format.
+
+After completing the request form, you can download a date and
+time-stamped overview of your variable access request. We recommend
+downloading this overview, so that you can compare your requested
+variables with the variables that you will receive from the data
+manager.
+
+\textbf{Important to note:} after submitting the variable access
+request, it is no longer possible to make any changes to the list of
+requested variables. This includes adding and removing variables from
+the list. So make sure in advance that you have listed all variables
+that you will need for your study. Do not request variables that are not
+mentioned in the post-registration, you will not get access to them.
+
+\hypertarget{receiving-data}{%
+\subsection{Receiving data}\label{receiving-data}}
+
+After your variable access request is approved, you will receive an
+automatic email notifying you of the approval. Shortly after, the data
+manager will send you the dataset in the requested format. Along with
+the dataset, you will receive an email with the following message:
+
+``The data requested by {[}your name{]} for the study titled {[}your
+study title{]} have been sent on {[}date{]}''
+
+Please check the dataset immediately after receiving it. Make sure that
+all variables you requested are included, that you received data from
+the correct measurement point(s) and that you received data from the
+correct subset of participants when applicable. You can use the download
+of the variable request form to check if everything is correct. In case
+there is a mistake in the dataset, contact the data manager as soon as
+possible. We will make sure that you receive the correct dataset.
+
+\hypertarget{section-4}{%
+\subsection{}\label{section-4}}
+
+\hypertarget{special-cases}{%
+\subsection{Special cases}\label{special-cases}}
+
+\hypertarget{section-5}{%
+\subsubsection{}\label{section-5}}
+
+\hypertarget{registered-reports-using-drops}{%
+\subsubsection{Registered Reports using
+DROPS}\label{registered-reports-using-drops}}
+
+\hypertarget{about-registered-reports}{%
+\paragraph{About Registered Reports}\label{about-registered-reports}}
+
+Registered Reports are a novel publication format with a two-stage
+research process. In the first stage, researchers are asked to specify
+their introduction, hypotheses, methods and analyses before collecting
+any data. These are then reviewed based on their theoretical and
+methodological soundness. When the paper is approved in the first stage,
+it is awarded an \emph{in-principle acceptance}, which guarantees that
+the paper will be published after the data collection and analysis are
+completed, regardless of what the results are. In stage 2 of the review
+process, the reviewers make sure that the research that was conducted
+was in line with the protocol registered in Stage 1. In this way, the
+Registered Reports format prevents publication bias (i.e., ensures that
+a paper will be judged by its methods, not by its results) and gives
+researchers the opportunity to fine-tune their protocol before they
+collect data. We highly recommend considering the Registered Reports
+format for your secondary data analysis. For more information about the
+format itself and the review process, we recommend
+\href{https://www.nature.com/articles/s41562-021-01193-7}{this paper}.
+
+\includegraphics{RackMultipart20221220-1-9i7noz_html_26ada00dbe266d99.png}
+
+\emph{Figure 2: The Registered Reports workflow (reproduced from}
+\href{https://www.cos.io/initiatives/registered-reports}{\emph{https://www.cos.io/initiatives/registered-reports}}\emph{)}
+
+\hypertarget{registered-reports-and-drops}{%
+\paragraph{Registered Reports and
+DROPS}\label{registered-reports-and-drops}}
+
+If you decide to write an article using the
+\href{https://www.cos.io/initiatives/registered-reports}{Registered}\href{https://www.cos.io/initiatives/registered-reports}{Reports
+format}\href{https://www.zotero.org/google-docs/?UK8wKf}{(Chambers,
+20}\href{https://www.zotero.org/google-docs/?UK8wKf}{13}\href{https://www.zotero.org/google-docs/?UK8wKf}{;
+Nosek \& Lakens, 2014)}, the process of requesting data via DROPS is
+similar to the standard procedure. As the first step, you submit an
+abstract in DROPS. After the abstract is approved, you will receive an
+automated email from DROPS asking you to submit the variable request
+form. In the variable request form, please indicate that the
+registration of your study is not yet available, as you are waiting for
+the Stage 1 manuscript acceptance.
+
+Likely, you will need a subsample of the data for power calculations
+before writing your Stage 1 manuscript and study registration. If that
+is the case, it is possible to submit a first abstract and variable
+request form in DROPS before submitting your introduction and methods
+section as a Stage 1 Registered Report. If you plan to do so, please
+state clearly that you are only requesting a subsample of the data. In
+the acceptance email for your abstract submission, reference number will
+be included that you will use to request the remaining data after your
+Stage 1 manuscript is accepted.
+
+After your Stage-1 manuscript is accepted by the journal, please submit
+a new abstract to request the remaining data for your main analyses.
+Then, you will be asked to submit your study registration and (second)
+variable request form to DROPS. After the variable request form is
+approved by DROPS, you will be able to download a time-stamped overview
+that confirms you have only accessed the dataset after Stage-1
+manuscript acceptance.
+
+\hypertarget{exploratory-studies}{%
+\subsection{Exploratory studies}\label{exploratory-studies}}
+
+It is possible to request DROPS datasets to conduct exploratory data
+analysis. Of course, given that some of the rules and suggestions
+mentioned above are aimed mostly at confirmatory approaches, they do not
+apply to exploratory analyses. Still, researchers should aim at maximum
+transparency when planning and reporting their exploratory analyses.
+
+While you do not have to register explicit hypotheses or plan for every
+possible contingency, we recommend that you clearly state the general
+intent of the study (what are you starting points, what do you want to
+learn), clarify your choice of variables and pre-processing/analytical
+plans. During the analysis itself, we recommend you to log the different
+analyses and decisions you conducted in a transparent way. For example,
+you can add updates to your original registration, explaining what
+variables and analytical procedures you added and why.
+
+For more information about pre-registering exploratory studies (and
+pre-registering secondary data analyses in general), we recommend
+\href{https://open.lnu.se/index.php/metapsychology/article/view/2625}{this
+article}\href{https://www.zotero.org/google-docs/?osv6BM}{(Van den Akker
+et al., 2021)}. Additionally, the
+\href{https://www.elsevier.com/__data/promis_misc/Exploratory_Reports_Guidelines.pdf}{guidelines
+for the Exploratory Reports publication format} are a good starting
+point for transparent exploratory secondary data analysis. Specifically,
+we recommend reporting effect sizes, confidence/credible intervals, or
+just directionalities of effects, instead of \emph{p}-values in
+exploratory papers
+\href{https://www.zotero.org/google-docs/?NsZXQE}{(Weston et al.,
+2019)}.
+
+\hypertarget{section-6}{%
+\section{}\label{section-6}}
+
+\hypertarget{frequently-asked-questions}{%
+\section{Frequently Asked Questions}\label{frequently-asked-questions}}
+
+\begin{itemize}
+\tightlist
+\item
+  Q: \emph{How long does it approximately take to receive data through
+  DROPS?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you do not receive a response within 2 weeks of submitting your
+    abstract or you do not receive the data within 2 weeks from
+    submitting the data request form, please reach out to the
+    \protect\hyperlink{_6eanlztnrvpa}{contact person} of the respective
+    study.
+  \end{itemize}
+\item
+  Q: \emph{What if my pre-registered models do not converge / there are
+  errors in the pre-registered code / I decided to use different
+  analyses than the ones I registered / assumptions of the statistical
+  models were violated?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: Some of the decisions you will make during the registration
+    process will be dependent on the data. For example, upon finding out
+    that your data violates assumptions you might want to use a
+    statistical model different from the one you were initially planning
+    to use. In the case of multilevel models widely used to analyse ESM
+    data, non-convergence is a widespread issue. Although it is usually
+    not possible to predict all possible issues that can arise during
+    data analysis, we encourage you to include detailed contingency
+    plans in your study registration. For example, you can pre-specify
+    how you are going to deal with convergence issues or violated
+    assumptions (and include the code for these contingencies in the
+    registration).
+  \end{itemize}
+\end{itemize}
+
+Still, unexpected problems can arise even if you rigorously plan for
+possible contingencies. In that case, we recommend you to add updates
+reflecting the necessary changes to your registration and to clearly
+communicate the deviations from the registered analysis in the paper
+itself. The goal of study registration is maximum transparency, not
+perfection. For more information about contingency plans and reporting
+deviations from registration, we recommend the ESM pre-registration
+tutorial \href{https://www.zotero.org/google-docs/?A6JUag}{(Kirtley,
+Lafit, et al., 2021)}.
+
+Please note that unless the deviations from registration requires
+accessing other data, it is not necessary to submit a new DROPS abstract
+with details of the new registration/deviation from the registration.
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Q: I know broadly what variables I want to access but I have
+  some questions. Can I use DROPS to ask questions?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: Instead of using the DROPS forms to ask questions, please send
+    your questions via email to the DROPS data manager
+    \href{https://www.kuleuven.be/wieiswie/nl/person/00007576}{Dr
+    Martien Wampers}.
+  \end{itemize}
+\item
+  Q: \emph{I am a reviewer / I am planning to do a verification report
+  of a study that used one of the datasets included in DROPS. To obtain
+  the data for reanalysis, do I need to submit my own DROPS request
+  (complete with abstract etc.), or is there a faster way to obtain the
+  exact dataset that the original authors used?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    As a reviewer, we recommend you to reach out directly to the contact
+    person of the given dataset (see the
+    \protect\hyperlink{_6eanlztnrvpa}{\emph{Which data can be request
+    through DROPS?}}subsection) and see if you can obtain the dataset
+    based on the paper title.
+  \end{itemize}
+\item
+  Q: \emph{I want to first request 70\% of the sample to create a model,
+  then, after I have the final model, I will request the remaining 30\%
+  to cross-validate it. Do I need to submit two separate requests?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: Yes, DROPS allows for requesting subsamples of the datasets for
+    the purposes of cross-validation. Please refer to the section about
+    \protect\hyperlink{_qlx2etgrq9hr}{requesting a subsample for power
+    analysis}.
+  \end{itemize}
+\item
+  Q: \emph{The journal I am submitting to asks that my data are made
+  publicly available, what do I do?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can state that the you used are stored in a restricted-access
+    data repository maintained by the Center for Contextual Psychiatry
+    and mention that there is a data-management system in place.
+  \end{itemize}
+\item
+  Q: \emph{What do I write in the `data availability' statement when I
+  submit my manuscript to a journal for publication?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    See response above
+  \end{itemize}
+\item
+  Q: \emph{I am a supervisor and one of my students is going to use data
+  from DROPS for their thesis, but I also want to write a paper on these
+  data later on. Do we need two post-registrations?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you are planning to run two separate studies, two separate
+    post-registrations will be required.
+  \end{itemize}
+\item
+  Q: \emph{One of my colleagues/students is going to run analyses on the
+  same variables I used in a previous paper. Can I just send them the
+  data to save time?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: Although we understand that just sharing the data with your
+    colleague might be the more practical way of doing things, one of
+    the main functions of DROPS is to keep track of who accessed the
+    datasets. This makes the lives of researchers easier as well, as
+    DROPS provides them with date- and time-stamped confirmation of data
+    access, that can be used to prove the data were only accessed after
+    the study registration was submitted. As such, please start a new
+    DROPS request for every study you are planning to conduct, even if
+    it uses identical variables to a study you've already conducted.
+  \end{itemize}
+\item
+  Q: \emph{How do I know if there is missing data in some of the
+  variables I would like to use?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The general information about missing data and compliance in ESM
+    variables are usually included in the study protocols.
+  \end{itemize}
+\item
+  Q: \emph{I don't know anything about pre-registration or open science.
+  Help! Where do I start?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    There are many good-quality introductory resources for getting into
+    open science. For starters, we would recommend the following two
+    articles:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://econtent.hogrefe.com/doi/full/10.1027/2151-2604/a000387}{Seven
+      Easy Steps to Open
+      Science}\href{https://www.zotero.org/google-docs/?t8Vk4A}{(Crüwell
+      et al., 2019)}
+    \item
+      Easing Into Open Science: A Guide for Graduate Students and their
+      Advisors
+      \href{https://www.zotero.org/google-docs/?ho5j2d}{(Kathawalla et
+      al., 2021)}
+    \end{itemize}
+  \end{itemize}
+\item
+  Q: \emph{What formats can I request DROPS datasets in?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: The two main formats you can request DROPS data in are csv and
+    CDISC ODM-XML. For more information, please refer to
+    \protect\hyperlink{_2dzt9xeysbee}{this section of the manual}.
+  \end{itemize}
+\item
+  Q: \emph{I provided a view-only link to the entire OSF project with
+  the registration, can you see it?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: Unfortunately, the only way we can access your registration is
+    via a view only link to \textbf{the registration itself}.
+  \end{itemize}
+\item
+  Q: \emph{Can I get access to an entire dataset?}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A: To be consistent with the main goals of the DROPS data curation
+    system, we require researchers to only request variables that are
+    directly relevant to your planned study.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Bibliography}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Benning, S. D.,
+Bachrach, R. L., Smith, E. A., Freeman, A. J., \& Wright, A. G. (2019).
+The registration continuum in clinical science: A guide toward
+transparent
+practices.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Journal
+of Abnormal
+Psychology}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{128}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(6),
+528.}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Chambers, C. D.
+(2020). Verification Reports: A new article type at
+Cortex.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Cortex}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{129}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,
+A1--A3. https://doi.org/10.1016/j.cortex.2020.04.020}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Champely, S., Ekstrom,
+C., Dalgaard, P., Gill, J., Weibelzahl, S., Anandkumar, A., Ford, C.,
+Volcic, R., De Rosario, H., \& De Rosario, M. H. (2018). Package
+`pwr.'}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{R Package
+Version}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{1}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(2).}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Cohen, J. (1992).
+Statistical power
+analysis.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Current
+Directions in Psychological
+Science}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{1}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(3),
+98--101.}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Crüwell, S., van
+Doorn, J., Etz, A., Makel, M. C., Moshontz, H., Niebaum, J. C., Orben,
+A., Parsons, S., \& Schulte-Mecklenbeck, M. (2019). Seven Easy Steps to
+Open Science: An Annotated Reading
+List.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Zeitschrift
+Für
+Psychologie}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{227}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(4),
+237--248. https://doi.org/10.1027/2151-2604/a000387}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Eisele, G., Lafit, G.,
+Vachon, H., Kuppens, P., Houben, M., Myin-Germeys, I., \& Viechtbauer,
+W. (2021). Affective structure, measurement invariance, and reliability
+across different experience sampling
+protocols.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Journal
+of Research in
+Personality}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{92}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,
+104094. https://doi.org/10.1016/j.jrp.2021.104094}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Eisele, G., Vachon,
+H., Lafit, G., Kuppens, P., Houben, M., Myin-Germeys, I., \&
+Viechtbauer, W. (2020). The Effects of Sampling Frequency and
+Questionnaire Length on Perceived Burden, Compliance, and Careless
+Responding in Experience Sampling Data in a Student
+Population.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Assessment}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{29(2)}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,
+16.}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Faul, F., Erdfelder,
+E., Buchner, A., \& Lang, A.-G. (2009). Statistical power analyses using
+G* Power 3.1: Tests for correlation and regression
+analyses.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Behavior
+Research
+Methods}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{41}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(4),
+1149--1160.}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Kathawalla, U.-K.,
+Silverstein, P., \& Syed, M. (2021). Easing Into Open Science: A Guide
+for Graduate Students and Their
+Advisors.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Collabra:
+Psychology}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{7}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(1),
+18684. https://doi.org/10.1525/collabra.18684}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Kirtley, O. J.,
+Achterhof, R., Hagemann, N., Hermans, K. S. F. M., Hiekkaranta, A. P.,
+Lecei, A., Boets, B., Henquet, C., Kasanova, Z., Schneider, M., van
+Winkel, R., Reininghaus, U., Viechtbauer, W., \& Myin-Germeys, I.
+(2021).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Initial
+cohort characteristics and protocol for SIGMA: An accelerated
+longitudinal study of environmental factors, inter- and intrapersonal
+processes, and mental health in
+adolescence}}\href{https://www.zotero.org/google-docs/?EJLlNC}{{[}Preprint{]}.
+PsyArXiv. https://doi.org/10.31234/osf.io/jp2fk}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Kirtley, O. J., Lafit,
+G., Achterhof, R., Hiekkaranta, A. P., \& Myin-Germeys, I. (2021).
+Making the Black Box Transparent: A Template and Tutorial for
+Registration of Studies Using Experience-Sampling
+Methods.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Advances
+in Methods and Practices in Psychological
+Science}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{4}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(1),
+251524592092468. https://doi.org/10.1177/2515245920924686}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Lafit, G., Adolf, J.,
+Dejonckheere, E., Myin-Germeys, I., Viechtbauer, W., \& Ceulemans, E.
+(2020).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Selection
+of the Number of Participants in Intensive Longitudinal Studies: A
+User-friendly Shiny App and Tutorial to Perform Power Analysis in
+Multilevel Regression Models that Account for Temporal
+Dependencies}}\href{https://www.zotero.org/google-docs/?EJLlNC}{{[}Preprint{]}.
+PsyArXiv. https://doi.org/10.31234/osf.io/dq6ky}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Nosek, B. A.,
+Ebersole, C. R., DeHaven, A. C., \& Mellor, D. T. (2018). The
+preregistration
+revolution.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Proceedings
+of the National Academy of
+Sciences}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{115}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(11),
+2600--2606. https://doi.org/10.1073/pnas.1708274114}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Nosek, B. A., \&
+Lakens, D.
+(2014).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Registered
+reports: A method to increase the credibility of published results.}}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Perugini, M.,
+Gallucci, M., \& Costantini, G. (2018). A practical primer to power
+analysis for simple experimental
+designs.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{International
+Review of Social
+Psychology}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{31}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(1).}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Qiu, W.
+(2021).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{powerMediation:
+Power/Sample Size Calculation for Mediation
+Analysis}}\href{https://www.zotero.org/google-docs/?EJLlNC}{(0.3.4).}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Trull, T. J., \&
+Ebner-Priemer, U. W.
+(2020).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Ambulatory
+Assessment in Psychopathology Research: A Review of Recommended
+Reporting Guidelines and Current
+Practices}}\href{https://www.zotero.org/google-docs/?EJLlNC}{. 8.}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Van den Akker, O. R.,
+Weston, S., Campbell, L., Chopik, B., Damian, R., Davis-Kean, P., Hall,
+A., Kosie, J., Kruse, E., Olsen, J., Ritchie, S., Valentine, K., Van 't
+Veer, A., \& Bakker, M. (2021). Preregistration of secondary data
+analysis: A template and
+tutorial.}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Meta-Psychology}}\href{https://www.zotero.org/google-docs/?EJLlNC}{,}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{5}}\href{https://www.zotero.org/google-docs/?EJLlNC}{.
+https://doi.org/10.15626/MP.2020.2625}
+
+\href{https://www.zotero.org/google-docs/?EJLlNC}{Weston, S. J.,
+Ritchie, S. J., Rohrer, J. M., \& Przybylski, A. K.
+(2019).}\href{https://www.zotero.org/google-docs/?EJLlNC}{\emph{Recommendations
+for Increasing the Transparency of Analysis of Preexisting Data
+Sets}}\href{https://www.zotero.org/google-docs/?EJLlNC}{. 14.}
+
+\end{document}

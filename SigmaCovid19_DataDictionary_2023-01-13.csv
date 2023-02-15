@@ -1,0 +1,917 @@
+﻿"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,registratie,,text,"Record ID",,,,,,,,,,,,,
+agl_ado_email,registratie,,text,E-mailadres,,,email,,,y,,,,,,,
+agl_ado_surname,registratie,,text,Achternaam,,,,,,y,,y,,,,,
+agl_ado_name,registratie,,text,Voornaam,,,,,,y,,y,,,,,
+agl_ado_dob,registratie,,text,Geboortedatum,,"Geef de datum in zoals in dit voorbeeld: 28-04-2003. Je kan rechtstreeks in het vakje typen.  Je kan ook op het kalendertje klikken en met de pijltjes de juiste dag, maand en jaar kiezen.",date_dmy,1996-01-01,2010-12-31,,,y,,,,,
+above18,registratie,,yesno,"Ouder dan 18?",,,,,,,,,,,,,
+age,registratie,,text,leeftijd,,,,,,,,,,,,,
+esm_dayno,esm,,text,Dagnummer,,,integer,,,,,,,,,,
+esm_beeptype,esm,,radio,Beepsoort,"1, Morning beep | 2, Normal beep | 3, Evening beep",,,,,,,,,,,,
+esm_beepno,esm,,text,"Beep nummer",,,integer,1,10,,,,,,,,
+esm_date,esm,,text,"ESM date",,,date_dmy,,,,,,,,,,
+esm_creationtime,esm,,text,"Beep creation time",,,datetime_seconds_dmy,,,,,,,,,,
+esm_scheduledtime,esm,,text,"Scheduled beep time",,,datetime_seconds_dmy,,,,,,,,,,
+esm_beep_resp_start,esm,,text,"Beep response start",,,datetime_seconds_dmy,,,,,,,,,,
+esm_beep_resp_end,esm,,text,"Beep response end",,,datetime_seconds_dmy,,,,,,,,,,
+esm_expirationtime,esm,,text,"Beep expiration time",,,datetime_seconds_dmy,,,,,,,,,,
+esm_uploadtime,esm,,text,"Beep upload time",,,datetime_seconds_dmy,,,,,,,,,,
+esm_total_resp_time,esm,,text,"Total response time",,,number,,,,,,,,,,
+esm_mor_sleepwell,esm,,radio,"Ik heb goed geslapen","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_sleepwell_rt,esm,,text,"Ik heb goed geslapen - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_sleeplong,esm,,radio,"Ik heb lang genoeg geslapen","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_sleeplong_rt,esm,,text,"Ik heb lang genoeg geslapen - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_event,esm,,text,"Denk aan de belangrijkste gebeurtenis die vandaag zal plaatsvinden. Wat is het?",,,,,,,,,,,,,
+esm_mor_event_english,esm,,text,"Denk aan de belangrijkste gebeurtenis die vandaag zal plaatsvinden. Wat is het? (Engelse vertaling)",,,,,,,,,,,,,
+esm_mor_event_rt,esm,,text,"Denk aan de belangrijkste gebeurtenis die vandaag zal plaatsvinden. Wat is het? - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_event_lookforward,esm,,radio,"Ik heb zin in deze gebeurtenis","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_lookforward_rt,esm,,text,"Ik heb zin in deze gebeurtenis - antwoordtijd",,,,,,,,,,,,,
+esm_mor_event_dread,esm,,radio,"Ik zie op tegen deze gebeurtenis","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_dread_rt,esm,,text,"Ik zie op tegen deze gebeurtenis - antwoordtijd",,,,,,,,,,,,,
+esm_mor_event_important,esm,,radio,"Deze gebeurtenis is belangrijk","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_important_rt,esm,,text,"Deze gebeurtenis is belangrijk - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_event_control,esm,,radio,"Ik heb controle over deze gebeurtenis","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_control_rt,esm,,text,"Ik heb controle over deze gebeurtenis - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_event_pleasant,esm,,radio,"Hoe verwacht ik dat deze gebeurtenis zal zijn","-3, -3 Zeer onplezierig | -2, -2 | -1, -1 | 0, 0 | 1, 1 | 2, 2 | 3, 3 Zeer plezierig",,,,,,,,,,,,
+esm_mor_event_pleasant_2,esm,,text,"Hoe verwacht ik dat deze gebeurtenis zal zijn - antwoordtijd",,,number,,,,,,,,,,
+esm_mor_event_think,esm,,radio,"Ik heb vaak aan deze gebeurtenis gedacht","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_think_rt,esm,,text,"Ik heb vaak aan deze gebeurtenis gedacht - antwoordtijd",,,,,,,,,,,,,
+esm_mor_event_talk,esm,,radio,"Ik heb het veel met iemand over deze gebeurtenis gehad","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mor_event_talk_rt,esm,,text,"Ik heb het veel met iemand over deze gebeurtenis gehad",,,number,,,,,,,,,,
+esm_mood_cheerful,esm,,radio,"Ik voel me vrolijk","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_cheerful_rt,esm,,text,"Ik voel me vrolijk - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_irritated,esm,,radio,"Ik voel me geïrriteerd","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_irritated_rt,esm,,text,"Ik voel me geïrriteerd - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_anxious,esm,,radio,"Ik voel me angstig","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_anxious_rt,esm,,text,"Ik voel me angstig - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_satisfied,esm,,radio,"Ik voel me tevreden","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_satisfied_rt,esm,,text,"Ik voel me tevreden - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_insecure,esm,,radio,"Ik voel me onzeker","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_insecure_rt,esm,,text,"Ik voel me onzeker - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_lonely,esm,,radio,"Ik voel me eenzaam","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_lonely_rt,esm,,text,"Ik voel me eenzaam - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_relaxed,esm,,radio,"Ik voel me ontspannen","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_relaxed_rt,esm,,text,"Ik voel me ontspannen - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_paranoid,esm,,radio,"Ik voel me wantrouwig","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_paranoid_rt,esm,,text,"Ik voel me wantrouwig - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_experiences,esm,,radio,"Ik heb ongewone ervaringen. Ik zie of hoor dingen die anderen niet zien of horen.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_experiences_rt,esm,,text,"Ik heb ongewone ervaringen. Ik zie of hoor dingen die anderen niet zien of horen. - antwoordtijd",,,,,,,,,,,,,
+esm_mood_sad,esm,,radio,"Ik voel me verdrietig","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_sad_rt,esm,,text,"Ik voel me verdrietig - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_stressed,esm,,radio,"Ik voel me gestresst","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_stressed_2,esm,,text,"Ik voel me gestresst  - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_restless,esm,,radio,"Ik voel me rusteloos","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_restless_rt,esm,,text,"Ik voel me rusteloos - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_generally_well,esm,,radio,"Over het algemeen gezien voel ik me nu goed","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_generally_well_rt,esm,,text,"Over het algemeen gezien voel ik me nu goed - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_confident,esm,,radio,"Ik voel me zeker van mezelf","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_confident_rt,esm,,text,"Ik voel me zeker van mezelf - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_burden,esm,,radio,"Ik voel me een last voor anderen.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_burden_rt,esm,,text,"Ik voel me een last voor anderen. - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_defeated,esm,,radio,"Ik voel me machteloos","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_defeated_rt,esm,,text,"Ik voel me machteloos - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_entrapped,esm,,radio,"Ik heb het gevoel dat ik vastzit.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_entrapped_rt,esm,,text,"Ik heb het gevoel dat ik vastzit. - antwoordtijd",,,number,,,,,,,,,,
+esm_mood_safe,esm,,radio,"Ik voel me veilig","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_mood_safe_rt,esm,,text,"Ik voel me veilig - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_who,esm,,checkbox,"Met wie ben ik?","1, Vader | 2, Moeder | 3, Andere familie (uit gezin) | 4, Andere familie (buiten gezin) | 5, Vriend(en) | 6, Andere leeftijdsgenoten | 7, leraar | 8, Andere (bekende) mensen | 9, Onbekende mensen | 11, Lief | 10, Niemand",,,,,,,,,,,,
+esm_soc_who_rt,esm,,text,"Met wie ben ik? - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_interaction,esm,,radio,"We zijn samen iets aan het doen (praten, leren, gamen, etc.). ","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_company_interaction_rt,esm,,text,"We zijn samen iets aan het doen (praten, leren, gamen, etc.). - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_atease,esm,,radio,"Ik voel me op mijn gemak in dit gezelschap.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_company_atease_rt,esm,,text,"Ik voel me op mijn gemak in dit gezelschap. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_appreciated,esm,,radio,"Ik voel me gewaardeerd door dit gezelschap.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_company_appreciated_rt,esm,,text,"Ik voel me gewaardeerd door dit gezelschap. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_belong,esm,,radio,"Ik hoor erbij.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_company_belong_rt,esm,,text,"Ik hoor erbij. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_preferalone,esm,,radio,"Ik zou liever alleen zijn.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_company_preferalone_rt,esm,,text,"Ik zou liever alleen zijn. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_alone_pleasant,esm,,radio,"Ik vind het fijn om alleen te zijn.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_alone_pleasant_rt,esm,,text,"Ik vind het fijn om alleen te zijn. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_alone_want,esm,,radio,"Ik wil alleen zijn","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_alone_want_rt,esm,,text,"Ik wil alleen zijn - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_alone_excluded,esm,,radio,"Ik voel me buitengesloten","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_alone_excluded_rt,esm,,text,"Ik voel me buitengesloten - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_alone_prefercompany,esm,,radio,"Ik wil liever met anderen zijn.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_alone_prefercompany_rt,esm,,text,"Ik wil liever met anderen zijn. - antwoordtijd",,,number,,,,,,,,,,
+esm_activity,esm,,checkbox,"Wat ben je aan het doen?","1, Praten met anderen | 2, Sporten | 3, Vrije tijd actief (hobby, uitgaan, jeugdbeweging,...) | 4, Vrije tijd passief (lezen, muziek beluisteren, ....) | 5, Vrije tijd digitaal (tv kijken, gsm/computer/tablet gebruiken) | 6, School | 7, Werk | 8, Huishoudelijke taken | 9, Onderweg | 10, Persoonlijke hygiëne (tanden poetsen, aankleden,...) | 11, Eten/drinken | 12, Iets anders | 13, Niets",,,,,,,,,,,,
+esm_activity_rt,esm,,text,"Wat ben je aan het doen? - antwoordtijd",,,number,,,,,,,,,,
+esm_act_like,esm,,radio,"Ik vind het leuk wat ik nu aan het doen ben","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_act_like_rt,esm,,text,"Ik vind het leuk wat ik nu aan het doen ben - antwoordtijd",,,number,,,,,,,,,,
+esm_act_else,esm,,radio,"Ik zou liever iets anders doen.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_act_else_rt,esm,,text,"Ik zou liever iets anders doen. - antwoordtijd",,,number,,,,,,,,,,
+esm_act_active,esm,,radio,"Ik ben actief bezig","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_act_active_rt,esm,,text,"Ik ben actief bezig - antwoordtijd",,,number,,,,,,,,,,
+esm_act_move,esm,,radio,"Gedurende deze activiteit ben ik aan het... ","1, Zitten/liggen | 2, Staan/stappen | 3, Matig bewegen, ademhaling versnelt | 4, Intens bewegen, je begint te zweten",,,,,,,,,,,,
+esm_act_move_rt,esm,,text,"Gedurende deze activiteit ben ik aan het... - antwoordtijd",,,,,,,,,,,,,
+esm_where,esm,,radio,"Waar ben je?","1, Op school | 2, Thuis | 3, Bij vriend(en) | 4, Bij andere familie dan thuis | 5, Op de fiets/in de auto/in de bus/in de trein | 6, Ergens anders binnen | 7, Ergens anders buiten",,,,,,,,,,,,
+esm_where_rt,esm,,text,"Waar ben je? - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_company_virtual,esm,,checkbox,"Ik ben virtueel in contact met anderen","1, Ja, en ik ben aan het lezen/scrollen/liken (op sociale media) | 2, Ja, en ik ben aan het posten (op sociale media) | 3, Ja, en ik ben aan het (video)chatten of bellen | 4, Ja, en ik ben met anderen iets aan het doen (bv gamen) | 5, Ja, en ik ben les aan het volgen | 0, Nee",,,,,,,,,,,,
+esm_soc_company_virtual_rt,esm,,text,"Ik ben virtueel in contact met anderen - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_whynot,esm,,checkbox,"Waarom ben ik niet online","1, Ik mag niet online zijn | 2, Ik kan niet online zijn | 3, Ik wil niet online zijn | 4, Ik hoef niet online te zijn | 5, Een andere reden | 6, Geen reden | 7, Er is niemand beschikbaar om mee in contact te zijn",,,,,,,,,,,,
+esm_soc_virtual_whynot_rt,esm,,text,"Waarom ben ik niet online - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_prefervirtual,esm,,radio,"Ik zou graag online in contact zijn met anderen.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_prefervirtual_rt,esm,,text,"Ik zou graag online in contact zijn met anderen. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_choice,esm,,radio,"Ik heb er zelf voor gekozen om niet online in contact te zijn met anderen.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_choice_rt,esm,,text,"Ik heb er zelf voor gekozen om niet online in contact te zijn met anderen. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_excluded,esm,,radio,"Ik voel me, online gezien, buitengesloten.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_excluded_rt,esm,,text,"Ik voel me, online gezien, buitengesloten. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_who,esm,,checkbox,"Met wie ben je virueel in contact?","1, Vader | 2, moeder | 3, andere familie (uit gezin) | 4, andere familie (buiten gezin) | 5, vriend(en) | 6, andere leeftijdsgenoten | 7, leraar | 8, andere (bekende) mensen | 9, onbekende mensen | 11, lief | 10, niemand specifiek | 12, hulpverlener",,,,,,,,,,,,
+esm_soc_virtual_who_rt,esm,,text,"Met wie ben je virueel in contact? - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_atease,esm,,radio,"Bij de mensen met wie ik online in contact ben, voel ik me op mijn gemak.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_atease_rt,esm,,text,"Bij de mensen met wie ik online in contact ben, voel ik me op mijn gemak. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_valued,esm,,radio,"Ik voel me gewaardeerd door de mensen met wie ik online in contact ben.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_valued_rt,esm,,text,"Ik voel me gewaardeerd door de mensen met wie ik online in contact ben. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_belong,esm,,radio,"Ik hoor bij de mensen met wie ik online in contact ben.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_belong_rt,esm,,text,"Ik hoor bij de mensen met wie ik online in contact ben. - antwoordtijd",,,number,,,,,,,,,,
+esm_soc_virtual_prefernotvirtual,esm,,radio,"Ik zou liever niet virtueel in contact zijn.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_soc_virtual_prefernotvirtual_rt,esm,,text,"Ik zou liever niet virtueel in contact zijn. - antwoordtijd",,,number,,,,,,,,,,
+esm_emoreg_pleasant,esm,"Denk aan de belangrijkste gebeurtenis voor jou in de afgelopen 2 uur",radio,"Deze gebeurtenis was","-3, -3 Zeer onplezierig | -2, -2 | -1, 1 | 0, 0 | 1, 1 | 2, 2 | 3, 3 zeer plezierig",,,,,,,,,,,,
+esm_emoreg_pleasant_rt,esm,,text,"Deze gebeurtenis was - antwoordtijd",,,number,,,,,,,,,,
+esm_emoreg_stress,esm,,radio,"Hoe stressvol was deze gebeurtenis?","1, 1 Helemaal niet stressvol | 2,2 | 3,3 | 4,4 | 5,5 | 6,6 |7, 7 Zeer stressvol",,,,,,,,,,,,
+esm_emoreg_stress_rt,esm,,text,"Hoe stressvol was deze gebeurtenis? - antwoordtijd",,,number,,,,,,,,,,
+esm_emoreg_think,esm,,radio,"Ik heb nog vaak aan deze belangrijkste gebeurtenis van de afgelopen 2 uur gedacht","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_emoreg_think_rt,esm,,text,"Ik heb nog vaak aan deze belangrijkste gebeurtenis van de afgelopen 2 uur gedacht - antwoordtijd",,,number,,,,,,,,,,
+esm_emoreg_talk,esm,,radio,"Ik heb het veel met iemand over deze belangrijkste gebeurtenis van de afgelopen 2 uur gehad","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_emoreg_talk_rt,esm,,text,"Ik heb het veel met iemand over deze belangrijkste gebeurtenis van de afgelopen 2 uur gehad - antwoordtijd",,,number,,,,,,,,,,
+esm_selfharm_thought,esm,,radio,"Sinds de vorige beep: Heb je eraan gedacht jezelf te verwonden?","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_selfharm_thought_rt,esm,,text,"Sinds de vorige beep: Heb je eraan gedacht jezelf te verwonden? - antwoordtijd",,,number,,,,,,,,,,
+esm_selfharm_endlife,esm,,radio,"Tijdens deze gedachten over zelfverwonding had ik de wens om mijn leven te beëindigen ","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_selfharm_endlife_rt,esm,,text,"Tijdens deze gedachten over zelfverwonding had ik de wens om mijn leven te beëindigen -antwoordtijd",,,number,,,,,,,,,,
+esm_selfharm_act,esm,,radio,"Ik heb naar deze gedachten gehandeld door mezelf opzettelijk te verwonden, pijn te doen of te vergiftigen ","1, Ja | 2, Nee",,,,,,,,,,,,
+esm_selfharm_act_rt,esm,,text,"Ik heb naar deze gedachten gehandeld door mezelf opzettelijk te verwonden, pijn te doen of te vergiftigen - antwoordtijd",,,number,,,,,,,,,,
+esm_substance,esm,,checkbox,"Sinds de vorige beep heb ik het volgende gebruikt:","0, Niets | 1, Medicatie | 2, Alcohol | 3, Sigaretten | 4, Cannabis | 5, Andere drugs",,,,,,,,,,,,
+esm_substance_rt,esm,,text,"Sinds de vorige beep heb ik het volgende gebruikt: = antwoordtijd",,,,,,,,,,,,,
+esm_beep_disturbed,esm,,radio,"Deze beep stoorde me.","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_beep_disturbed_rt,esm,,text,"Deze beep stoorde me.",,,number,,,,,,,,,,
+esm_eve_neg_what,esm,,text,"Denk aan de meest NEGATIEVE gebeurtenis van vandaag. Wat was het?",,,,,,,,,,,,,
+esm_eve_neg_what_english,esm,,text,"Denk aan de meest NEGATIEVE gebeurtenis van vandaag. Wat was het? (Engelse vertaling)",,,,,,,,,,,,,
+esm_eve_neg_what_rt,esm,,text,"Denk aan de meest NEGATIEVE gebeurtenis van vandaag. Wat was het? Antwoordtijd.",,,,,,,,,,,,,
+esm_eve_neg_unpleasant,esm,,radio,"(Meest negatieve gebeurtenis) Deze gebeurtenis was","1, 1 Neutraal | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Zeer onplezierig",,,,,,,,,,,,
+esm_eve_neg_unpleasant_rt,esm,,text,"(Meest negatieve gebeurtenis) Deze gebeurtenis was - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_control,esm,,radio,"(Meest negatieve gebeurtenis) Ik had controle over deze gebeurtenis","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_control_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik had controle over deze gebeurtenis - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_important,esm,,radio,"(Meest negatieve gebeurtenis) Deze gebeurtenis was belangrijk","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_important_rt,esm,,text,"(Meest negatieve gebeurtenis) Deze gebeurtenis was belangrijk. Antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_talk,esm,,radio,"(Meest negatieve gebeurtenis) Hoeveel heb ik het er met iemand over gehad","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_talk_rt,esm,,text,"(Meest negatieve gebeurtenis) Hoeveel heb ik het er met iemand over gehad - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_ruminate,esm,,radio,"(Meest negatieve gebeurtenis) Ik heb er nog vaak aan gedacht","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_ruminate_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik heb er nog vaak aan gedacht - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_show,esm,,radio,"(Meest negatieve gebeurtenis) Ik heb mijn emoties getoond","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_show_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik heb mijn emoties getoond - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_suppress,esm,,radio,"(Meest negatieve gebeurtenis) Ik probeerde mijn emoties te onderdrukken","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_suppress_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik probeerde mijn emoties te onderdrukken - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_distract,esm,,radio,"(Meest negatieve gebeurtenis) Ik heb geprobeerd mijzelf af te leiden met andere activiteiten","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_distract_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik heb geprobeerd mijzelf af te leiden met andere activiteiten - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_change,esm,,radio,"(Meest negatieve gebeurtenis) Ik probeerde de situatie te veranderen","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_change_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik probeerde de situatie te veranderen - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_accept,esm,,radio,"(Meest negatieve gebeurtenis) Ik heb mijn emoties gewoon aanvaard","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_accept_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik heb mijn emoties gewoon aanvaard - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_neg_perspective,esm,,radio,"(Meest negatieve gebeurtenis) Ik heb er op een andere manier naar gekeken","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_neg_perspective_rt,esm,,text,"(Meest negatieve gebeurtenis) Ik heb er op een andere manier naar gekeken - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_what,esm,,text,"Denk aan de meest POSITIEVE gebeurtenis van vandaag. Wat was het?",,,,,,,,,,,,,
+esm_eve_pos_what_english,esm,,text,"Denk aan de meest POSITIEVE gebeurtenis van vandaag. Wat was het? (Engelse vertaling)",,,,,,,,,,,,,
+esm_eve_pos_what_rt,esm,,text,"Denk aan de meest POSITIEVE gebeurtenis van vandaag. Wat was het? - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_pleasant,esm,,radio,"(Meest positieve gebeurtenis) Deze gebeurtenis was","1, 1 Neutraal | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Zeer plezierig",,,,,,,,,,,,
+esm_eve_pos_pleasant_rt,esm,,text,"(Meest positieve gebeurtenis) Deze gebeurtenis was - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_control,esm,,radio,"(Meest positieve gebeurtenis) Ik had controle over deze gebeurtenis","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_control_rt,esm,,text,"(Meest positieve gebeurtenis) Ik had controle over deze gebeurtenis - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_important,esm,,radio,"(Meest positieve gebeurtenis) Deze gebeurtenis was belangrijk","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_important_rt,esm,,text,"(Meest positieve gebeurtenis) Deze gebeurtenis was belangrijk",,,number,,,,,,,,,,
+esm_eve_pos_talk,esm,,radio,"(Meest positieve gebeurtenis) Hoeveel heb ik het er met iemand over gehad","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_talk_rt,esm,,text,"(Meest positieve gebeurtenis) Hoeveel heb ik het er met iemand over gehad - antwoordtijd",,,,,,,,,,,,,
+esm_eve_pos_think,esm,,radio,"(Meest positieve gebeurtenis) Ik heb er nog vaak aan gedacht","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_think_rt,esm,,text,"(Meest positieve gebeurtenis) Ik heb er nog vaak aan gedacht- antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_accept,esm,,radio,"(Meest positieve gebeurtenis) Ik heb mijn emoties gewoon aanvaard","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_accept_rt,esm,,text,"(Meest positieve gebeurtenis) Ik heb mijn emoties gewoon aanvaard - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_show,esm,,radio,"(Meest positieve gebeurtenis) Ik heb mijn emoties getoond","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_show_rt,esm,,text,"(Meest positieve gebeurtenis) Ik heb mijn emoties getoond - antwoordtijd",,,number,,,,,,,,,,
+esm_eve_pos_suppress,esm,,radio,"(Meest positieve gebeurtenis) Ik probeerde mijn emoties te onderdrukken","1, Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, Heel erg",,,,,,,,,,,,
+esm_eve_pos_suppress_rt,esm,,text,"(Meest positieve gebeurtenis) Ik probeerde mijn emoties te onderdrukken",,,number,,,,,,,,,,
+esm_group,esm,,radio,,"1, Monday ESM start | 5, Monday ESM start - Huawei users, only morning and evening questionnaires | 6, Monday ESM start | 8, Tuesday ESM start - Huawei users, only morning and evening questionnaires | 9, Tuesday ESM start | 10, Tuesday ESM start",,,,,,,,,,,,
+rdm_beep_complete,esm,,radio,"Esm  beep complete?","0, Nee | 1, Ja",,,,,,,,,,,,
+icf_ado_letter,toestemmingsformulier_jongeren,,descriptive," <p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:19px;font-family:""Trebuchet MS"",sans-serif;color:#CE6B0E;'>Hoe word ik wie ik ben?</span></strong></p>
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><span style='font-size:19px;font-family:""Trebuchet MS"",sans-serif;color:#CE6B0E;'>Een onderzoek naar de ontwikkeling van psychische problematiek en weerbaarheid in adolescentie</span></p>                                     
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Uitnodiging om deel te nemen aan dit onderzoek</span></strong></p>
+We willen u graag uitnodigen om deel te nemen aan een bijkomende meting van ons onderzoek in het licht van de recente maatregelen rond het coronavirus (COVID-19). Wij vragen u vriendelijk de tijd te nemen om deze informatie goed te lezen en, als u een ouder of verzorgende bent, dit met uw zoon of dochter te bespreken. Neem gerust contact met ons op als er iets niet duidelijk is of als u meer informatie wenst. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat is het doel van dit onderzoek?</span></strong></p>
+We onderzoeken welke factoren aan de ontwikkeling van psychische weerbaarheid en klachten tijdens de adolescentie bijdragen. De adolescentie is een boeiende tijd waarin de wereld van de jongere evolueert en vaardigheden ontwikkeld worden die nodig zijn om goed in de samenleving te functioneren (denk hierbij aan sociale vaardigheden, identiteitsontwikkeling, emotiebeheersing of stresshantering). In deze periode ontwikkelt 1 op 4 jongeren psychische klachten, bijvoorbeeld angst, zich somber voelen, niet goed in zijn/haar vel zitten. In deze studie pogen wij te onderzoeken welke factoren aan het al dan niet ontwikkelen van deze klachten bijdragen. We kijken hierbij naar factoren in de omgeving zoals gepest worden en het hebben van vrienden, maar ook naar de ontwikkeling van eerder genoemde vaardigheden. 
+
+De recente ""social distancing"" maatregelen in verband met het coronavirus hebben ervoor gezorgd dat ons dagelijks leven de voorbije weken helemaal werd omgegooid. Scholen werden tijdelijk gesloten en iedereen wordt aangemaand ""in zijn kot"" te blijven. Het ziet er bovendien naar uit dat deze situatie niet snel zal overwaaien. Deze onbekende situatie zorgt niet alleen voor praktische en organisatorische uitdagingen, maar kan ons ook confronteren met mentale uitdagingen. Natuurlijk heeft het ook een grote impact op ons sociaal leven. Wij zouden graag onderzoeken welke impact deze situatie heeft op het dagelijks leven van adolescenten en hoe dit mogelijke samenhangt met eventuele verandereningen in hun welbevinden.
+
+
+Met uw deelname draagt u bij aan een betere kennis over psychische weerbaarheid en kwetsbaarheid in deze uitdagende situatie. Zo hopen we jongeren beter te kunnen ondersteunen op mentaal vlak tijdens deze periode en wanneer er zich gelijkaardige gebeurtenissen voordoen in de toekomst. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Waarom ben ik uitgenodigd om deel te nemen?</span></strong></p>
+U bent uitgenodigd om deel te nemen omdat u deelnam aan het vorige meetmoment of omdat u ouder of verzorgende bent van een adolescent die deelnam aan het vorige meetmoment. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Moet ik deelnemen?</span></strong></p>
+Deelname aan het onderzoek is vrijwillig. Mocht u beslissen om deel te nemen, vragen we u het onderzoek met de jongere te bespreken als u een ouder of verzorgende bent en de geïnformeerde toestemming via het online formulier of de papieren versiete ondertekenen bij akkoord. U bent nog steeds vrij om uw deelname op ieder moment stop te zetten, de adolescent zal hier op geen enkele manier nadeel van ondervinden. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat wordt er van me verwacht als ik deelneem?</span></strong></p>
+Deelname aan de studie betekent dat de jongere gedurende een half uur online vragenlijsten invult. Nadien zal de jongere een applicatie (SEMA3) installeren op zijn/haar eigen smartphone. SEMA3 (Smartphone Ecological Momentary Assessment 3) is een applicatie voor het onderzoeken van situaties in het dagelijkse leven die ontwikkeld werd door de Universiteit van Melbourne. Deze applicatie (app) geeft gedurende zes opeenvolgende dagen tien keer per dag een signaal waarna de jongere een korte vragenlijst dient in te vullen. Deze vragen gaan over gevoelens, gedachten, activiteiten en de omgeving. Deze nemen maximaal twee minuten in beslag. De app verzamelt en bewaart enkel de antwoorden die de jongere geeft op de vragen. Er worden geen bijkomende gegevens verzameld en/of bewaard (vb. locatie, gebruik van apps ...). 
+De hele studie wordt dus uitgevoerd vanop afstand, zonder fysiek contact met de onderzoekers.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat gebeurt er als ik mijn deelname aan de studie wil stopzetten?</span></strong></p>
+Deelname aan de studie kan op ieder moment - zonder reden - gestopt worden. Indien u tijdens de studie besluit te stoppen, zullen wij vragen om de tot dan verzamelde data te gebruiken. Zo niet, zullen wij deze data vernietigen en indien gewenst zult u niet meer door ons benaderd worden. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat zijn de mogelijke risico's of nadelen van deelname?</span></strong></p>
+Sommige vragen gaan over gevoelige thema's. Adolescenten kunnen tijdens het onderzoek steeds via e-mail contact opnemenen met het onderzoeksteam dat waar nodig ondersteuning zal bieden. Het gebruik van de app kan als vervelend ervaren worden. Onze ruime ervaring met het gebruik van de app laat echter zien dat deelnemers hier snel aan wennen en er beperkte last van ondervinden. Wij verwachten dat adolescenten weinig moeite hebben met het gebruik van een app. 
+Dit is een observationeel onderzoek met als hoofddoel het ontwikkelen van kennis over mentale gezondheid in een ""social distancing"" situatie. Omwille van onze anonimiteitsclausule, willen wij graag benadrukken dat we niet actief ingrijpen op basis van antwoorden op vragenlijsten online en/of in de dagelijkse context. Dit doen we om kennis te vergaren die in de toekomst kan helpen bij de preventie en behandeling van psychische klachten tijdens zo'n uitzonderlijke situatie. We zijn ons ervan bewust dat sommige onderdelen van dit onderzoek gevoelig kunnen zijn. Daarom bieden we tijdens het onderzoek een luisterend oor waar nodig en contactgegevens van personen en/of instanties die verdere gepaste hulp kunnen bieden.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat zijn de mogelijke voordelen van deelname?</span></strong></p>
+Je helpt ons begrijpen welke mogelijke invloed de huidige situatie heeft op het mentaal welbevinden van jongeren. Hierdoor kunnen we in de toekomst beter voorspellen welke jongeren meer hulp nodig hebben wanneer er een gelijkaardige gebeurtenis plaatsvindt en kunnen we proberen te voorkomen dat jongeren problemen krijgen. Verder geeft het ook een gevoel van voldoening of plezier om bij te dragen aan wetenschappelijk onderzoek.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat is de compensatie voor deelname?</span></strong></p>
+Alle deelnemende adolescenten krijgen een cadeaukaart van bol.com ter waarde van 10 euro..   
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Zullen mijn deelname en gegevens vertrouwelijk behandeld worden?</span></strong></p>
+Alle informatie die tijdens het onderzoek verzameld wordt, zal strikt vertrouwelijk behandeld worden. Dit betekent dat persoonlijke gegevens apart en veilig opgeslagen worden en alleen toegankelijk zijn voor het onderzoeksteam. De data worden geanonimiseerd voor onderzoeksdoeleinden in het kader van wetenschappelijke publicaties. U hebt het recht om aan de onderzoeker te vragen welke gegevens hij/zij over u heeft verzameld en waarvoor ze gebruikt worden in het kader van de studie. De onderzoeker is verplicht om deze verzamelde gegevens vertrouwelijk te behandelen. Dit betekent dat hij/zij zich ertoe verbindt om uw naam nooit bekend te maken in het kader van een publicatie of een conferentie en dat hij/zij uw gegevens zal coderen (uw identiteit zal worden vervangen door een identificatiecode in de studie). De overgedragen persoonlijke gegevens omvatten geen combinatie van elementen waarmee het mogelijk is u te identificeren . De resultaten van de online vragenlijsten van de jongeren zullen gekoppeld worden aan dezelfde identificatiecode die gebruikt werd tijdens de vorige meting. De gegevens van de SEMA3 app zullen voor elke deelnemer gekoppeld worden aan een unieke 9-cijferige identificatiecode. De koppeling tussen deze 9-cijferige code en persoonsgegevens wordt enkel gemaakt om de jongere via e-mail eenmalig een uitnodiging te sturen voor het installeren van de app en het opstarten van de studie, en om eenmalig de gegevens van de app te kunnen koppelen aan de gegevens van de online vragenlijsten. De persoonlijke gegevens van de jongere zullen apart van de gegevens van de vragenlijsten en strikt beveiligd bewaard worden, waarbij enkel de onderzoekers van SIGMA toegang hebben tot deze gegevens.
+
+De (gecodeerde) onderzoeksgegevens kunnen doorgegeven worden aan Belgische of andere regelgevende instanties, aan de ethische comités, aan andere instellingen die samenwerken met de opdrachtgever. Sommige wetenschappelijke tijdschriften verplichten onderzoekers om data te delen bij publicaties. In dat geval zullen de gecodeerde data ook met deze instanties gedeeld kunnen worden.
+
+Uw toestemming om aan deze studie deel te nemen betekent dus ook dat u akkoord gaat dat uw gecodeerde gegevens gebruikt worden voor doeleinden die in dit informatieformulier staan beschreven en dat ze worden overgedragen aan bovenvermelde personen en/of instellingen.
+
+De opdrachtgever zal de verzamelde gegevens gebruiken in het kader van de studie waaraan u deelneemt, maar wil ze ook kunnen aanwenden in het kader van andere studies. Buiten de context die wordt beschreven in dit document, kunnen uw gegevens enkel gebruikt worden als een ethisch comité haar goedkeuring heeft gegeven. 
+Indien u uw toestemming tot deelname aan de studie intrekt, zullen de gecodeerde gegevens die al verzameld waren vóór uw terugtrekking, bewaard worden, mits u hier geen bezwaar tegen heeft. Hierdoor wordt de geldigheid van de studie gegarandeerd. Er zal geen enkel nieuw gegeven aan de opdrachtgever worden doorgegeven.
+
+Indien u zich zorgen maakt over de manier waarop uw gegevens behandeld worden, kan u contact opnemen met de functionaris voor gegevensbescherming verwerkingen van persoonsgegevens i.h.k.v. onderzoek van de KU Leuven, de heer Toon Boon (toon.boon@kuleuven.be; +32 16 32 40 74).
+U heeft het recht om een klacht in te dienen over hoe uw informatie wordt behandeld, bij de Belgische toezichthoudende instantie die verantwoordelijk is voor het handhaven van de wetgeving inzake gegevensbescherming:
+Gegevensbeschermingsautoriteit (GBA)
+Drukpersstraat 35
+1000 Brussel
+Tel. +32 2 274 48 00
+e-mail: contact@apd-gba.be
+website: www.gegevensbeschermingsautoriteit.be
+ 
+
+ <p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Hoe wordt het project gefinancierd?</span></strong></p>
+Het project wordt door 'Odysseus Topwetenschap in Vlaanderen' gefinancierd. Dit is een beurs die professor Germeys ontvangen heeft om dit langdurige, grootschalige project op te zetten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat gebeurt er met de resultaten van de studie?</span></strong></p>
+De resultaten worden (online) gepubliceerd als onderdeel van verschillende doctoraatsprojecten en artikelen binnen de onderzoeksgroep psychiatrie. Persoonlijke gegevens worden niet gepubliceerd waardoor geen enkel individu identificeerbaar is. Indien gewenst, kan men op de hoogte gehouden worden van de resultaten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wie heeft toestemming voor deze studie gegeven?</span></strong></p>
+Dit onderzoek is goedgekeurd door de Ethische Commissie Onderzoek UZ/KU Leuven, een onafhankelijke groep mensen die uw veiligheid, rechten, welbevinden en waarden beschermt in onderzoeksprojecten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Contactgegevens</span></strong></p>
+Hieronder vindt u de gegevens van het onderzoeksteam. Bij vragen/opmerkingen kan u steeds contact met hen opnemen.
+
+Hoofdonderzoekers
+Professor Dr. Inez Germeys, professor en hoofd Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: inez.germeys@kuleuven.be 
+
+Dr. Olivia Kirtley, postdoc Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: olivia.kirtley@kuleuven.be 
+
+Drs. Robin Achterhof, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: robin.achterhof@kuleuven.be
+
+Drs. Eva Bamps, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: eva.bamps@kuleuven.be
+
+Drs. Noemi Hagemann, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: noemi.hagemann@kuleuven.be
+
+Drs. Karlijn Hermans, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: karlijn.hermans@kuleuven.be 
+
+Drs. Anu Hiekkaranta, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: anupauliina.hiekkaranta@kuleuven.be
+
+Drs. Julie Janssens, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: julie.janssens2@kuleuven.be
+
+Algemeen project e-mailadres: sigma@kuleuven.be
+Algemeen project telefoonnummer: +32 16 3767 18
+
+Hartelijk dank voor het lezen van deze informatiebrief en voor het overwegen van deelname aan dit onderzoek. 
+",,,,,,,,,,,,,
+icf_ado_agree,toestemmingsformulier_jongeren,,radio,"Ik heb bovenstaande informatie over het onderzoek gelezen en wil doorgaan naar het toestemmingsformulier om mee te doen aan dit onderzoek.","0, Nee | 1, Ja",,,,,,,y,,,,,
+icf_ado,toestemmingsformulier_jongeren,,descriptive,"Geïnformeerde instemming adolescenten
+
+Titel van het onderzoek:
+Sigma: Onderzoek naar de ontwikkeling van psychische problematiek en weerbaarheid in adolescentie.
+
+Naam + contactgegevens onderzoekers: 
+Professor Inez Germeys - inez.germeys@kuleuven.be
+Dr Olivia Kirtley - olivia.kirtley@kuleuven.be
+Drs Robin Achterhof - robin.achterhof@kuleuven.be
+Drs Noemi Hagemann - noemi.hagemann@kuleuven.be
+Drs Anu Hiekkaranta - anupauliina.hiekkaranta@kuleuven.be
+Drs Eva Bamps - eva.bamps@kuleuven.be
+Drs Julie Janssens - julie.janssens2@kuleuven.be
+
+Doel en methodologie van het onderzoek:
+Het doel van deze studie is om mogelijke veranderingen op vlak van mentale gezondheid en welzijn in kaart te brengen, na het invoeren van de 'social distancing' maatregelen omtrent Covid-19. Om dit te meten maken we gebruik van een app. Via deze app zullen we je gedurende 6 opeenvolgende dagen vragen stellen over je gedachten, gevoelens, wat je aan het doen bent, met wie je bent en waar je bent. Daarnaast zal je online een vragenlijst krijgen. Je kan wanneer je maar wilt besluiten om niet meer mee te doen.
+
+Duur van het experiment:
+30 minuten en 6 dagen lang 10 keer per dag via een app op je smartphone vragenlijstjes van 2 minuten invullen (samen maximaal 20 minuten, verspreid over de dag). 
+
+	Ik begrijp wat van mij verwacht wordt tijdens dit onderzoek.
+
+	Ik weet dat ik zal deelnemen aan volgende proeven of testen:
+
+Dertig minuten besteden aan het invullen van vragenlijstjes online. De vragenlijsten gaan bijvoorbeeld over of je soms verdrietig, boos of angstig bent, en hoe het thuis gaat. Daarnaast download je een app op je eigen smartphone. De app zal gedurende 6 dagen 10 keer per dag een signaal geven waarop een kort vragenlijstje van 2 minuten verschijnt over hoe je je op dat moment voelt en wat je aan het doen bent, met wie, en waar. 
+
+	Ik weet dat er risico's of ongemakken kunnen verbonden zijn aan mijn deelname:
+
+Het kan zo zijn dat je het moeilijk vindt om sommige vragen te beantwoorden. Je mag dit altijd aangeven bij het onderzoeksteam. Dit kan je door een mail te sturen naar sigma@kuleuven.be. 
+
+	Ikzelf of anderen kunnen geholpen zijn door dit onderzoek op volgende wijze:
+
+Door mee te doen aan het onderzoek help je ons de mentale gezondheid van jongeren in kaart te brengen na de 'social distancing' maatregelen omtrent Covid-19. We trachten ook naar de verschillen te kijken tussen de mentale gezondheid voor en tijdens de maatregelen. Op deze manier maak je het voor ons mogelijk om een zicht te krijgen op hoe we jongeren beter kunnen ondersteunen tijdens deze en andere wereldwijde gezondheidscrisissen.
+Je ontvangt van ons een cadeaukaart van bol.com ter waarde van 10 euro als je meedoet aan het onderzoek.
+
+	Ik begrijp dat mijn deelname aan deze studie vrijwillig is. Ik heb het recht om mijn deelname op elk moment stop te zetten. Daarvoor hoef ik geen reden te geven en ik weet dat daaruit geen nadeel voor mij mag ontstaan.
+
+	De resultaten van dit onderzoek kunnen gebruikt worden voor wetenschappelijke doeleinden en mogen gepubliceerd worden. Mijn naam wordt daarbij niet gepubliceerd, en de vertrouwelijkheid van de gegevens is in elk stadium van het onderzoek gewaarborgd. De data wordt 'gecodeerd' opgeslagen. Dit wil zeggen dat de gegevens verzameld met de vragenlijsten en tests met een unieke code worden opgeslagen, en in een apart beveiligd bestand kan die code gelinkt worden aan persoonsgegevens.
+
+	Ik begrijp dat mijn gecodeerde gegevens die al verzameld waren vóór mijn terugtrekking, bewaard worden, mits ik hier geen bezwaar tegen heb.
+
+	Voor vragen weet ik dat ik na mijn deelname terecht kan bij het onderzoeksteam (Robin Achterhof, Noemi Hagemann, Anu Hiekkaranta, Eva Bamps of Julie Janssens), bereikbaar via sigma@kuleuven.be of een van de persoonlijke e-mailadressen zoals hierboven vermeld.
+
+	Ik begrijp dat andere onderzoekers toegang zullen hebben tot de gecodeerde data, alleen wanneer zij akkoord gaan met de vertrouwelijkheidsregels afgesproken binnen deze studie. 
+
+Voor eventuele klachten of andere bezorgdheden over ethische aspecten van deze studie kan ik contact opnemen met de Ethische Commissie van UZ/KU Leuven: ec@uzleuven.be. Je hebt het recht om een klacht in te dienen over hoe je informatie wordt behandeld, bij de Belgische toezichthoudende instantie die verantwoordelijk is voor het handhaven van de wetgeving inzake gegevensbescherming:
+Gegevensbeschermingsautoriteit (GBA)
+Drukpersstraat 35
+1000 Brussel
+Tel. +32 2 274 48 00
+e-mail: contact@apd-gba.be
+website: www.gegevensbeschermingsautoriteit.be
+
+Conform de Belgische wet van 7 mei 2004 inzake experimenten op de menselijke persoon, is de opdrachtgever zelfs foutloos, aansprakelijkheid voor alle schade die de deelnemer of zijn rechthebbenden opliepen en die rechtstreeks dan wel onrechtstreeks verband vertoont met het experiment. De opdrachtgever van deze studie [KU Leuven] heeft een verzekering afgesloten die deze aansprakelijkheid dekt. Indien u schade zou oplopen ten gevolge van uw deelname aan deze studie zal die schade bijgevolg worden vergoed conform de Belgische wet van 7 mei 2004.
+
+
+Ik heb bovenstaande informatie gelezen en begrepen en heb antwoord gekregen op al mijn vragen betreffende deze studie. Ik stem in om deel te nemen.
+
+",,,,,,,[icf_ado_agree]='1',,,,,,
+date_icf_ado,toestemmingsformulier_jongeren,,text,"Datum van vandaag",,,date_dmy,,,,[icf_ado_agree]='1',,,,,,
+icf_ado_study,toestemmingsformulier_jongeren,,radio,"Ik geef toestemming om door de onderzoekers gecontacteerd te worden voor deelname aan andere relevante onderzoeken binnen hetzelfde departement. 
+","0, Nee | 1, Ja",,,,,,[icf_ado_agree]='1',y,,,,,
+icf_ado_update,toestemmingsformulier_jongeren,,radio,"Ik wil graag op de hoogte gehouden worden van de resultaten van dit onderzoek. ","0, Nee | 1, Ja",,,,,,[icf_ado_agree]='1',y,,,,,
+icf_ado_researcher,toestemmingsformulier_jongeren,,radio,"Ik geef toestemming dat andere onderzoekers, buiten de context van deze studie, mijn gecodeerde gegevens mogen gebruiken voor andere studies","0, Nee | 1, Ja",,,,,,[icf_ado_agree]='1',,,,,,
+icf_ado_mail,toestemmingsformulier_jongeren,,text,"De onderzoekers mogen mij hiervoor contacteren op het volgende emailadres:",,,email,,,y,"([icf_ado_study]='1' or [icf_ado_update]='1' or [icf_ado_researcher]='1') and [icf_ado_agree]='1'",,,,,,
+icf_ado_age,toestemmingsformulier_jongeren,,radio,"Ben je 18 jaar of ouder?","0, Nee | 1, Ja",,,,,y,[icf_ado_agree]='1',y,,,,,
+icf_ado_email_parent,toestemmingsformulier_jongeren,,text,"Omdat je jonger bent dan 18 hebben we ook de toestemming van je ouders nodig. Kan je ons daarom het emai adres van 1 van je ouders geven zodat we die toestemming kunnen vragen?",,,email,,,y,"[icf_ado_age]='0' and [icf_ado_agree]='1'",y,,,,,
+icf_ado_name,toestemmingsformulier_jongeren,,text,Naam,,,,,,,,,,,,,
+icf_parent_letter,toestemmingsformulier_ouder,,descriptive,"<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:19px;font-family:""Trebuchet MS"",sans-serif;color:#CE6B0E;'>Hoe word ik wie ik ben?</span></strong></p>
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><span style='font-size:19px;font-family:""Trebuchet MS"",sans-serif;color:#CE6B0E;'>Een onderzoek naar de ontwikkeling van psychische problematiek en weerbaarheid in adolescentie</span></p>                                     
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Uitnodiging om deel te nemen aan dit onderzoek</span></strong></p>
+We willen u graag uitnodigen om deel te nemen aan een bijkomende meting van ons onderzoek in het licht van de recente maatregelen rond het coronavirus (COVID-19). Wij vragen u vriendelijk de tijd te nemen om deze informatie goed te lezen en, als u een ouder of verzorgende bent, dit met uw zoon of dochter te bespreken. Neem gerust contact met ons op als er iets niet duidelijk is of als u meer informatie wenst. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat is het doel van dit onderzoek?</span></strong></p>
+We onderzoeken welke factoren aan de ontwikkeling van psychische weerbaarheid en klachten tijdens de adolescentie bijdragen. De adolescentie is een boeiende tijd waarin de wereld van de jongere evolueert en vaardigheden ontwikkeld worden die nodig zijn om goed in de samenleving te functioneren (denk hierbij aan sociale vaardigheden, identiteitsontwikkeling, emotiebeheersing of stresshantering). In deze periode ontwikkelt 1 op 4 jongeren psychische klachten, bijvoorbeeld angst, zich somber voelen, niet goed in zijn/haar vel zitten. In deze studie pogen wij te onderzoeken welke factoren aan het al dan niet ontwikkelen van deze klachten bijdragen. We kijken hierbij naar factoren in de omgeving zoals gepest worden en het hebben van vrienden, maar ook naar de ontwikkeling van eerder genoemde vaardigheden. 
+
+De recente ""social distancing"" maatregelen in verband met het coronavirus hebben ervoor gezorgd dat ons dagelijks leven de voorbije weken helemaal werd omgegooid. Scholen werden tijdelijk gesloten en iedereen wordt aangemaand ""in zijn kot"" te blijven. Het ziet er bovendien naar uit dat deze situatie niet snel zal overwaaien. Deze onbekende situatie zorgt niet alleen voor praktische en organisatorische uitdagingen, maar kan ons ook confronteren met mentale uitdagingen. Natuurlijk heeft het ook een grote impact op ons sociaal leven. Wij zouden graag onderzoeken welke impact deze situatie heeft op het dagelijks leven van adolescenten en hoe dit mogelijke samenhangt met eventuele verandereningen in hun welbevinden.
+
+
+Met uw deelname draagt u bij aan een betere kennis over psychische weerbaarheid en kwetsbaarheid in deze uitdagende situatie. Zo hopen we jongeren beter te kunnen ondersteunen op mentaal vlak tijdens deze periode en wanneer er zich gelijkaardige gebeurtenissen voordoen in de toekomst. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Waarom ben ik uitgenodigd om deel te nemen?</span></strong></p>
+U bent uitgenodigd om deel te nemen omdat u deelnam aan het vorige meetmoment of omdat u ouder of verzorgende bent van een adolescent die deelnam aan het vorige meetmoment. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Moet ik deelnemen?</span></strong></p>
+Deelname aan het onderzoek is vrijwillig. Mocht u beslissen om deel te nemen, vragen we u het onderzoek met de jongere te bespreken als u een ouder of verzorgende bent en de geïnformeerde toestemming via het online formulier of de papieren versiete ondertekenen bij akkoord. U bent nog steeds vrij om uw deelname op ieder moment stop te zetten, de adolescent zal hier op geen enkele manier nadeel van ondervinden. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat wordt er van me verwacht als ik deelneem?</span></strong></p>
+Deelname aan de studie betekent dat de jongere gedurende een half uur online vragenlijsten invult. Nadien zal de jongere een applicatie (SEMA3) installeren op zijn/haar eigen smartphone. SEMA3 (Smartphone Ecological Momentary Assessment 3) is een applicatie voor het onderzoeken van situaties in het dagelijkse leven die ontwikkeld werd door de Universiteit van Melbourne. Deze applicatie (app) geeft gedurende zes opeenvolgende dagen tien keer per dag een signaal waarna de jongere een korte vragenlijst dient in te vullen. Deze vragen gaan over gevoelens, gedachten, activiteiten en de omgeving. Deze nemen maximaal twee minuten in beslag. De app verzamelt en bewaart enkel de antwoorden die de jongere geeft op de vragen. Er worden geen bijkomende gegevens verzameld en/of bewaard (vb. locatie, gebruik van apps ...). 
+De hele studie wordt dus uitgevoerd vanop afstand, zonder fysiek contact met de onderzoekers.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat gebeurt er als ik mijn deelname aan de studie wil stopzetten?</span></strong></p>
+Deelname aan de studie kan op ieder moment - zonder reden - gestopt worden. Indien u tijdens de studie besluit te stoppen, zullen wij vragen om de tot dan verzamelde data te gebruiken. Zo niet, zullen wij deze data vernietigen en indien gewenst zult u niet meer door ons benaderd worden. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat zijn de mogelijke risico's of nadelen van deelname?</span></strong></p>
+Sommige vragen gaan over gevoelige thema's. Adolescenten kunnen tijdens het onderzoek steeds via e-mail contact opnemenen met het onderzoeksteam dat waar nodig ondersteuning zal bieden. Het gebruik van de app kan als vervelend ervaren worden. Onze ruime ervaring met het gebruik van de app laat echter zien dat deelnemers hier snel aan wennen en er beperkte last van ondervinden. Wij verwachten dat adolescenten weinig moeite hebben met het gebruik van een app. 
+Dit is een observationeel onderzoek met als hoofddoel het ontwikkelen van kennis over mentale gezondheid in een ""social distancing"" situatie. Omwille van onze anonimiteitsclausule, willen wij graag benadrukken dat we niet actief ingrijpen op basis van antwoorden op vragenlijsten online en/of in de dagelijkse context. Dit doen we om kennis te vergaren die in de toekomst kan helpen bij de preventie en behandeling van psychische klachten tijdens zo'n uitzonderlijke situatie. We zijn ons ervan bewust dat sommige onderdelen van dit onderzoek gevoelig kunnen zijn. Daarom bieden we tijdens het onderzoek een luisterend oor waar nodig en contactgegevens van personen en/of instanties die verdere gepaste hulp kunnen bieden.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat zijn de mogelijke voordelen van deelname?</span></strong></p>
+Je helpt ons begrijpen welke mogelijke invloed de huidige situatie heeft op het mentaal welbevinden van jongeren. Hierdoor kunnen we in de toekomst beter voorspellen welke jongeren meer hulp nodig hebben wanneer er een gelijkaardige gebeurtenis plaatsvindt en kunnen we proberen te voorkomen dat jongeren problemen krijgen. Verder geeft het ook een gevoel van voldoening of plezier om bij te dragen aan wetenschappelijk onderzoek.
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat is de compensatie voor deelname?</span></strong></p>
+Alle deelnemende adolescenten krijgen een cadeaukaart van bol.com ter waarde van 10 euro..   
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Zullen mijn deelname en gegevens vertrouwelijk behandeld worden?</span></strong></p>
+Alle informatie die tijdens het onderzoek verzameld wordt, zal strikt vertrouwelijk behandeld worden. Dit betekent dat persoonlijke gegevens apart en veilig opgeslagen worden en alleen toegankelijk zijn voor het onderzoeksteam. De data worden geanonimiseerd voor onderzoeksdoeleinden in het kader van wetenschappelijke publicaties. U hebt het recht om aan de onderzoeker te vragen welke gegevens hij/zij over u heeft verzameld en waarvoor ze gebruikt worden in het kader van de studie. De onderzoeker is verplicht om deze verzamelde gegevens vertrouwelijk te behandelen. Dit betekent dat hij/zij zich ertoe verbindt om uw naam nooit bekend te maken in het kader van een publicatie of een conferentie en dat hij/zij uw gegevens zal coderen (uw identiteit zal worden vervangen door een identificatiecode in de studie). De overgedragen persoonlijke gegevens omvatten geen combinatie van elementen waarmee het mogelijk is u te identificeren . De resultaten van de online vragenlijsten van de jongeren zullen gekoppeld worden aan dezelfde identificatiecode die gebruikt werd tijdens de vorige meting. De gegevens van de SEMA3 app zullen voor elke deelnemer gekoppeld worden aan een unieke 9-cijferige identificatiecode. De koppeling tussen deze 9-cijferige code en persoonsgegevens wordt enkel gemaakt om de jongere via e-mail eenmalig een uitnodiging te sturen voor het installeren van de app en het opstarten van de studie, en om eenmalig de gegevens van de app te kunnen koppelen aan de gegevens van de online vragenlijsten. De persoonlijke gegevens van de jongere zullen apart van de gegevens van de vragenlijsten en strikt beveiligd bewaard worden, waarbij enkel de onderzoekers van SIGMA toegang hebben tot deze gegevens.
+
+De (gecodeerde) onderzoeksgegevens kunnen doorgegeven worden aan Belgische of andere regelgevende instanties, aan de ethische comités, aan andere instellingen die samenwerken met de opdrachtgever. Sommige wetenschappelijke tijdschriften verplichten onderzoekers om data te delen bij publicaties. In dat geval zullen de gecodeerde data ook met deze instanties gedeeld kunnen worden.
+
+Uw toestemming om aan deze studie deel te nemen betekent dus ook dat u akkoord gaat dat uw gecodeerde gegevens gebruikt worden voor doeleinden die in dit informatieformulier staan beschreven en dat ze worden overgedragen aan bovenvermelde personen en/of instellingen.
+
+De opdrachtgever zal de verzamelde gegevens gebruiken in het kader van de studie waaraan u deelneemt, maar wil ze ook kunnen aanwenden in het kader van andere studies. Buiten de context die wordt beschreven in dit document, kunnen uw gegevens enkel gebruikt worden als een ethisch comité haar goedkeuring heeft gegeven. 
+Indien u uw toestemming tot deelname aan de studie intrekt, zullen de gecodeerde gegevens die al verzameld waren vóór uw terugtrekking, bewaard worden, mits u hier geen bezwaar tegen heeft. Hierdoor wordt de geldigheid van de studie gegarandeerd. Er zal geen enkel nieuw gegeven aan de opdrachtgever worden doorgegeven.
+
+Indien u zich zorgen maakt over de manier waarop uw gegevens behandeld worden, kan u contact opnemen met de functionaris voor gegevensbescherming verwerkingen van persoonsgegevens i.h.k.v. onderzoek van de KU Leuven, de heer Toon Boon (toon.boon@kuleuven.be; +32 16 32 40 74).
+U heeft het recht om een klacht in te dienen over hoe uw informatie wordt behandeld, bij de Belgische toezichthoudende instantie die verantwoordelijk is voor het handhaven van de wetgeving inzake gegevensbescherming:
+Gegevensbeschermingsautoriteit (GBA)
+Drukpersstraat 35
+1000 Brussel
+Tel. +32 2 274 48 00
+e-mail: contact@apd-gba.be
+website: www.gegevensbeschermingsautoriteit.be
+ 
+
+ <p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Hoe wordt het project gefinancierd?</span></strong></p>
+Het project wordt door 'Odysseus Topwetenschap in Vlaanderen' gefinancierd. Dit is een beurs die professor Germeys ontvangen heeft om dit langdurige, grootschalige project op te zetten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wat gebeurt er met de resultaten van de studie?</span></strong></p>
+De resultaten worden (online) gepubliceerd als onderdeel van verschillende doctoraatsprojecten en artikelen binnen de onderzoeksgroep psychiatrie. Persoonlijke gegevens worden niet gepubliceerd waardoor geen enkel individu identificeerbaar is. Indien gewenst, kan men op de hoogte gehouden worden van de resultaten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Wie heeft toestemming voor deze studie gegeven?</span></strong></p>
+Dit onderzoek is goedgekeurd door de Ethische Commissie Onderzoek UZ/KU Leuven, een onafhankelijke groep mensen die uw veiligheid, rechten, welbevinden en waarden beschermt in onderzoeksprojecten. 
+
+
+<p style='margin: 0in 0in 0pt;text-align: left;font-family: ""Calibri"",sans-serif;font-size:15px;'><strong><span style='font-size:13px;font-family:""Verdana"",sans-serif;color:#1F497D;'>Contactgegevens</span></strong></p>
+Hieronder vindt u de gegevens van het onderzoeksteam. Bij vragen/opmerkingen kan u steeds contact met hen opnemen.
+
+Hoofdonderzoekers
+Professor Dr. Inez Germeys, professor en hoofd Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: inez.germeys@kuleuven.be 
+
+Dr. Olivia Kirtley, postdoc Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: olivia.kirtley@kuleuven.be 
+
+Drs. Robin Achterhof, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: robin.achterhof@kuleuven.be
+
+Drs. Eva Bamps, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: eva.bamps@kuleuven.be
+
+Drs. Noemi Hagemann, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven
+E-mail: noemi.hagemann@kuleuven.be
+
+Drs. Karlijn Hermans, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: karlijn.hermans@kuleuven.be 
+
+Drs. Anu Hiekkaranta, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: anupauliina.hiekkaranta@kuleuven.be
+
+Drs. Julie Janssens, doctoraatsstudent Centrum voor Contextuele Psychiatrie KU Leuven 
+E-mail: julie.janssens2@kuleuven.be
+
+Algemeen project e-mailadres: sigma@kuleuven.be
+Algemeen project telefoonnummer: +32 16 3767 18
+
+Hartelijk dank voor het lezen van deze informatiebrief en voor het overwegen van deelname aan dit onderzoek. 
+",,,,,,,,,,,,,
+icf_parent_agree,toestemmingsformulier_ouder,,radio,"Ik heb bovenstaande informatie gelezen en wil doorgaan neer het toestemminsformulier om mijn kind te laten deelnemen aan dit onderzoek","0, Nee | 1, Ja",,,,,,,,,,,,
+icf_parent_icf,toestemmingsformulier_ouder,,descriptive,"Geïnformeerde toestemming ouder(s)/verzorgende(n)
+
+Titel van het onderzoek:
+Sigma: Onderzoek naar de ontwikkeling van psychische problematiek en weerbaarheid in adolescentie.
+
+Naam + contactgegevens onderzoekers: 
+Professor Inez Germeys - inez.germeys@kuleuven.be
+Dr Olivia Kirtley - olivia.kirtley@kuleuven.be
+Drs Robin Achterhof - robin.achterhof@kuleuven.be
+Drs Noemi Hagemann - noemi.hagemann@kuleuven.be
+Drs Anu Hiekkaranta - anupauliina.hiekkaranta@kuleuven.be
+Drs Eva Bamps - eva.bamps@kuleuven.be
+Drs Julie Janssens - julie.janssens2@kuleuven.be
+
+Doel en methodologie van het onderzoek:
+Deze studie heeft als doel om de mogelijke veranderingen op vlak van mentale gezondheid en welzijn in kaart te brengen, na de ""social distancing"" maatregelen omtrent COVID-19. In dit onderzoek zullen we jongeren online een aantal vragenlijsten aanbieden. Daarnaast gaan we de jongere opvolgen met een elektronisch dagboekje via een app op hun eigen smartphone, waarbij ze op een aantal momenten in de dag aangeven hoe ze zich voelen, maar ook de context (waar zijn ze, met wie, wat zijn ze aan het doen). Dit is volledig vrijwillig en deelname aan de studie kan altijd zonder reden stopgezet worden. 
+
+Duur van het experiment:
+Adolescenten: 30 minuten en 6 dagen lang 10 keer per dag via een app op hun smartphone vragenlijstjes van 2 minuten invullen (samen maximaal 20 minuten verspreid over de dag). 
+
+
+	Ik begrijp wat van mij verwacht wordt tijdens dit onderzoek.
+
+	Ik weet dat de adolescent zal deelnemen aan volgende proeven of testen:
+
+Invullen van de volgende online vragenlijsten:
+o	Demografische informatie over de adolescent en de gezinssamenstelling
+o	Vragenlijst over psychische problematiek 
+o	Vragenlijst over sociale steun
+o	COVID-19 gerelateerde vragenlijsten (stress, emoties en toegang tot informatie over COVID-19)
+o	Vragenlijst over (mentale) veerkracht
+o	Vragenlijst over middelengebruik
+
+Deze zullen verstuurd worden naar het persoonlijke emailadres. 
+De adolescent zal ook gedurende zes dagen vragen beantwoorden via een app op zijn/haar smartphone. De vragen gaan over zijn/haar gevoelens en omgeving (waar hij/zij is, met wie en wat hij/zij aan het doen is).
+
+	Ik weet dat er risico's of ongemakken kunnen verbonden zijn aan de deelname van de adolescent:
+
+Het zou kunnen dat de adolescent moeite heeft met het beantwoorden van bepaalde vragen. Het beantwoorden van vragen over psychische problematiek zou onrust kunnen oproepen. Dit laatste is echter zeker niet de bedoeling van deze studie dus bij vragen of ongemak verzoeken we u vriendelijk via e-mail (sigma@kuleuven.be) contact op te nemen met het onderzoeksteam.
+
+	Ikzelf of anderen kunnen baat bij dit onderzoek hebben op volgende wijze:
+
+Door mee te doen aan dit onderzoek draagt u bij aan het in kaart brengen van mogelijke veranderingen in het welzijn en de mentale gezondheid van jongeren na de ""social distancing"" maatregelen omtrent COVID-19. Op deze manier helpt u ons om een zicht te krijgen op hoe we jongeren beter kunnen steunen tijdens deze en andere wereldwijde gezondheidscrisissen.
+De adolescent wordt beloond met een cadeaukaart van bol.com ter waarde van 10 euro bij deelname aan het onderzoek.
+
+	Ik begrijp dat mijn deelname aan deze studie vrijwillig is. Ik heb het recht om mijn deelname op elk moment stop te zetten. Daarvoor hoef ik geen reden te geven en ik weet dat daaruit geen nadeel voor mij mag ontstaan.
+
+	Ik heb het onderzoek met de deelnemende adolescent besproken en geef hierbij toestemming voor zijn of haar deelname aan de studie en het gebruik van de data voor het onderzoek. De adolescent kan altijd beslissen niet mee te doen of te stoppen met het onderzoek, zonder hiervan nadeel te ondervinden. 
+
+	De resultaten van dit onderzoek kunnen gebruikt worden voor wetenschappelijke doeleinden en mogen gepubliceerd worden. Mijn naam wordt daarbij niet gepubliceerd, de vertrouwelijkheid van de gegevens is in elk stadium van het onderzoek gewaarborgd. De data wordt 'gecodeerd' opgeslagen. Dit wil zeggen dat de gegevens verzameld met de vragenlijsten en tests met een unieke code worden opgeslagen, en in een apart beveiligd bestand kan die code gelinkt worden aan persoonsgegevens.
+
+	Ik begrijp dat mijn gecodeerde gegevens die al verzameld waren vóór de terugtrekking van de adolescent, bewaard worden, mits de adolescent hier geen bezwaar tegen heeft.
+
+	Voor vragen weet ik dat ik na mijn deelname terecht kan bij het onderzoeksteam (Robin Achterhof, Noemi Hagemann, Anu Hiekkaranta, Eva Bamps of Julie Janssens), bereikbaar via sigma@kuleuven.be of een van de persoonlijke e-mailadressen zoals hierboven vermeld.
+
+	Ik begrijp dat andere onderzoekers toegang zullen hebben tot de gecodeerde data, alleen wanneer zij akkoord gaan met de vertrouwelijkheidsregels afgesproken binnen deze studie.
+
+
+
+Voor eventuele klachten of andere bezorgdheden omtrent ethische aspecten van deze studie kan ik contact opnemen met de Ethische Commissie van UZ/KU Leuven: ec@uzleuven.be. U heeft het recht om een klacht in te dienen over hoe uw informatie wordt behandeld, bij de Belgische toezichthoudende instantie die verantwoordelijk is voor het handhaven van de wetgeving inzake gegevensbescherming:
+Gegevensbeschermingsautoriteit (GBA)
+Drukpersstraat 35
+1000 Brussel
+Tel. +32 2 274 48 00
+e-mail: contact@apd-gba.be
+website: www.gegevensbeschermingsautoriteit.be
+
+
+
+Conform de Belgische wet van 7 mei 2004 inzake experimenten op de menselijke persoon, is de opdrachtgever zelfs foutloos, aansprakelijkheid voor alle schade die de deelnemer of zijn rechthebbenden opliepen en die rechtstreeks dan wel onrechtstreeks verband vertoont met het experiment. De opdrachtgever van deze studie [KU Leuven] heeft een verzekering afgesloten die deze aansprakelijkheid dekt. Indien u schade zou oplopen ten gevolge van uw deelname aan deze studie zal die schade bijgevolg worden vergoed conform de Belgische wet van 7 mei 2004.
+
+Ik heb bovenstaande informatie gelezen en begrepen en heb antwoord gekregen op al mijn vragen betreffende deze studie. Ik stem toe om deel te nemen, en geef toestemming voor deelname van mijn kind.
+",,,,,,,[icf_parent_agree]='1',,,,,,
+icf_parent_date,toestemmingsformulier_ouder,,text,Datum,,,date_dmy,,,,[icf_parent_agree]='1',,,,,,
+icf_parent_researcher,toestemmingsformulier_ouder,,radio,"Ik geef toestemming dat andere onderzoekers, buiten de context van deze studie, de gecodeerde gegevens van de adolescent mogen gebruiken voor andere studies.","0, Nee | 1, Ja",,,,,,[icf_parent_agree]='1',y,,,,,
+icf_parent_results,toestemmingsformulier_ouder,,radio,"Ik wil graag op de hoogte gehouden worden van de resultaten van dit onderzoek. ","0, Nee | 1, Ja",,,,,,[icf_parent_agree]='1',y,,,,,
+icf_parent_email,toestemmingsformulier_ouder,,text,"De onderzoeker mag mij hiervoor contacteren op het volgende e-mailadres: ",,,email,,,,[icf_parent_results]='1',,,,,,
+icf_parent_name,toestemmingsformulier_ouder,,text,Naam,,,,,,,[icf_parent_agree]='1',y,,,,,
+date_test,hoe_gaat_het_in_coronatijden,,text,"Datum van vandaag",,"Klik gewoon op Today om de datum van vandaag in te vullen.",date_dmy,,,,,y,,,,,
+agl_ado_sex,hoe_gaat_het_in_coronatijden,,radio,"Wat is je biologische geslacht?","0, Jongen/Man | 1, Meisje/Vrouw",,,,,,,y,,,,,
+agl_ado_age,hoe_gaat_het_in_coronatijden,,text,Leeftijd,,"in jaren",number,10,21,,,y,,,,,
+agl_ado_education_year,hoe_gaat_het_in_coronatijden,,radio,Studiejaar,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, Ik ben afgestudeerd aan de middelbare school | 9, Ik ben gestopt met de middelbare school",,,,,,,y,,,,,
+agl_ado_education_level,hoe_gaat_het_in_coronatijden,,radio,"In welk onderwijstype zit je?","1, ASO | 2, TSO | 3, BSO | 4, KSO",,,,,,"[agl_ado_education_year]='1' or [agl_ado_education_year]='2' or [agl_ado_education_year]='3' or [agl_ado_education_year]='4' or [agl_ado_education_year]='5' or [agl_ado_education_year]='6' or [agl_ado_education_year]='7'",y,,,,,
+agl_ado_school,hoe_gaat_het_in_coronatijden,,dropdown,"In welke school zit je?","1, Sint-Jan Berchmanscollege in Avelgem | 2, GO! Atheneum in Ninove | 3, Scholen a/d Leie - Campus Sint-Jorrisschool in Menen en Geluwe | 4, Don Bosco in Groot Bijgaarden | 5, Sint-Gummaruscollege in Lier | 6, Kosh - Campus Scheppersstraat in Herentals | 7, Talentenschool in Turnhout | 8, Onze Lieve Vrouw Instituut in Poperinge | 9, Vrij Innovatief Interactief Onderwijs (VIIO) in Tongeren | 10, Busleyden Atheneum - campus Botaniek in Mechelen | 11, Lyceumcollege in Ieper | 12, Koninklijk Atheneum Brugge | 13, Petrus & Paulus West in Oostende | 14, GO! Atheneum in Aalst | 15, Sint-Lievenscollege in Gent | 16, Heilig Hartinstituut in Kessel-Lo | 17, Instituut Maris Stella in Borgerhout | 18, Sint-Alloysiuscollege in Menen | 19, Spectrumcollege in Beringen | 20, Sint-Lambertuscollege in Bilzen | 21, Heilig Graf Instituut Bilzen in Bilzen | 22, Kindsheid Jesu Hasselt in Hasselt | 23, Andere school",,,,,,"[agl_ado_education_year]='1' or [agl_ado_education_year]='2' or [agl_ado_education_year]='3' or [agl_ado_education_year]='4' or [agl_ado_education_year]='5' or [agl_ado_education_year]='6' or [agl_ado_education_year]='7'",y,RV,,,,
+agl_ado_daily,hoe_gaat_het_in_coronatijden,,checkbox,"Hoe kan je je dagelijks activiteit (buiten de coronamaatregelen) het best omschreven worden? Duid de opties aan die voor jou van toepassing zijn.","1, Student hoger onderwijs | 2, Student universiteit | 3, Andere opleiding (bv, VDAB) | 4, Jobstudent (max, 475 uur/jaar) | 5, Werkstudent (meer dan 475 uur/jaar) | 6, Werkzoekend | 7, Werk voltijds | 8, Werk deeltijds | 9, Zonder vast werk omwille van mentale/fysieke beperking | 10, Sabbatjaar | 11, Anders",,,,,,"[agl_ado_education_year]='8' or [agl_ado_education_year]='9'",y,,,,,
+agl_ado_dailyb,hoe_gaat_het_in_coronatijden,,text,"Indien ""Anders"", specificeer:",,,,,,,[agl_ado_daily(11)]='1',y,RV,,,,
+agl_ado_finance,hoe_gaat_het_in_coronatijden,,radio,"In welke mate kan je elke maand financieel rondkomen?","1, Heel gemakkelijk | 2, Gemakkelijk | 3, Eerder gemakkelijk | 4, Eerder moeilijk | 5, Moeilijk | 6, Heel moeilijk",,,,,,"[agl_ado_education_year]='8' or [agl_ado_education_year]='9'",y,RV,,,,
+agl_ado_house,hoe_gaat_het_in_coronatijden,,radio,"Wat is je huidige woonsituatie? Duid aan wat voor jou past,","1, Inwonend bij ouders/familie | 2, Alleenwonend | 3, Bij vrienden/huisgenoten | 4, Bij partner | 5, Anders",,,,,,"[agl_ado_education_year]='8' or [agl_ado_education_year]='9'",y,RV,,,,
+agl_ado_parentvisit,hoe_gaat_het_in_coronatijden,,radio,"Hoe vaak ga je gewoonlijk (buiten de coronamaatregelen) naar je ouders? Duid aan wat voor jou past.","1, Elk weekend (altijd) | 2, De meeste weekends (vaak) | 3, Sommige weekends (af en toe) | 4, Bijna geen enkel weekend (zelden) | 5, Geen enkel weekend (nooit)",,,,,,"([agl_ado_education_year]='8' or [agl_ado_education_year]='9') and [agl_ado_house]<>'1'",y,,,,,
+sexid_feel_man,hoe_gaat_het_in_coronatijden,"Nu volgen een paar vragen over je identiteit.",radio,"Ik voel me mannelijk","1, 1 Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel erg | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,id1,,
+sexid_feel_woman,hoe_gaat_het_in_coronatijden,,radio,"Ik voel me vrouwelijk","1, 1 Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel erg | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,id2,,
+sexid_attraction_men,hoe_gaat_het_in_coronatijden,,radio,"Ik voel me romantisch aangetrokken tot (Ik val op) jongens/mannen","1, 1 Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel erg | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,id3,,
+sexid_attraction_women,hoe_gaat_het_in_coronatijden,,radio,"Ik voel me romantisch aangetrokken tot (Ik val op) meisjes/vrouwen","1, 1 Helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel erg | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,id4,,
+agl_ado_nationality,hoe_gaat_het_in_coronatijden,,dropdown,"Van welk land heb je de nationaliteit?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland",,autocomplete,,,y,,y,,,,,
+agl_ado_nationality_2,hoe_gaat_het_in_coronatijden,,radio,"Heb je nog een tweede nationaliteit?","0, Nee | 1, Ja",,,,,y,,y,,,,,
+agl_ado_nationality_2b,hoe_gaat_het_in_coronatijden,,dropdown,"Van welk land is je tweede nationaliteit?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland",,autocomplete,,,y,[agl_ado_nationality_2]=1,y,,,,,
+agl_ado_nationality_change,hoe_gaat_het_in_coronatijden,,radio,"Is je nationaliteit nu anders dan toen je geboren werd?","0, Nee | 1, Ja",,,,,y,,y,,,,,
+agl_ado_nationality_birth,hoe_gaat_het_in_coronatijden,,dropdown,"Van welk land had je bij je geboorte de nationaliteit?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland",,autocomplete,,,y,[agl_ado_nationality_change]=1,y,,,,,
+agl_ado_country_birth,hoe_gaat_het_in_coronatijden,,dropdown,"In welk land ben je geboren?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland",,autocomplete,,,y,,y,,,,,
+agl_ado_country_dad,hoe_gaat_het_in_coronatijden,,dropdown,"In welk land is je vader geboren?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland | 999, Ik weet het niet",,,,,y,,y,,,,,
+agl_ado_country_mom,hoe_gaat_het_in_coronatijden,,dropdown,"In welk land is je moeder geboren?","15, België | 1, Afghanistan | 2, Albanië | 3, Algerije | 4, Andorra | 5, Angola | 6, Antigua en Barbuda | 7, Argentinië | 8, Armenië | 9, Australië | 10, Azerbeidzjan | 11, Bahama's | 12, Bahrein | 13, Bangladesh | 14, Barbados | 16, Belize | 17, Benin | 18, Bhutan | 19, Bolivia | 20, Bosnië - Herzegovina | 21, Botswana | 22, Brazilië | 23, Brunei | 24, Bulgarije | 25, Burkina Faso | 26, Burundi | 27, Cambodja | 28, Canada | 29, Centraal-Afrikaanse Republiek | 30, Chili | 31, China | 32, Colombia | 33, Comoren | 34, Congo-Brazzaville | 35, Congo (Democratische Republiek) | 36, Costa Rica | 37, Cuba | 38, Cyprus | 39, Denemarken | 40, Djibouti | 41, Dominica | 42, Dominicaanse Republiek | 43, Duitsland | 44, Ecuador | 45, Egypte | 46, El Salvador | 47, Equatoriaal-Guinea | 48, Eritrea | 49, Estland | 50, Ethiopië | 51, Fiji | 52, Filipijnen | 53, Finland | 54, Frankrij | 55, Gabon | 56, Gambia | 57, Georgië | 58, Ghana | 59, Grenada | 60, Griekenland | 61, Guatemala | 62, Guinee | 63, Guinee-Bissau | 64, Guyana | 65, Haïti | 66, Honduras | 67, Hongarije | 68, Ierland | 69, IJsland | 70, India | 71, Indonesië | 72, Irak | 73, Iran | 74, Israël | 75, Italië | 76, Ivoorkust | 77, Jamaica | 78, Japan | 79, Jemen | 80, Jordanië | 81, Kaapverdië | 82, Kameroen | 83, Kazachstan | 84, Kenia | 85, Kirgizië | 86, Kiribati | 87, Koeweit | 88, Kosovo | 89, Kroatië | 90, Laos | 91, Lesotho | 92, Letland | 93, Libanon | 94, Liberia | 95, Libië | 96, Liechtenstein | 97, Litouwen | 98, Luxemburg | 99, Macedonië | 100, Madagaskar | 101, Malawi | 102, Maldiven | 103, Maleisië | 104, Mali | 105, Malta | 106, Marokko | 107, Marshalleilanden | 108, Mauritanië | 109, Mauritius | 110, Mexico | 111, Micronesië | 112, Moldavië | 113, Monaco | 114, Mongolië | 115, Montenegro | 116, Mozambique | 117, Myanmar | 118, Namibië | 119, Nauru | 120, Nederland | 121, Nepal | 122, Nicaragua | 123, Nieuw-Zeeland | 124, Niger | 125, Nigeria | 126, Noord-Korea | 127, Noorwegen | 128, Oeganda | 129, Oekraïne | 130, Oezbekistan | 131, Oman | 132, Oostenrijk | 133, Oost-Timo | 134, Pakistan | 135, Palau | 136, Palestina | 137, Panama | 138, Papoea-Nieuw-Guinea | 139, Paraguay | 140, Peru | 141, Polen | 142, Portugal | 143, Qatar | 144, Roemenië | 145, Rusland | 146, Rwanda | 147, Saint Kitts en Nevis | 148, Saint Lucia | 149, Saint Vincent en de Grenadines | 150, Salomonseilanden | 151, Samoa | 152, San Marino | 153, Sao Tomé en Principe | 154, Saoedi-Arabië | 155, Senegal | 156, Servië | 157, Seychellen | 158, Sierra Leone | 159, Singapore | 160, Slovenië | 161, Slowakije | 162, Soedan | 163, Somalië | 164, Spanje | 165, Sri Lanka | 166, Suriname | 167, Swaziland | 168, Syrië | 169, Tadzjikistan | 170, Taiwan | 171, Tanzania | 172, Thailand | 173, Togo | 174, Tonga | 175, Trinidad en Tobago | 176, Tsjaad | 177, Tsjechië | 178, Tunesië | 179, Turkije | 180, Turkmenistan | 181, Tuvalu | 182, Uruguay | 183, Vanuatu | 184, Vaticaanstad | 185, Venezuela | 186, Verenigd Koninkrijk | 187, Verenigde Arabische Emiraten | 188, Verenigde Staten | 189, Vietnam | 190, Westelijke Sahara | 191, Wit-Rusland | 192, Zambia | 193, Zimbabwe | 194, Zuid-Afrika | 195, Zuid-Korea | 196, Zuid-Soedan | 197, Zweden | 198, Zwitserland | 999, Ik weet het niet",,,,,y,,y,,,,,
+agl_ado_divorced,hoe_gaat_het_in_coronatijden,,radio,"Zijn je ouders gescheiden/uit elkaar?","0, Nee | 1, Ja",,,,,y,,,,,,,
+agl_ado_adopt,hoe_gaat_het_in_coronatijden,,radio,"Ben je geadopteerd?","0, Nee | 1, Ja",,,,,,,y,,,,,
+agl_ado_adopt_age,hoe_gaat_het_in_coronatijden,,text,"Hoe oud was je toen je geadopteerd werd? (leeftijd in jaren)",,,number,,,,[agl_ado_adopt]='1',,,,,,
+agl_ado_foster,hoe_gaat_het_in_coronatijden,,radio,"Woon(de) je in een pleeggezin?","0, Nee | 1, Ja",,,,,,,y,,,,,
+agl_ado_foster_age,hoe_gaat_het_in_coronatijden,,text,"Hoe oud was je toen je in pleegzorg terecht kwam? (leeftijd in jaren)",,,number,,,,[agl_ado_foster]='1',y,,,,,
+agl_ado_foster_age_family,hoe_gaat_het_in_coronatijden,,text,"Hoe oud was je toen je in dit pleeggezin terecht kwam? (leeftijd in jaren)",,,,,,,[agl_ado_foster]='1',y,,,,,
+agl_ado_contact_biomom,hoe_gaat_het_in_coronatijden,,radio,"In welke mate heb je contact met je biologische moeder?","1, 1 Helemaal geen contact | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel veel contact",,,,,,"[agl_ado_adopt]='1' or [agl_ado_foster]='1'",y,,,adopt1,,
+agl_ado_contact_biodad,hoe_gaat_het_in_coronatijden,,radio,"In welke mate heb je contact met je biologische vader?","1, 1 Helemaal geen contact | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Heel veel contact",,,,,,"[agl_ado_adopt]='1' or [agl_ado_foster]='1'",y,,,adopt2,,
+agl_ado_parent_dead,hoe_gaat_het_in_coronatijden,,radio,"Is iemand van je (biologische/adoptie/pleeg/stief)ouders overleden?","0, Nee | 1, Ja",,,,,y,,y,,,,,
+agl_ado_parent_dead_who,hoe_gaat_het_in_coronatijden,,checkbox,"Wie van je (biologische/adoptie/pleeg/stief)ouders is overleden?","1, Mijn biologische vader | 2, Mijn biologische moeder | 3, Mijn adoptievader | 4, Mijn adoptiemoeder | 5, Mijn pleegvader | 6, Mijn pleegmoeder | 7, Mijn stiefvader | 8, Mijn stiefmoeder",,,,,,[agl_ado_parent_dead]='1',y,,,,,
+agl_ado_family,hoe_gaat_het_in_coronatijden,,checkbox,"Welke van deze mensen heb je op dit moment allemaal in je leven?","1, Biologische vader | 2, Biologische moeder | 3, Adoptievader | 4, Adoptiemoeder | 5, Pleegvader | 6, Pleegmoeder | 7, Stiefvader | 8, Stiefmoeder | 9, Biologische broer/zus | 10, Halfbroer/halfzus | 11, Pleegbroer/pleegzus | 12, Adoptiebroer/adoptiezus | 13, Stiefbroer/stiefzus",,,,,,,y,,,,,
+agl_ado_confidants,hoe_gaat_het_in_coronatijden,,checkbox,"Tijdens de coronamaatregelen (gestart op 13 maart):Bij welke volwassene(n) kan je terecht als je je niet goed voelt? Je kan meerdere personen aanduiden.","0, Ik denk of weet niet of ik bij iemand terecht kan | 1, Mijn vader | 2, Mijn moeder | 3, Mijn adoptievader | 4, Mijn adoptiemoeder | 5, Mijn pleegvader | 6, Mijn pleegmoeder | 7, Mijn stiefvader | 8, Mijn stiefmoeder | 9, Grootvader | 10, Grootmoeder | 11, Nonkel | 12, Tante | 13, Ander (bv, leerkracht, psycholoog, buurvrouw...)",,,,,,,y,,,,,
+agl_ado_confidants_specify,hoe_gaat_het_in_coronatijden,,text,"Schrijf hier wat je bedoelt met 'ander'.",,,,,,,[agl_ado_confidants(13)]='1',y,,,,,
+agl_ado_brand,hoe_gaat_het_in_coronatijden,,radio,"Wat is het merk van je mobiele telefoon?","1, Apple (iPhone) | 6, Asus | 7, Cat | 8, CrossCat | 9, Doro | 10, Emporia | 11, Fysic | 12, Honor | 13, HTC | 2, Huawei | 14, LG | 15, Motorola | 16, Nokia | 3, Oneplus | 17, Oppo | 18, Ruggear | 4, Samsung | 19, Sony | 5, Xiaomi | 20, Ander",,,,,,,y,,,,,
+agl_ado_brandb,hoe_gaat_het_in_coronatijden,,text,"Wat is dan het merk van jouw mobile telefoon?",,,,,,,[agl_ado_brand]='20',y,,,,,
+agl_ado_type,hoe_gaat_het_in_coronatijden,,text,"Wat is het model van je mobiele telefoon?",,,,,,,,,,,,,
+agl_ado_os,hoe_gaat_het_in_coronatijden,,text,"Wat is het besturingssysteem van je mobiele telefoon?
+
+Voor Android gebruikers: 
+Om erachter te komen welk besturingssysteem je op je gsm hebt, doe je het volgende:
+1. Ga naar het 'Instellingen' (of 'Settings') menu
+2. Vervolgens zoek en klik je op het menu 'Over telefoon'. Dit menu kan ook onder de 'Systeem' knop in je Instellingen-menu staan.
+3. Klik op 'Software informatie' (of 'Software information'/ 'Software update' / 'Android-versie'/ 'Firmwareversie'). Het nummer dat je hier ziet staan (bij 'Android-versie') is het nummer van je besturingssysteem/software.
+
+Mocht je er hiermee niet uitkomen, dan staat hier ook nog eens uitgelegd hoe je het besturingssysteemnummer kan vinden voor verschillende merken telefoons: https://www.consumentenbond.nl/acties/updaten/stappenplan-android-versie.
+
+
+Voor iPhone gebruikers:  
+Om erachter te komen welke versie van besturingssysteem je op je gsm hebt, doe je het volgende:
+1.      Ga naar 'Instellingen' (in het Engels: 'Settings') 
+2.      Ga naar 'Algemeen' (in het Engels: 'General') 
+3.      Klik op 'Info' (in het Engels: 'About') 
+4.      Kijk naar je 'Softwareversie' (in het Engels: 'Software version'). Het nummer dat je hier ziet staan is het nummer van je iOS-besturingssysteem. Bijvoorbeeld 13.3.1. 
+
+
+",,,,,,,,,,,,,
+agl_ado_gsmyear,hoe_gaat_het_in_coronatijden,,text,"In welk jaar is je mobiele telefoon ongeveer gemaakt?",,,,,,,,y,,,,,
+agl_ado_stayparents,leefsituatie,,radio,"Verblijf je op dit moment (tijdens de coronamaatregelen) voltijds bij je ouder(s)","0, Nee | 1, Ja",,,,,,,y,RV,,,,
+agl_ado_stayparentsno,leefsituatie,,text,"Waar verblijf je dan?",,,,,,,[agl_ado_stayparents]='0',y,RV,,,,
+agl_ado_nrpeople,leefsituatie,,text,"Hoeveel mensen wonen er op dit moment in het huis waar je verblijft? (jezelf inbegrepen)",,,,,,,,y,RV,,,,
+agl_ado_housetype,leefsituatie,,radio,"Duid aan hoe jouw huis het best omschreven kan worden.","1, Een alleenstaand huis | 2, Een rijwoning | 3, Een driegevelwoning | 4, Een appartement | 5, Ander",,,,,,,y,,,,,
+agl_ado_housetypeb,leefsituatie,,text,"Wat bedoel je met ""Ander""?",,,,,,,[agl_ado_housetype]='5',y,RV,,,,
+agl_ado_outsidespace,leefsituatie,,radio,"Heb je thuis manieren om buiten te zijn (bv. tuin, koer)?","0, Nee | 1, Ja",,,,,,,y,,,,,
+agl_ado_structure,leefsituatie,,radio,"In welke mate heb je structuur in je dag/een vaste dagindeling? Geef een score.","1, 1 Geen structuur (ik weet niet hoe mijn dag er zal uitzien) | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Veel structuur (Ik weet op voorhand wat ik elk uur zal doen)",,,,,,,y,,,struct1,,
+agl_ado_structure_others,leefsituatie,,radio,"Is deze structuur je opgelegd? Geef een score.","1, 1 Helemaal door mezelf bepaald | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Compleet door anderen opgelegd",,,,,,"[agl_ado_structure] >'1'",,,,,,
+agk_ado_covidnews,leefsituatie,,radio,"In welke mate volg je het nieuws betreffende de coronasituatie op? Geef een score.","1, 1 Ik volg het nieuws met betrekking tot corona helemaal niet | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 Ik mis geen enkele nieuwsuitzending met betrekking tot corona.",,,,,,,y,,,covid1,,
+agl_ado_outside,leefsituatie,,radio,"In de afgelopen maand (sinds de start van de coronamaatregelen op 13 maart) hoe vaak was je buiten?","0, Nooit | 1, Minder dan 1 keer per week | 2, Ongeveer 1 of 2 keer per week | 3, (Bijna) dagelijks | 4, Meerdere keren per dag",,,,,,,y,,,,,
+agl_ado_schoolwork,leefsituatie,,radio,"Heb je een plek waar je ongestoord kan werken voor school?","0, Nee | 1, Ja",,,,,,,y,RV,,,,
+agl_ado_alone,leefsituatie,,radio,"Heb je een plaats waar je ongestoord alleen kan zijn?","0, Nee | 1, Ja",,,,,,,,,,,,
+bsi_nervous,welzijn,"Hieronder staat een lijst met problemen die mensen kunnen hebben. Lees ieder probleem zorgvuldig door en kleur het bolletje dat het beste weergeeft IN HOEVERRE JE LAST HAD VAN DAT PROBLEEM sinds de coronamaatregelen (13 maart). Duid een cijfer aan achter iedere vraag en sla geen vragen over. Hoeveel last had je van...",radio,"Zenuwachtig of beverig zijn","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_1,,"Hoeveel last had je van"
+bsi_dizziness,welzijn,,radio,"Duizeligheid of moeite je evenwicht te bewaren","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_2,,"Hoeveel last had je van"
+bsi_thoughtcontrol,welzijn,,radio,"Het idee dat een ander je gedachten kan beïnvloeden","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_3,,"Hoeveel last had je van"
+bsi_blameothers,welzijn,,radio,"Het gevoel dat de meeste van je problemen aan anderen te wijten zijn (door anderen komen).","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_4,,"Hoeveel last had je van"
+bsi_forgetfulness,welzijn,,radio,"Moeite iets te onthouden","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_5,,"Hoeveel last had je van"
+bsi_annoyance,welzijn,,radio,"Je snel aan iets ergeren","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_6,,"Hoeveel last had je van"
+bsi_chestpain,welzijn,,radio,"Pijn op de borst of het hart","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_7,,"Hoeveel last had je van"
+bsi_agoraphobia,welzijn,,radio,"Angstig zijn op open pleinen of in grote ruimten","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_8,,"Hoeveel last had je van"
+bsi_suicidalthoughts,welzijn,,radio,"Gedachten aan zelfmoord","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_9,,"Hoeveel last had je van"
+bsi_distrust,welzijn,,radio,"Het gevoel dat de meeste mensen niet te vertrouwen zijn","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_10,,"Hoeveel last had je van"
+bsi_littleappetite,welzijn,,radio,"Weinig eetlust","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_11,,"Hoeveel last had je van"
+bsi_getscared,welzijn,,radio,"Zomaar plotseling bang worden","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_12,,"Hoeveel last had je van"
+bsi_anger,welzijn,,radio,"Woede-uitbarstingen die je niet kan beheersen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_13,,"Hoeveel last had je van"
+bsi_lonelycompany,welzijn,,radio,"Je eenzaam voelen, zelfs als je in gezelschap bent","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_14,,"Hoeveel last had je van"
+bsi_blocked,welzijn,,radio,"Je geblokkeerd voelen bij het afkrijgen van dingen (het gevoel hebben dat je niet verder kunt).","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_15,,"Hoeveel last had je van"
+bsi_lonely,welzijn,,radio,"Je eenzaam voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_16,,"Hoeveel last had je van"
+bsi_gloomy,welzijn,,radio,"Je somber voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_17,,"Hoeveel last had je van"
+bsi_disinterested,welzijn,,radio,"Geen interesse kunnen opbrengen voor dingen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_18,,"Hoeveel last had je van"
+bsi_fearful,welzijn,,radio,"Bang zijn","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_19,,"Hoeveel last had je van"
+bsi_quicklyhurt,welzijn,,radio,"Gauw gekwetst of geraakt zijn","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_20,,"Hoeveel last had je van"
+bsi_unfriendly,welzijn,,radio,"Het gevoel dat mensen onvriendelijk zijn en je niet mogen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_21,,"Hoeveel last had je van"
+bsi_inferior,welzijn,,radio,"Je tegenover anderen de mindere voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_22,,"Hoeveel last had je van"
+bsi_nausea,welzijn,,radio,"Misselijkheid of dat je maag van streek was","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_23,,"Hoeveel last had je van"
+bsi_watched,welzijn,,radio,"Het gevoel dat je in de gaten gehouden wordt of dat er over je gepraat wordt achter je rug","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_24,,"Hoeveel last had u van..."
+bsi_asleep,welzijn,,radio,"Moeite met in slaap vallen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_25,,"Hoeveel last had je van"
+bsi_checks,welzijn,,radio,"Steeds maar alles wat je doet moeten controleren","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_26,,"Hoeveel last had je van"
+bsi_indecisive,welzijn,,radio,"Moeite met beslissingen nemen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_27,,"Hoeveel last had je van"
+bsi_publictransport,welzijn,,radio,"Bang zijn om te reizen met bus, trein of tram","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_28,,"Hoeveel last had je van"
+bsi_tightness,welzijn,,radio,"Benauwdheid, moeite met ademhalen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_29,,"Hoeveel last had je van"
+bsi_hotcold,welzijn,,radio,"Opvliegers (het ineens heel warm krijgen) of koude rillingen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_30,,"Hoeveel last had je van"
+bsi_avoidance,welzijn,,radio,"Bepaalde dingen, plaatsen of activiteiten vermijden omdat je er angstig van wordt","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_31,,"Hoeveel last had je van"
+bsi_blankmind,welzijn,,radio,"Helemaal van je apropos zijn (de draad van je gedachten kwijt raken)","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_32,,"Hoeveel last had je van"
+bsi_numbness,welzijn,,radio,"Gevoelloosheid of tintelingen in bepaalde lichaamsdelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_33,,"Hoeveel last had je van"
+bsi_sinful,welzijn,,radio,"Het idee dat je zondig bent en gestraft moet worden","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_34,,"Hoeveel last had je van"
+bsi_hopeless,welzijn,,radio,"Je hopeloos voelen over de toekomst","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_35,,"Hoeveel last had je van"
+bsi_concentration,welzijn,,radio,Concentratieproblemen,"0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_36,,"Hoeveel last had je van"
+bsi_weak,welzijn,,radio,"Je slap of zwak voelen ergens in je lichaam","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_37,,"Hoeveel last had je van"
+bsi_tense,welzijn,,radio,"Je gespannen en opgefokt voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_38,,"Hoeveel last had je van"
+bsi_death,welzijn,,radio,"Gedachten aan sterven of aan de dood","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_39,,"Hoeveel last had je van"
+bsi_harm,welzijn,,radio,"De aandrang hebben iemand te slaan, te verwonden of pijn te doen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_40,,"Hoeveel last had je van"
+bsi_throw,welzijn,,radio,"De aandrang hebben om met dingen te gooien of ze stuk te slaan","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_41,,"Hoeveel last had je van"
+bsi_shy,welzijn,,radio,"Je erg verlegen voelen in gezelschap","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_42,,"Hoeveel last had je van"
+bsi_uneasycrowd,welzijn,,radio,"Je niet op je gemak voelen in menigten","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_43,,"Hoeveel last had je van"
+bsi_unconnected,welzijn,,radio,"Je met niemand nauw verbonden voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_44,,"Hoeveel last had je van"
+bsi_panicattack,welzijn,,radio,"Aanvallen van angst of paniek","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_45,,"Hoeveel last had je van"
+bsi_quarrel,welzijn,,radio,"Snel ruzie krijgen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_46,,"Hoeveel last had je van"
+bsi_nervousalone,welzijn,,radio,"Je nerveus voelen als je alleen en verlaten bent","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_47,,"Hoeveel last had je van"
+bsi_credits,welzijn,,radio,"Het gevoel dat anderen je prestaties niet voldoende waarderen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_48,,"Hoeveel last had je van"
+bsi_restless,welzijn,,radio,"Je zo rusteloos voelen dat je niet stil kan blijven zitten","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_49,,"Hoeveel last had je van"
+bsi_worthless,welzijn,,radio,"Het gevoel dat je niets waard bent","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_50,,"Hoeveel last had je van"
+bsi_exploit,welzijn,,radio,"Het gevoel dat anderen misbruik van je maken als je niet oppast","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_51,,"Hoeveel last had je van"
+bsi_guilty,welzijn,,radio,"Je schuldig voelen","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_52,,"Hoeveel last had je van"
+bsi_psychic,welzijn,,radio,"De gedachte dat je psychisch wat mankeert","0, 0 Helemaal geen | 1, 1 Een beetje | 2, 2 Nogal | 3, 3 Tamelijk veel | 4, 4 Heel veel | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,bsi_53,,"Hoeveel last had je van"
+covid_symptoms_self,coronagebeurtenissen,"Hieronder volgen enkele situaties die mensen kunnen ervaren als gevolg van de huidige coronapandemie. Geef aan of je momenteel de volgende situaties ervaart, of deze de afgelopen twee weken hebt ervaren in verband met de coronapandemie, en hoe belastend deze voor je zijn/waren.
+Let op: COVID-19 is de ziekte die hoort bij het coronavirus.",radio,"Het hebben van COVID-19-symptomen of symptomen die gerelateerd zouden kunnen zijn aan COVID-19.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_symptoms_self_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,"[covid_symptoms_self] = '1'",y,RV,,,,
+covid_symptoms_family,coronagebeurtenissen,,radio,"COVID-19-symptomen of symptomen die gerelateerd zouden kunnen zijn aan COVID-19 bij familieleden, vrienden, geliefden of klasgenoten.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_symptoms_family_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_symptoms_family]='1',y,RV,,,,
+covid_risk_self,coronagebeurtenissen,,radio,"Verhoogd risico op ernstige COVID-19 klachten als je ermee besmet wordt (bijvoorbeeld omdat je een andere ziekte hebt die er voor zorgt dat als jij COVID-19 krijgt, je daar veel zieker van zou worden dan de meeste mensen).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_risk_self_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_risk_self]='1',y,RV,,,,
+covid_risk_family,coronagebeurtenissen,,radio,"Familie, vrienden of andere naasten lopen een verhoogd risico op een ernstig COVID-19 ziekteverloop indien ze besmet raken (bijvoorbeeld omdat zij een andere ziekte hebben die er voor zorgt dat als zij COVID-19 krijgen, ze daar veel zieker van zouden worden dan de meeste mensen).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_risk_family_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_risk_family]='1',y,RV,,,,
+covid_job_self,coronagebeurtenissen,,radio,"Een verhoogd risico op het krijgen van COVID-19 (bijvoorbeeld omdat je voor een [bij]baan veel mensen moet zien).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_job_self_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_job_self]='1',y,RV,,,,
+covid_job_family,coronagebeurtenissen,,radio,"Een verhoogd risico op het krijgen van COVID-19 bij familieleden, vrienden, of andere naasten (bijvoorbeeld vanwege hun job). ","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_job_family_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_job_family]='1',y,RV,,,,
+covid_healthcare,coronagebeurtenissen,,radio,"Problemen met toegang tot gezondheidszorg, medicatie of sanitaire voorzieningen.
+","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_healthcare_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_healthcare]='1',y,RV,,,,
+covid_restriction,coronagebeurtenissen,,radio,"(Een gevoel van) beperking om je huis te verlaten.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_restriction_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_restriction]='1',y,RV,,,,
+covid_lesspeople,coronagebeurtenissen,,radio,"Minder mensen kunnen zien.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_lesspeople_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_lesspeople]='1',y,RV,,,,
+covid_socialevents,coronagebeurtenissen,,radio,"Niet naar belangrijke sociale evenementen (bijvoorbeeld een verjaardag of bruiloft) kunnen.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_socialevents_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_socialevents]='1',y,RV,,,,
+covid_hospital,coronagebeurtenissen,,radio,"Familie, vrienden of andere naasten bevinden zich in een ziekenhuis of woonzorgcentrum en het is moeilijk om ze te bezoeken.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,,,,,
+covid_hospital_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_hospital]='1',y,RV,,,,
+covid_funeral,coronagebeurtenissen,,radio,"Niet naar een begrafenis van een familielid, vriend of andere naaste kunnen gaan.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_funeral_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_funeral]='1',y,RV,,,,
+covid_hobby,coronagebeurtenissen,,radio,"Geen hobby's kunnen uitoefenen.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,,,,,
+covid_hobby_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_hobby]='1',y,RV,,,,
+covid_move,coronagebeurtenissen,,radio,"Minder lichaamsbeweging dan normaal krijgen.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_move_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_move]='1',y,RV,,,,
+covid_tension_parents,coronagebeurtenissen,,radio,"Ruzie/spanning tussen je ouders","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_tension_parents_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_tension_parents]='1',y,RV,,,,
+covid_tension_self,coronagebeurtenissen,,radio,"Ruzie/spanning tussen jou en je ouders.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_tension_self_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_tension_self]='1',y,RV,,,,
+covid_siblings,coronagebeurtenissen,,radio,"Ruzie/spanning tussen jou en je broer(s)/zus(sen).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_siblings_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_siblings]='1',y,RV,,,,
+covid_travel,coronagebeurtenissen,,radio,"Niet kunnen reizen of op vakantie gaan.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_travel_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_travel]='1',y,RV,,,,
+covid_basics,coronagebeurtenissen,,radio,"Problemen bij het verkrijgen van basisbehoeften (bijv. eten, drinken, medicatie).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,,,,,
+covid_basics_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_basics]='1',y,RV,,,,
+covid_media,coronagebeurtenissen,,radio,"Corona-gerelateerde media-aandacht (nieuws over Corona op televisie/internet/in de krant).","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_media_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_media]='1',y,RV,,,,
+covid_school,coronagebeurtenissen,,radio,"Niet naar school kunnen.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,RV,,,,
+covid_school_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_school]='1',y,RV,,,,
+covid_money,coronagebeurtenissen,,radio,"(Mogelijke) geldproblemen voor jou of je gezin.","0, Deze situatie heeft niet plaatsgevonden | 1, Deze situatie heeft plaatsgevonden",,,,,,,y,,,,,
+covid_money_burden,coronagebeurtenissen,,radio,"Hoeveel last heb je hiervan gehad?","1, Helemaal geen last | 2, Bijna geen last | 3, Een beetje last | 4, Redelijk veel last | 5, Heel veel last",,,,,,[covid_money]='1',y,RV,,,,
+cerq_accept_happened,emoties,"In de vorige vragenlijst werd je gevraagd of je mogelijk negatieve of onaangename situaties door de coronapandemie ervaart. Iedereen reageert op zijn of haar eigen manier op deze situaties. In de volgende stellingen word je gevraagd om aan te geven wat je in het algemeen denkt als je negatieve of onaangename gevolgen ervaart in verband met de coronapandemie.",radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk me dat ik moet aanvaarden (accepteren) dat mij dit is overkomen.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_1,,
+cerq_feel,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk vaak aan hoe ik me voel over wat ik heb meegemaakt.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_2,,
+cerq_learn,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk dat ik iets van de situatie kan leren.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_3,,
+cerq_me_responsible,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk er aan dat ik zelf verantwoordelijk ben voor hetgeen me overkomen is.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_4,,
+cerq_accept_situation,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk me dat ik het moet accepteren.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_5,,
+cerq_preoccupied,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik hou me veel bezig met alles wat ik denk en voel over wat ik heb meegemaakt.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_6,,
+cerq_pleasant,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk aan leuke dingen die er niets mee te maken hebben.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_7,,
+cerq_stronger,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk dat ik als persoon 'sterker' word door de situatie.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_8,,
+cerq_terrible,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk me voortdurend hoe verschrikkelijk het is wat ik allemaal heb meegemaakt.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_9,,
+cerq_others_responsible,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk er aan dat anderen verantwoordelijk zijn voor wat mij is overkomen.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_10,,
+cerq_nice,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk aan  iets leuks in plaats van aan wat me overkomen is.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_11,,
+cerq_change,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk na over hoe ik de situatie kan veranderen.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_12,,
+cerq_compared,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk me dat het vergeleken met andere dingen allemaal best meevalt.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_13,,
+cerq_cause_self,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk dat de uiteindelijke oorzaak wel bij mij zal liggen.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_14,,
+cerq_plan,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk een plan voor wat ik het best kan doen.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_15,,
+cerq_worse,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik bedenk me dat er ergere dingen in het leven zijn.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_16,,
+cerq_horrible,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk er telkens aan hoe vreselijk de situatie is geweest.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_17,,
+cerq_cause_others,emoties,,radio,"Als er iets vervelends of ergs is gebeurd als gevolg van de coronapandemie: Ik denk dat de uiteindelijke oorzaak bij anderen ligt.","1, 1 (bijna) nooit | 2, 2 soms | 3, 3 regelmatig | 4, 4 vaak | 5, 5 (bijna) altijd | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,cerq_18,,
+selfharm_su_ideation_lifetime,moeilijke_gedachten,"Nu volgen wat vragen over gedachten die sommige jongeren wel eens hebben. Het kan zijn dat deze vragen lastig zijn om te beantwoorden, maar probeer alsjeblieft eerlijk te zijn en laat het ons weten als je je verdrietig gaat voelen door de vragen. ",radio,"Heb je er sinds de coronamaatregelen (13 maart) aan gedacht om een einde aan je leven te maken?","0, Nee, nooit | 1, Ja, éénmaal | 2, Ja, meerdere malen | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+selfharm_su_attempt_lifetime,moeilijke_gedachten,,radio,"Heb je er sinds de coronamaatregelen (13 maart) geprobeerd om een einde te maken aan je leven?","0, Nee, nooit | 1, Ja, eenmaal | 2, Ja, meerdere malen | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+selfharm_nsi_ideation_lifetime,moeilijke_gedachten,,radio,"Heb je er sinds de coronamaatregelen (13 maart) aan gedacht om jezelf opzettelijk te verwonden, pijn te doen of te vergiftigen (zonder dat je de wens had om te sterven)?","0, Nee, nooit | 1, Ja, eenmaal | 2, Ja, meerdere malen | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+selfharm_nsi_behav_lifetime,moeilijke_gedachten,,radio,"Heb je sinds de coronamaatregelen (13 maart) met opzet geprobeerd om jezelf te verwonden, pijn te doen of te vergiftigen (zonder dat je de wens had om te sterven)?","0, Nee, nooit | 1, Ja, eenmaal | 2, Ja, meerdere malen | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+pq16_uninterested,bijzondere_ervaringen,"<p>Hieronder staan een aantal uitspraken over gedachten, gevoelens en ervaringen die sommige jongeren wel eens hebben. We vragen je om na te gaan of jij SINDS DE CORONAMAATREGELEN (13 maart) deze ervaringen ook ooit gehad hebt. 
+Lees iedere uitspraak goed na en geef aan of je het daarmee 'eens' of 'oneens' bent. Indien je 'eens' gekozen hebt,
+geef dan ook aan hoeveel last je daarvan ondervindt.
+Het gaat om <strong><span style=""text-decoration: underline;"">een algemene beschrijving</span></strong> van hoe jij je <span style=""text-decoration: underline;""><strong>de laatste tijd</strong></span> voelt.</p>",radio,"Ik voel me ongeïnteresseerd in de dingen die ik vroeger leuk vond.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_1,,
+pq16_uninterested_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_uninterested] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_1_ja,,
+pq16_dejavu,bijzondere_ervaringen,,radio,"Ik schijn vaak gebeurtenissen te beleven precies zoals die eerder gebeurd zijn (déjà vu).","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_2,,
+pq16_dejavu_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_dejavu] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_2_ja,,
+pq16_smell,bijzondere_ervaringen,,radio,"Ik ruik of proef soms dingen die anderen niet kunnen ruiken of proeven. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,RH,,pq16_3,,
+pq16_smell_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_smell]='1' and [agl_ado_education_year]<>'1'",y,,,pq_16_3_ja,,
+pq16_sound,bijzondere_ervaringen,,radio,"Ik hoor vaak ongewone geluiden zoals gebonk, getik, gesis, geklap of gerinkel in mijn oren.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_4,,
+pq16_sound_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_sound] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_4_ja,,
+pq16_confused,bijzondere_ervaringen,,radio,"Ik haal wel eens door elkaar of iets dat ik heb meegemaakt echt was of fantasie.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_5,,
+pq16_confused_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_confused] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_5_ja,,
+pq16_mirror,bijzondere_ervaringen,,radio,"Als ik naar iemand kijk of ik kijk naar mezelf in een spiegel, heb ik het gezicht vlak voor mijn ogen zien veranderen.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_6,,
+pq16_mirror_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_mirror]='1' and [agl_ado_education_year]<>'1'",y,,,pq_16_6_ja,,
+pq16_anxious,bijzondere_ervaringen,,radio,"Ik raak buitengewoon ongerust als ik mensen voor het eerst ontmoet.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_7,,
+pq_16_anxious_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_anxious] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_7_ja,,
+pq16_visual_hallucinations,bijzondere_ervaringen,,radio,"Ik heb dingen gezien die andere mensen blijkbaar niet kunnen zien. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_8,,
+pq16_visual_hallucinations_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_visual_hallucinations] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_8_ja,,
+pq16_thoughts,bijzondere_ervaringen,,radio,"Mijn gedachten zijn soms zo sterk dat ik ze bijna kan horen.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_9,,
+pq16_thoughts_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_thoughts] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_9_ja,,
+pq16_advertisements,bijzondere_ervaringen,,radio,"Ik zie soms speciale betekenissen in advertenties, etalages of in de manier waarop dingen om mij heen zijn opgesteld.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_10,,
+pq16_advertisements_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_advertisements] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_10_ja,,
+pq16_nocontrol,bijzondere_ervaringen,,radio,"Soms heb ik het gevoel gehad dat ik niet de baas was over mijn eigen ideeën of gedachten.","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_11,,
+pq16_nocontrol_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_nocontrol] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_11_ja,,
+pq16_distracted,bijzondere_ervaringen,,radio,"Soms voel ik me plotseling afgeleid door geluiden van veraf, die ik gewoonlijk niet opmerk. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_12,,
+pq16_distracted_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_distracted] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_12_ja,,
+pq16_auditory_hallucinations,bijzondere_ervaringen,,radio,"Ik heb dingen gehoord die andere mensen niet horen zoals stemmen van fluisterende of pratende mensen. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_13,,
+pq16_auditory_hallucinations_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_auditory_hallucinations] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_13_ja,,
+pq16_paranoia,bijzondere_ervaringen,,radio,"Ik heb vaak het gevoel dat anderen mij kwaad willen doen. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_14,,
+pq16_paranoia_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_paranoia] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_14_ja,,
+pq16_force,bijzondere_ervaringen,,radio,"Ik heb het gevoel gehad dat er een of andere persoon of kracht om mij heen is, ook al kon ik niemand zien. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_15,,
+pq16_force_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_force] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_15_ja,,
+pq16_body,bijzondere_ervaringen,,radio,"Ik heb het gevoel dat sommige delen van mijn lichaam op een of andere manier veranderd zijn of dat delen van mijn lichaam anders werken dan voorheen. ","1, Eens | 0, Oneens | 88, Ik beantwood deze vraag niet",,,,,,[agl_ado_education_year]<>'1',y,,,pq16_16,,
+pq16_body_distress,bijzondere_ervaringen,,radio,"Hoeveel last had je daarvan?","0, 0 geen last | 1, 1 een beetje last | 2, 2 nogal wat last | 3, 3 veel last | 88, Ik beantwoord deze vraag niet",,,,,,"[pq16_body] = '1' and [agl_ado_education_year]<>'1'",y,,,pq_16_16_ja,,
+ad_use_covid,middelengebruik,,checkbox,"Heb je sinds de coronamaatregelen (13 maart) een van de onderstaande middelen gebruikt? Duid aan welke je hebt gebruikt (al is het maar één keer). Er zijn meerdere antwoorden mogelijk. ","1, Alcohol | 2, Sigaretten, nicotine | 3, Hasj/wiet, cannabis | 4, Amfetamines, speed, ritalin, methylfenidaat, concerta, stimulantia zoals ADHD-medicatie die niet aan jou is voorgeschreven door een dokter | 5, Nee, Ik heb sinds de coronamaatregelen geen van bovenstaande middelen ooit gebruikt.",,,,,,,y,LV,,,,
+ad_alcohol_freq,middelengebruik,,radio,"Sinds de coronamaatregelen (13 maart): Hoe vaak gebruik of gebruikte je alcohol dan ongeveer?","0, Minder dan 1 keer per maand | 1, 3 tot 4 keer per maand | 2, 1 tot 2 keer per maand | 3, 3 tot 4 keer per week | 4, (Bijna) dagelijks | 88, Ik beantwoord deze vraag niet",,,,,,"[ad_use_covid(1)] = '1'",y,LV,,,,
+ad_cigarettes_freq,middelengebruik,,radio,"Sinds de coronamaatregelen (13 maart): Hoe vaak gebruik of gebruikte je sigaretten (nicotine) dan ongeveer?","0, Minder dan 1 keer per maand | 1, 3 tot 4 keer per maand | 2, 1 tot 2 keer per maand | 3, 3 tot 4 keer per week | 4, (Bijna) dagelijks | 88, Ik beantwoord deze vraag niet",,,,,,"[ad_use_covid(2)] = '1'",y,LV,,,,
+ad_cannabis_freq,middelengebruik,,radio,"Sinds de coronamaatregelen (13 maart): Hoe vaak gebruik of gebruikte je hasj/wiet (cannabis) dan ongeveer?","0, Minder dan 1 keer per maand | 1, 3 tot 4 keer per maand | 2, 1 tot 2 keer per maand | 3, 3 tot 4 keer per week | 4, (Bijna) dagelijks | 88, Ik beantwoord deze vraag niet",,,,,,"[ad_use_covid(3)] = '1'",y,LV,,,,
+ad_stimulants_freq,middelengebruik,,radio,"Sinds de coronamaatregelen (13 maart): Hoe vaak gebruik of gebruikte je amfetamines, speed, ritalin, methylfenidaat, concerta (stimulantia) dan ongeveer?","0, Minder dan 1 keer per maand | 1, 3 tot 4 keer per maand | 2, 1 tot 2 keer per maand | 3, 3 tot 4 keer per week | 4, (Bijna) dagelijks | 88, Ik beantwoord deze vraag niet",,,,,,"[ad_use_covid(4)] = '1'",y,LV,,,,
+ad_use_covid_freq,middelengebruik,,radio,"Sinds de coronamaatregelen (13 maart): Is je middelengebruik veranderd?","1, 1 Duidelijk minder | 2, 2 | 3, 3 | 4, 4 Hetzelfde gebleven | 5, 5 | 6, 6 | 7, 7 Duidelijk meer",,,,,,,,LV,,,,
+mspss_person_help,steun,"We willen graag weten wat jouw mening is over de volgende stellingen. Lees iedere stelling goed door en geef aan in hoeverre je het eens bent met de stelling.",radio,"Tijdens de coronamaatregelen (gestart op 13 maart), is er een speciaal persoon die me helpt wanneer ik het nodig heb.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss1,,
+mspss_person_joy,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), is er een speciaal persoon met wie ik mijn vreugde en mijn zorgen/verdriet kan delen.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss2,,
+mspss_family_help,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), probeert mijn familie me echt te helpen.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss3,,
+mspss_family_support,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), geeft mijn familie me de emotionele steun die ik nodig heb.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss4,,
+mspss_person_comfort,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), is er een speciaal persoon in mijn leven die een grote bron van troost is voor mij.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss5,,
+mspss_friends_help,steun,,radio,"Tijdens de coronamaatregelen (gestart io 13 maart), proberen mijn vrienden me echt te helpen.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss6,,
+mspss_friends_count,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), kan ik op mijn vrienden rekenen als er dingen misgaan.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss7,,
+mspss_family_talk,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), kan ik met mijn familie over mijn problemen praten.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss8,,
+mspss_friends_joy,steun,,radio,"Tijdens de coronamaatregelen ( gestart op 13 maart), heb ik vrienden met wie ik mijn vreugde en zorgen/verdriet kan delen.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss9,,
+mspss_person_feelings,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), is er een speciaal persoon in mijn leven die geeft om mijn gevoelens.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss10,,
+mspss_family_decide,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart), staat mijn familie klaar om me te helpen bij het nemen van beslissingen.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss11,,
+mspss_friends_talk,steun,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): kan ik met mijn vrienden over mijn problemen praten.","1, helemaal mee oneens | 2, niet eens | 3, een beetje oneens | 4, neutraal | 5, een beetje eens | 6, wel eens | 7, helemaal eens | 88, Ik beantwoord deze vraag niet",,,,,,,y,,,mspss12,,
+ptg_important,groei,"Wil je voor elke bewering hieronder de mate aangeven waarin deze verandering plaatsvond in je leven als gevolg van de coronapandemie en de maatregelen die daarbij horen?",radio,"Ik vind nu andere dingen belangrijk in het leven. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,,,,,
+ptg_value,groei,,radio,"Mijn eigen leven heeft voor mij meer waarde gekregen.","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,,,,,
+ptg_insight,groei,,radio,"Ik heb meer inzicht gekregen in spirituele zaken. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_newdirection,groei,,radio,"Ik ben een nieuwe weg ingeslagen in mijn leven. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_connected,groei,,radio,"Ik voel me sterker met andere mensen verbonden. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_problems,groei,,radio,"Ik weet beter dan voorheen dat ik moeilijkheden aan kan. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_domore,groei,,radio,"Ik ben in staat meer met mijn leven te doen. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_religion,groei,,radio,"Mijn religieuze geloof is sterker geworden. ","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_stronger,groei,,radio,"Ik ben erachter gekomen dat ik sterker ben dan ik dacht.","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+ptg_fantastic,groei,,radio,"Ik heb kunnen ervaren hoe geweldig mensen kunnen zijn.","1, Nee niet ervaren | 2, Een heel klein beetje ervaren | 3, Een klein beetje ervaren | 4, Enigszins ervaren | 5, In sterke mate ervaren | 6, Ja in zeer sterke mate ervaren",,,,,,,y,RV,,,,
+access_covidinfo,informatie_over_corona,"We willen graag weten via welke kanalen jij je informeert over COVID-19. Hieronder vind je een lijst met mogelijke informatiebronnen. Duid de drie kanalen aan die jij de voorbije 7 dagen het meest gebruikt hebt om je te informeren over COVID-19:",checkbox,"Duid de drie kanalen aan die jij de voorbije 7 dagen het meest gebruikt hebt om je te informeren over COVID-19:","1, 1. Mensen waar ik dagelijks mee spreek (ouders, familie, vrienden) | 2, 2. Medische hulpverleners (huisarts of andere dokter, apotheker, verpleger/verpleegster) | 3, 3. Experts of onderzoekers (virologen, farmacologen, epidemiologen) | 4, 4. Officiële hulplijn voor COVID-19 (0800 14 689) | 5, 5. Officiële website van de overheid voor COVID-19 (info-coronavirus.be) | 6, 6. Overheidsinstanties (FOD Volksgezondheid, Wereldgezondheidsorganisatie/WHO, European Centre for Disease Prevention and Control. Europese Commissie) | 7, 7. Andere websites dan info-coronavirus.be | 8, 8. Google of andere zoekmachine | 9, 9. Sociale Media | 10, 10. TV-programma's | 11, 11. Radio | 12, 12. Kranten en magazines (online of op papier) | 13, 13. Advertenties",,,,,,,y,LV,,,,
+access_covidinfo_most,informatie_over_corona,,text,"Van welk van deze drie informatiekanalen: [access_covidinfo:checked] heb je het meest gebruik gemaakt de afgelopen 7 dagen?",,,,,,,,y,LV,,,,
+access_covidinfo_web,informatie_over_corona,,checkbox,"Welke andere websites heb je gebruikt (meerdere antwoorden mogelijk)?","1, Website van de mutualiteiten (cm.be, neutrale-ziekenfondsen.be, socmut.be, lm.be, mloz.be) | 2, Website van FOD Volksgezondheid (health.belgium.be) | 3, Website van de Wereldgezondheidsorganisatie/WHO (euro.who.int) | 4, Nieuwswebsite (VRTNWS.be, newsmonkey.be | 5, Ander",,,,,,[access_covidinfo(7)]='1',,LV,,,,
+access_info_social,informatie_over_corona,,checkbox,"Welke sociale media heb je gebruikt? (meerdere antwoorden mogelijk):","1, Facebook | 2, Instagram | 3, Twitter | 4, YouTube | 5, Ander",,,,,,[access_covidinfo(9)]='1',,LV,,,,
+access_covidinfo_tv,informatie_over_corona,,checkbox,"Welke TV-programma's heb je bekeken (meerdere antwoorden mogelijk)?","1, Nieuwsuitzendingen (Het Journaal, Het Nieuws) | 2, Duidingsprogramma's (Terzake, De Afspraak, Telefacts) | 3, Talkshows (b.v. Vandaag) | 4, Specifieke programma's rond COVID-19 (Blijf in uw kot, #corona2020) | 5, Ander",,,,,,[access_covidinfo(10)]='1',,LV,,,,
+access_covidinfo_radio,informatie_over_corona,,checkbox,"Welke radioprogramma's heb je beluisterd (meerdere antwoorden mogelijk)?","1, Nieuwsbulletin | 2, Duidingsprogramma's | 3, Gewone uitzending | 4, Specifieke programma's rond COVID-19 | 5, Ander",,,,,,[access_covidinfo(11)]='1',,LV,,,,
+access_covidinfo_newspaper,informatie_over_corona,,checkbox,"Welke krant(en) heb je gelezen (meerder antwoorden mogelijk)?","1, Kwaliteitskrant (De Morgen, De Standaard, De Tijd) | 2, Populaire krant (Het Laatste Nieuws, Het Nieuwsblad) | 3, Lokale krant (Gazet van Antwerpen, Het Belang van Limburg) | 4, Nieuwsmagazine (Knack, Trends, Humo) | 5, Populaire magazines (Libelle, Flair, Feeling, Goed Gevoel) | 6, Wetenschapsmagazine (EOS, Psychologies) | 7, Ander",,,,,,[access_covidinfo(12)]='1',,LV,,,,
+access_covidinfo_advertissement,informatie_over_corona,,checkbox,"Waar heb je advertenties gezien/gehoord (meerdere antwoorden mogelijk)?","1, Op TV | 2, Op de radio | 3, In de krant/een magazine | 4, Op het internet | 5, Ander",,,,,,[access_covidinfo(13)]='1',,LV,,,,
+res_getalong,veerkracht,"In hoeverre zijn de volgende uitspraken van toepassing op jou tijdens de coronamaatregelen (gestart op 13 maart)?",radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik kan goed overweg met andere mensen","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_study,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Studeren is belangrijk voor mij","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_behave,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik weet hoe ik mij moet gedragen in verschillende situaties (vb. op school, thuis, in de kerk, op bezoek bij anderen)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_care,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Mijn ouder(s)/verzorgende(n) zorgen goed voor mij","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_know,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Mijn ouder(s)/verzorgende(n) weten veel over mij (vb. wie mijn vrienden zijn, wat mijn interesses zijn)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_food,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Als ik honger heb, is er genoeg om te eten","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_spendtime,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Anderen brengen graag tijd door met mij","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_talkfeelings,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik praat met mijn ouder(s)/verzorgende(n) over hoe ik mij voel (vb. wanneer ik mij verdrietig of gekwetst voel)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_support,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik voel me gesteund door mijn vrienden","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_school,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik heb het gevoel dat ik erbij hoor op school","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_parents_caredifficulties,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Mijn ouder(s)/verzorgende(n) geven om mij wanneer er moeilijkheden zijn (vb. wanneer ik ziek ben of wanneer ik iets verkeerd heb gedaan)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_friends_caredifficulties,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Mijn vrienden geven om mij wanneer er moeilijkheden zijn (vb. wanneer ik ziek ben of wanneer ik iets verkeerd heb gedaan)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_fair,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik word eerlijk behandeld in mijn gemeenschap (v.b. school, gezin, bredere sociale netwerk)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_show,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik heb de kans om aan anderen te tonen dat ik volwassen word en zelf dingen kan doen","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_safe,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik voel me veilig wanneer ik bij mijn ouder(s)/verzorgende(n) ben","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_learn,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik heb de kans om dingen te leren die handig zullen zijn wanneer ik ouder ben (vb. koken, werken, anderen helpen)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+res_celebrate,veerkracht,,radio,"Tijdens de coronamaatregelen (gestart op 13 maart): Ik vind de manier waarop mijn gezin dingen viert leuk (vb. feestdagen, dingen die eigen zijn aan mijn cultuur)","1, Helemaal niet | 2, Een beetje | 3, Enigszins | 4, Nogal wat | 5, Heel erg",,,,,,,,,,,,
+kpv_bullied,pesten,"<p>We willen je nu graag vragen om enkele vragen te beantwoorden die te maken hebben met pesten.</p>
+<p>Met pesten bedoelen we als iemand van ongeveer jouw leeftijd:<br />- ﾠ ﾠ ﾠ Vervelende, nare of kwetsende dingen tegen je heeft gezegd<br />- ﾠﾠﾠﾠﾠﾠﾠJe heeft uitgelachen of uitgescholden<br />- ﾠﾠﾠﾠﾠﾠﾠJe heeft genegeerd of buitengesloten<br />- ﾠﾠﾠﾠﾠﾠﾠJe geslagen of geschopt heeft<br />- ﾠﾠﾠﾠﾠﾠﾠJe ergens heeft opgesloten<br />- ﾠﾠﾠﾠﾠﾠﾠLeugens over je heeft verteld, of roddels over je heeft verspreid<br />- ﾠﾠﾠﾠﾠﾠﾠIets anders heeft gedaan dat hier op lijkt en dat erg vervelend voor jou was</p>
+<p>We noemen het pesten als deze dingen vaker gebeuren (meer dan één of twee keer), en het moeilijk voor je was om het te laten stoppen. We noemen het geen pesten wanneer het op een vriendelijke of speelse manier gebeurde.</p>",radio,"Ben je dit schooljaar (van september tot nu) gepest door een ander kind of andere tiener?","0, 0 Nooit | 1, 1 Bijna nooit (een of twee keer in totaal) | 2, 2 Soms (meer dan twee keer in totaal, maar minder dan een keer per maand) | 3, 3 Regelmatig (ongeveer een keer in de maand of iets meer dan een keer in de maand) | 4, 4 Vaak (elke week of meerdere keren in de week) | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+kpv_physical,pesten,,radio,"Heeft een ander kind of andere tiener je dit schooljaar lichamelijk pijn gedaan? (bijvoorbeeld gebrand, een blauw plek gegeven, gesneden, geslagen, geschopt of iets anders)","0, 0 Nooit | 1, 1 Bijna nooit (een of twee keer in totaal) | 2, 2 Soms (meer dan twee keer in totaal, maar minder dan een keer per maand) | 3, 3 Regelmatig (ongeveer een keer in de maand of iets meer dan een keer in de maand) | 4, 4 Vaak (elke week of meerdere keren in de week) | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+kpv_internet,pesten,,radio,"Heeft een ander kind of andere tiener je dit schooljaar gepest via internet of app? (bijvoorbeeld  door je via facebook/Whatsapp/Snapchat/Instagram vervelende dingen te sturen, of door tegen jouw zin in online foto's van je te verspreiden, of iets anders)","0, 0 Nooit | 1, 1 Bijna nooit (een of twee keer in totaal) | 2, 2 Soms (meer dan twee keer in totaal, maar minder dan een keer per maand) | 3, 3 Regelmatig (ongeveer een keer in de maand of iets meer dan een keer in de maand) | 4, 4 Vaak (elke week of meerdere keren in de week) | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+kpv_scared,pesten,,radio,"Heeft een ander kind of andere tiener er dit schooljaar voor gezorgd dat je je erg bang, boos of verdrietig voelde? (of bijvoorbeeld nare dromen kreeg, je ziek voelde, ergens niet naartoe durfde/wilde of iets dat hierop lijkt)","0, 0 Nooit | 1, 1 Bijna nooit (een of twee keer in totaal) | 2, 2 Soms (meer dan twee keer in totaal, maar minder dan een keer per maand) | 3, 3 Regelmatig (ongeveer een keer in de maand of iets meer dan een keer in de maand) | 4, 4 Vaak (elke week of meerdere keren in de week) | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+kpv_severity,pesten,,radio,"Hoe erg was het pesten?","0, Niet (je bent nooit gepest of alleen maar een beetje geplaagd waar je geen last van had) | 1, Een beetje (je bent niet heel vaak gepest en bent er nooit bij verwond geraakt; je bent maar kort van streek geweest door het pesten) | 2, Matig (je bent vaker gepest waarbij mensen je wat pijn hebben gedaan, of waardoor je voor een tijdje bang, boos, of verdrietig was, of nare dromen had of niet naar bepaalde plekken durfde) | 3,   Ernstig (heel erge pesterijen waar je erg veel last van hebt gehad; je bent hierdoor erg van streek geraakt; dit heeft ervoor gezorgd dat je niet naar sommige plekken of mensen durfde of wilde gaan; je hebt hier vaker nachtmerries over gehad)",,,,,,,y,LV,,,,
+kpv_bully_self,pesten,,radio,"Heb je zelf dit schooljaar een ander kind of andere tiener gepest?","0, 0 Nooit | 1, 1 Bijna nooit (een of twee keer in totaal) | 2, 2 Soms (meer dan twee keer in totaal, maar minder dan een keer per maand) | 3, 3 Regelmatig (ongeveer een keer in de maand of iets meer dan een keer in de maand) | 4, 4 Vaak (elke week of meerdere keren in de week) | 88, Ik beantwoord deze vraag niet",,,,,,,y,LV,,,,
+aoo_dad_responsiveness,selfreport_adolescents_scores,"Algemene ouderlijke opvoedingsstijl (Perceived parenting style)",text,"Perceived parenting style father responsiveness",,,,,,,,,,,,,
+aoo_mom_responsiveness,selfreport_adolescents_scores,,text,"Perceived parenting style mother responsiveness",,,,,,,,,,,,,
+aoo_dad_control,selfreport_adolescents_scores,,text,"Perceived parenting style father psychological control",,,,,,,,,,,,,
+aoo_mom_control,selfreport_adolescents_scores,,text,"Perceived parenting style mother psychological control",,,,,,,,,,,,,
+aoo_dad_autonomy,selfreport_adolescents_scores,,text,"Perceived parenting style father autonomy support",,,,,,,,,,,,,
+aoo_mom_autonomy,selfreport_adolescents_scores,,text,"Perceived parenting style mother autonomy support",,,,,,,,,,,,,
+avail_pos_mean,selfreport_adolescents_scores,"Availability (Threat anticipation)",text,"Availability positive",,,,,,,,,,,,,
+avail_neg_mean,selfreport_adolescents_scores,,text,"Availability negative",,,,,,,,,,,,,
+bsi_somatization_total,selfreport_adolescents_scores,"Brief symptom inventory (BSI)",text,"BSI somatization",,,,,,,,,,,,,
+bsi_obsessiveness_total,selfreport_adolescents_scores,,text,"BSI obsessiveness",,,,,,,,,,,,,
+bsi_insecurity_total,selfreport_adolescents_scores,,text,"BSI insecurity",,,,,,,,,,,,,
+bsi_depressiveness_total,selfreport_adolescents_scores,,text,"BSI depressiveness",,,,,,,,,,,,,
+bsi_anxiety_total,selfreport_adolescents_scores,,text,"BSI anxiety",,,,,,,,,,,,,
+bsi_aggression_total,selfreport_adolescents_scores,,text,"BSI aggression",,,,,,,,,,,,,
+bsi_phobic_total,selfreport_adolescents_scores,,text,"BSI phobic",,,,,,,,,,,,,
+bsi_paranoid_total,selfreport_adolescents_scores,,text,"BSI paranoid",,,,,,,,,,,,,
+bsi_psychoticism_total,selfreport_adolescents_scores,,text,"BSI psychoticism",,,,,,,,,,,,,
+bsi_gsi,selfreport_adolescents_scores,,text,"BSI gsi",,,,,,,,,,,,,
+cerq_accept,selfreport_adolescents_scores,"Cognitive emotion regulation questionnaire (CERQ short)",text,"Cerq accept",,,,,,,,,,,,,
+cerq_ruminate,selfreport_adolescents_scores,,text,"Cerq ruminate",,,,,,,,,,,,,
+cerq_positive_reappraisal,selfreport_adolescents_scores,,text,"Cerq positive reappraisal",,,,,,,,,,,,,
+cerq_blame_self,selfreport_adolescents_scores,,text,"Cerq blame self",,,,,,,,,,,,,
+cerq_focus_positive,selfreport_adolescents_scores,,text,"Cerq focus positive",,,,,,,,,,,,,
+cerq_catastrophe,selfreport_adolescents_scores,,text,"Cerq catastrophe",,,,,,,,,,,,,
+cerq_blame_others,selfreport_adolescents_scores,,text,"Cerq blame others",,,,,,,,,,,,,
+cerq_planning,selfreport_adolescents_scores,,text,"Cerq planning",,,,,,,,,,,,,
+cerq_perspective,selfreport_adolescents_scores,,text,"Cerq perspective",,,,,,,,,,,,,
+dids_commitment_making_mean,selfreport_adolescents_scores,DIDS,text,"DIDS commitment making",,,,,,,,,,,,,
+dids_explore_breadth_mean,selfreport_adolescents_scores,,text,"DIDS explore breadth",,,,,,,,,,,,,
+dids_ruminative_exploration_mean,selfreport_adolescents_scores,,text,"DIDS ruminative exploration",,,,,,,,,,,,,
+dids_identification_mean,selfreport_adolescents_scores,,text,"DIDS identification",,,,,,,,,,,,,
+dids_exploration_depth_mean,selfreport_adolescents_scores,,text,"DIDS exploration depth",,,,,,,,,,,,,
+disc_total,selfreport_adolescents_scores,DISC,text,"DISC total",,,,,,,,,,,,,
+epsi_synthesis_total,selfreport_adolescents_scores,EPSI,text,"EPSI synthesis",,,,,,,,,,,,,
+epsi_confusion_total,selfreport_adolescents_scores,,text,"EPSI confusion",,,,,,,,,,,,,
+ippa_trust_mom,selfreport_adolescents_scores,"Inventory for PARENT and Peer Attachment (IPPA)",text,"IPPA mother trust",,,,,,,,,,,,,
+ippa_trust_dad,selfreport_adolescents_scores,,text,"IPPA father trust",,,,,,,,,,,,,
+ippa_trust_peer,selfreport_adolescents_scores,,text,"IPPA peers trust",,,,,,,,,,,,,
+ippa_communication_mom,selfreport_adolescents_scores,,text,"IPPA mother communication",,,,,,,,,,,,,
+ippa_communication_dad,selfreport_adolescents_scores,,text,"IPPA father communication",,,,,,,,,,,,,
+ippa_communication_peer,selfreport_adolescents_scores,,text,"IPPA peers communication",,,,,,,,,,,,,
+ippa_alienation_mom,selfreport_adolescents_scores,,text,"IPPA mother alienation",,,,,,,,,,,,,
+ippa_alienation_dad,selfreport_adolescents_scores,,text,"IPPA father alienation",,,,,,,,,,,,,
+ippa_alienation_peer,selfreport_adolescents_scores,,text,"IPPA peer alienation",,,,,,,,,,,,,
+ippa_attach_mom,selfreport_adolescents_scores,,text,"IPPA mother attachment",,,,,,,,,,,,,
+ippa_attach_dad,selfreport_adolescents_scores,,text,"IPPA father attachment",,,,,,,,,,,,,
+ippa_attach_peer,selfreport_adolescents_scores,,text,"IPPA peer attachment",,,,,,,,,,,,,
+jvq_total,selfreport_adolescents_scores,"Juvenile victimization questionnaire (JVQ)",text,"JVQ total score",,,,,,,,,,,,,
+jvq_conventional_crime,selfreport_adolescents_scores,,text,"JVQ conventional crime subscale",,,,,,,,,,,,,
+jvq_maltreatment,selfreport_adolescents_scores,,text,"JVQ maltreatment subscale",,,,,,,,,,,,,
+jvq_peer_victimization,selfreport_adolescents_scores,,text,"JVQ peer victimization subscale",,,,,,,,,,,,,
+jvq_sexual_victimization,selfreport_adolescents_scores,,text,"JVQ sexual victimization subscale",,,,,,,,,,,,,
+jvq_exposure_violence,selfreport_adolescents_scores,,text,"JVQ exposure violence subscale",,,,,,,,,,,,,
+pq16_total,selfreport_adolescents_scores,PQ16,text,"PQ16 total score",,,,,,,,,,,,,
+pq16_total_distress,selfreport_adolescents_scores,,text,"PQ16 total distress score",,,,,,,,,,,,,
+ssl_support_general,selfreport_adolescents_scores,"Sociale Steun Lijst (SSL)",text,"SSL support general",,,,,,,,,,,,,
+ssl_support_problems,selfreport_adolescents_scores,,text,"SSL support problems",,,,,,,,,,,,,
+ssl_appreciation,selfreport_adolescents_scores,,text,"SSL appreciation",,,,,,,,,,,,,
+ssl_total,selfreport_adolescents_scores,,text,"SSl total",,,,,,,,,,,,,
+vpv_relational,selfreport_adolescents_scores,"Vragenlijst Psychosociale vaardigheden (VPV)",text,"VPV relational skills (VPV-R)",,,,,,,,,,,,,
+vpv_affective,selfreport_adolescents_scores,,text,"VPV affective skills (VPV-A)",,,,,,,,,,,,,
+vpv_selfsteering,selfreport_adolescents_scores,,text,"VPV self-steering (VPV-S)",,,,,,,,,,,,,
+vpv_selfconscious,selfreport_adolescents_scores,,text,"VPV self-conscious (VPV-B)",,,,,,,,,,,,,
+vpv_interpersonal,selfreport_adolescents_scores,,text,"VPV interpresonal skills ",,,,,,,,,,,,,
+vpv_intrapersonal,selfreport_adolescents_scores,,text,"VPV intrapersonal skills",,,,,,,,,,,,,
+vpv_total,selfreport_adolescents_scores,,text,"VPV total score",,,,,,,,,,,,,
