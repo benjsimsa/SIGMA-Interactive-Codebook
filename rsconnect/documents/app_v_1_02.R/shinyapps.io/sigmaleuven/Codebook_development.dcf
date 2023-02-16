@@ -5,10 +5,10 @@ account: sigmaleuven
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8073143
-bundleId: 6818707
+bundleId: 6850807
 url: https://sigmaleuven.shinyapps.io/Codebook_development/
-when: 1675762493.85938
-lastSyncTime: 1675762493.8594
+when: 1676485266.69157
+lastSyncTime: 1676485266.69159
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: app_v_0_31.R|app_v_1.R|automatic assignment.R|code/codeboook_table.R

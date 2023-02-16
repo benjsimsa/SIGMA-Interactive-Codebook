@@ -5,7 +5,6 @@ library(tidyverse)
 library(shinythemes)
 library(markdown)
 library(knitr)
-library(here)
 library(shinyWidgets)
 library(shinyDarkmode)
 
@@ -28,13 +27,13 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                   tabPanel("Introduction", fluid = TRUE,
                            
                            sidebarLayout(
-                             sidebarPanel(position = "right",
+                             sidebarPanel(position = "right", width = 2, 
                                         tags$h2("Important links"),
                                         HTML("<p> <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form</a>
                                              </p>"),
                                         HTML("<p> <a href = 'https://psyarxiv.com/jp2fk/' >SIGMA study protocol</a>
                                              </p>"),
-                                        HTML("<p> <a href = https://osf.io/xwvc5/' >SIGMA OSF repository</a>
+                                        HTML("<p> <a href = 'https://osf.io/xwvc5/' >SIGMA OSF repository</a>
                                              </p>")),
                            
                            
@@ -43,7 +42,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                           tags$div(style = "margin-top: -25px; float: right; margin-right: -150px;",
                                       prettySwitch("togglemode", "Dark Mode", value = FALSE, fill = TRUE, status = "info")
                              ), 
-                           tags$h1("Interactive codebook - SIGMA study"),
+                           tags$h1("Interactive codebook: SIGMA study, Wave 1"),
                            tags$h3("What is SIGMA?"),
                            HTML("<p> This is the interactive codebook for the <a href='https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp/research-1/social-interaction/sigma/index.htm'>SIGMA study</a>. SIGMA is a three-wave intensive longitudinal study of child and adolescent mental health. 1,913 Flemish children and adolescents from the general population took part in the first wave of the SIGMA study. 
                                 The SIGMA study used retrospective self-report questionnaires (via tablets), Experience Sampling (via smartphones), physiological measures (via wearables) and experimental measures (PCE).
@@ -85,7 +84,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
     
     sidebarLayout(
      
-      sidebarPanel(width = "3",
+      sidebarPanel(width = "4",
         actionButton("group_not", "Ungroup (simple list of variables)"),
         actionButton("group_both", "Group (variables listed per category)"), 
         
@@ -93,16 +92,61 @@ ui <- fluidPage(theme = shinytheme("yeti"),
         " ", 
         HTML("<p>The text box above contains the codes of the variables you selected by clicking the checkboxes in the codebook. 
         You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
-        </p>")
+        </p>"), 
+        tags$h3("Wave 1 sample"), 
+        HTML("<p> The Wave 1 SIGMA data were collected between January 2018 and June 2019. 1,913 Flemish adolescents (age range: 11-20 years; 1,207 women, 695 men, 7 identified as 'Other') from 22 schools took part in the study. </p>")
         ),
      
      mainPanel(
         reactableOutput("table"))
      )),
 
+# TAB 3: CODEBOOK WAVE COVID
+tabPanel("Codebook: Wave COVID", fluid = TRUE,
+         # Application title
+         titlePanel("Interactive codebook: SIGMA study, Wave COVID"),
+         
+         sidebarLayout(
+           
+           sidebarPanel(width = 4, 
+                        actionButton("group_not_covid", "Ungroup (simple list of variables)"),
+                        actionButton("group_both_covid", "Group (variables listed per category)"), 
+                        
+                        verbatimTextOutput("selected_covid"),
+                        " ", 
+                        HTML("<p>The text box above contains the codes of the variables you selected by clicking the checkboxes in the codebook. 
+        You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
+        </p>"),
+                        tags$h4("Wave COVID sample"), 
+                        HTML("The Wave COVID data were collected during the first COVID lockdown in Belgium, between April and May 2020. 173 adolescents (all of whom previously participated in Wave 1) took part in the study."),
+                        tags$h4("Changes in item wordings"),
+                        HTML("<p> The wordings of the following questionnaires contains a time-reference to the start of the COVID pandemic measures (i.e., asking 'Since the start of the COVID measures ...', instead of 'Have you ever?'): 
+                <ul>
+                <li>Brief Symptom Inventory (BSI) </li>
+                <li>Cognitive Emotion Regulation Questionnaire (CERQ) </li>
+                <li>The items about self-harm</li>
+                <li>The items about substance use</li>
+                <li>Prodromal Questionnaire (PQ-16) </li>
+                <li>Adapted Short Bullying List (KPV; note: the KPV does not refer to the start of the pandemic measures, but to the start of the school year)</li>
+                </ul>
+                </p>"), 
+                        tags$h4("New questionnaires"), 
+                        HTML("<p> The following questionnaires were added to the wave COVID (compared to Wave 1):
+                <ul>
+                <li>A questionnaire about COVID-19</li>
+                <li>Posttraumatic Growth Inventory (PTG)</li>
+                <li>A questionnaire about resilience during the COVID pandemic</li>
+                </ul>
+                </p>")
+           ),
+           
+           mainPanel(
+             reactableOutput("table_covid"))
+         )),
+
 
 ########### 
-# TAB 3: CODEBOOK WAVE 2
+# TAB 4: CODEBOOK WAVE 2
 tabPanel("Codebook: Wave 2b", fluid = TRUE,
          # Application title
          titlePanel("Interactive codebook: SIGMA study, Wave 2b"),
@@ -110,7 +154,7 @@ tabPanel("Codebook: Wave 2b", fluid = TRUE,
          
          sidebarLayout(fluid = TRUE,
            
-           sidebarPanel(
+           sidebarPanel(width = "4", 
              actionButton("group_not_w2", "Ungroup (simple list of variables)"),
              actionButton("group_both_w2", "Group (variables listed per category)"), 
              
@@ -118,46 +162,23 @@ tabPanel("Codebook: Wave 2b", fluid = TRUE,
              " ", 
              HTML("<p>The text box above contains the codes of the variables you selected by clicking the checkboxes in the codebook. 
         You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
-        </p>")
-           ),
+        </p>"),
+           
+           tags$h4("Wave 2b sample"), 
+           HTML("The Wave 2b data were collected after the first COVID lockdown in Belgium, between January and June 2021. 277 adolescents (all of whom previously participated in Wave 1) took part in the study."),
+           tags$h4("Changes in item wordings"),
+           HTML("<p> Relative to Wave 1, the wording of the following questionnaires contains a time-reference to Wave 1 (i.e., asking 'Since the last time you were tested at school on [testdate_wave1] ...', instead of 'Have you ever?'): 
+                <ul>
+                <li>the Juvenile Victimisation Questionnaire (JVQ) </li>
+                <li>Adapted Short Bullying List (KPV) </li>
+                <li>Diagnostic Interview Schedule for Children (DISC)</li>
+                <li>the items about substance use</li>
+                </ul>
+                </p>")),
            
            mainPanel(
              reactableOutput("table_w2"))
-         )),
-
-# TAB 4: CODEBOOK WAVE COVID
-tabPanel("Codebook: Wave COVID", fluid = TRUE,
-         # Application title
-         titlePanel("Interactive codebook: SIGMA study, Wave COVID"),
-         
-         sidebarLayout(
-           
-           sidebarPanel(
-             actionButton("group_not_covid", "Ungroup (simple list of variables)"),
-             actionButton("group_both_covid", "Group (variables listed per category)"), 
-             
-             verbatimTextOutput("selected_covid"),
-             " ", 
-             HTML("<p>The text box above contains the codes of the variables you selected by clicking the checkboxes in the codebook. 
-        You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
-        </p>")
-           ),
-           
-           mainPanel(
-             reactableOutput("table_covid"))
-         )),
-
-##### TAB 5: SIGMA STUDIES 
-
-tabPanel("SIGMA Studies", fluid = TRUE,
-         # Application title
-        
-         
-         tags$h2("Published SIGMA studies"),
-         
-         tags$h2("SIGMA preprints")
-         )
-
+         ))
 
 
 ))
@@ -349,3 +370,7 @@ server <- function(input, output) {
 # Run the application 
 shinyApp(ui = ui, server = server)
 
+
+
+#### TODO 
+# - add collapsible boxes with the descriptions of the waves 
