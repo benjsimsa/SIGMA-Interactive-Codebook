@@ -17,6 +17,8 @@ wave2 = wave2 %>% select(1, 3, 4, 8, 9, 13, 15)
 wavecovid = read_excel('wavecovid_public_r_.xlsx') 
 wavecovid = wavecovid %>% select(1, 3, 4, 8, 9, 13, 15)
 
+waves_overview = read_excel('waves_measures.xlsx')
+
 ui <- fluidPage(theme = shinytheme("yeti"),
                 use_darkmode(),
       
@@ -26,8 +28,8 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                   
                   tabPanel("Introduction", fluid = TRUE,
                            
-                           sidebarLayout(
-                             sidebarPanel(position = "right", width = 2, 
+                           sidebarLayout(position = "left",
+                             sidebarPanel(width = 2, 
                                         tags$h2("Important links"),
                                         HTML("<p> <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form</a>
                                              </p>"),
@@ -46,7 +48,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                            tags$h3("What is SIGMA?"),
                            HTML("<p> This is the interactive codebook for the <a href='https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp/research-1/social-interaction/sigma/index.htm'>SIGMA study</a>. SIGMA is a three-wave intensive longitudinal study of child and adolescent mental health. 1,913 Flemish children and adolescents from the general population took part in the first wave of the SIGMA study. 
                                 The SIGMA study used retrospective self-report questionnaires (via tablets), Experience Sampling (via smartphones), physiological measures (via wearables) and experimental measures (PCE).
-                                The current version of the codebook only includes Wave 1. We are planning to add Wave 2 and Wave 3 soon.
+                                The current version of the codebook includes Wave 1 (2018-2019), Wave COVID-19 and Wave 2. The data for the last wave are currently being collected. 
                                 For more information about the study procedure and sample characteristics, please refer to the <a href='https://psyarxiv.com/jp2fk/'>study protocol</a>.</p>"),
                            HTML("<p> <a href='https://osf.io/xwvc5/'>Click here</a> to access the SIGMA repository on the Open Science Framework. The repository contains details about the measures and the studies that used the SIGMA data.</p>"),
                            
@@ -72,6 +74,12 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                                 The purpose of this codebook is to make the process as easy as possible. For more information on how to request data through DROPS, please refer to the <a href='https://sigmaleuven.shinyapps.io/DROPS_User_Guide/'>DROPS user guide.</a>  </p>")
                            
                   ))), 
+          
+                  
+                  ####### PANEL: Waves Overview 
+                  tabPanel("Waves overview",
+                           reactableOutput("waves")
+                           ),
                   
                   
                  
@@ -82,7 +90,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
     # Application title
     titlePanel("Interactive codebook - SIGMA study"),
     
-    sidebarLayout(
+    sidebarLayout(position = "left",
      
       sidebarPanel(width = "4",
         actionButton("group_not", "Ungroup (simple list of variables)"),
@@ -106,7 +114,7 @@ tabPanel("Codebook: Wave COVID", fluid = TRUE,
          # Application title
          titlePanel("Interactive codebook: SIGMA study, Wave COVID"),
          
-         sidebarLayout(
+         sidebarLayout(position = "left",
            
            sidebarPanel(width = 4, 
                         actionButton("group_not_covid", "Ungroup (simple list of variables)"),
@@ -136,6 +144,7 @@ tabPanel("Codebook: Wave COVID", fluid = TRUE,
                 <li>A questionnaire about COVID-19</li>
                 <li>Posttraumatic Growth Inventory (PTG)</li>
                 <li>A questionnaire about resilience during the COVID pandemic</li>
+                <li>Multidimensional Scale of Perceived Social Support</li>
                 </ul>
                 </p>")
            ),
@@ -152,7 +161,7 @@ tabPanel("Codebook: Wave 2b", fluid = TRUE,
          titlePanel("Interactive codebook: SIGMA study, Wave 2b"),
         
          
-         sidebarLayout(fluid = TRUE,
+         sidebarLayout(fluid = TRUE, position = "left",
            
            sidebarPanel(width = "4", 
              actionButton("group_not_w2", "Ungroup (simple list of variables)"),
@@ -174,7 +183,9 @@ tabPanel("Codebook: Wave 2b", fluid = TRUE,
                 <li>Diagnostic Interview Schedule for Children (DISC)</li>
                 <li>the items about substance use</li>
                 </ul>
-                </p>")),
+                </p>"),
+           tags$h4("New items"), 
+           HTML("<p>Compared to the previous wave (COVID), the Multidimensional Scale of Perceived Social Support was added in Wave 2b.</p>")),
            
            mainPanel(
              reactableOutput("table_w2"))
@@ -196,6 +207,12 @@ server <- function(input, output) {
   
   
   #### TABLE WAVE 1 
+  
+  output$waves = renderReactable({reactable(waves_overview, 
+                                          pagination = FALSE)
+                                          })
+    
+  
 
   output$table <- renderReactable({
     reactable(wave1,
@@ -327,7 +344,7 @@ server <- function(input, output) {
     
     observeEvent(input$group_both_covid, {
       output$table_covid <- renderReactable({
-        reactable(wave2,
+        reactable(wavecovid,
                   pagination = FALSE, 
                   searchable = TRUE,
                   selection = 'multiple',
@@ -343,7 +360,7 @@ server <- function(input, output) {
     
     observeEvent(input$group_not_covid, {
       output$table_covid <- renderReactable({
-        reactable(wave2,
+        reactable(wavecovid,
                   pagination = FALSE, 
                   searchable = TRUE,
                   selection = 'multiple',
