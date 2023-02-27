@@ -8,13 +8,17 @@ library(knitr)
 library(shinyWidgets)
 library(shinyDarkmode)
 
-wave1 = read_excel('wave1_public_r.xlsx')
+wave1 = read_excel('wave1_public_final.xlsx')
 wave1 = wave1 %>% select(1, 3, 4, 8, 9, 13, 15)
 
-wave2 = read_excel('wave2_public_r_.xlsx') 
+
+wave2a = read_excel('wave2a_public_final.xlsx') 
+wave2a = wave2a %>% select(1, 3, 4, 8, 9, 13, 15)
+
+wave2 = read_excel('wave2b_public_final.xlsx') 
 wave2 = wave2 %>% select(1, 3, 4, 8, 9, 13, 15)
 
-wavecovid = read_excel('wavecovid_public_r_.xlsx') 
+wavecovid = read_excel('wavecovid_public_final.xlsx') 
 wavecovid = wavecovid %>% select(1, 3, 4, 8, 9, 13, 15)
 
 waves_overview = read_excel('waves_measures.xlsx')
@@ -41,14 +45,12 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                            
                            mainPanel(
                              
-                          tags$div(style = "margin-top: -25px; float: right; margin-right: -150px;",
-                                      prettySwitch("togglemode", "Dark Mode", value = FALSE, fill = TRUE, status = "info")
-                             ), 
-                           tags$h1("Interactive codebook: SIGMA study, Wave 1"),
+                          
+                           tags$h1("Interactive codebook: SIGMA study"),
                            tags$h3("What is SIGMA?"),
                            HTML("<p> This is the interactive codebook for the <a href='https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp/research-1/social-interaction/sigma/index.htm'>SIGMA study</a>. SIGMA is a three-wave intensive longitudinal study of child and adolescent mental health. 1,913 Flemish children and adolescents from the general population took part in the first wave of the SIGMA study. 
                                 The SIGMA study used retrospective self-report questionnaires (via tablets), Experience Sampling (via smartphones), physiological measures (via wearables) and experimental measures (PCE).
-                                The current version of the codebook includes Wave 1 (2018-2019), Wave COVID-19 and Wave 2. The data for the last wave are currently being collected. 
+                                The current version of the codebook includes Wave 1 (2018-2019), Wave 2a (TODO: year), Wave COVID-19 (2020) and Wave 2b (2021). The data for the last wave are currently being collected. 
                                 For more information about the study procedure and sample characteristics, please refer to the <a href='https://psyarxiv.com/jp2fk/'>study protocol</a>.</p>"),
                            HTML("<p> <a href='https://osf.io/xwvc5/'>Click here</a> to access the SIGMA repository on the Open Science Framework. The repository contains details about the measures and the studies that used the SIGMA data.</p>"),
                            
@@ -72,7 +74,6 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                            tags$h3("Using the codebook to request SIGMA data"),
                            HTML("<p> Researchers can request the data collected in the SIGMA study via the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS data checkout system  </a>. 
                                 The purpose of this codebook is to make the process as easy as possible. For more information on how to request data through DROPS, please refer to the <a href='https://sigmaleuven.shinyapps.io/DROPS_User_Guide/'>DROPS user guide.</a>  </p>")
-                           
                   ))), 
           
                   
@@ -109,7 +110,38 @@ ui <- fluidPage(theme = shinytheme("yeti"),
         reactableOutput("table"))
      )),
 
-# TAB 3: CODEBOOK WAVE COVID
+# TAB: CODEBOOK WAVE 2A 
+tabPanel("Codebook: Wave 2a", fluid = TRUE,
+         # Application title
+         titlePanel("Interactive codebook: SIGMA study, Wave 2a"),
+         
+         sidebarLayout(position = "left",
+                       
+                       sidebarPanel(width = 4, 
+                                    actionButton("group_not_2a", "Ungroup (simple list of variables)"),
+                                    actionButton("group_both_2a", "Group (variables listed per category)"), 
+                                    
+                                    verbatimTextOutput("selected_w2a"),
+                                    " ", 
+                                    HTML("<p>The text box above contains the codes of the variables you selected by clicking the checkboxes in the codebook. 
+        You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
+        </p>"),
+                                    tags$h4("Wave 2a sample"), 
+                                    HTML("TODO"),
+                                    tags$h4("New questionnaires"), 
+                                    HTML("<p> The following questionnaires were added to the Wave 2a (compared to Wave 1):
+                <ul>
+                <li> TODO </li>
+                </ul>
+                </p>")
+                       ),
+                       
+                       mainPanel(
+                         reactableOutput("table_w2a"))
+         )),
+
+
+# TAB: CODEBOOK WAVE COVID
 tabPanel("Codebook: Wave COVID", fluid = TRUE,
          # Application title
          titlePanel("Interactive codebook: SIGMA study, Wave COVID"),
@@ -269,7 +301,67 @@ server <- function(input, output) {
       print(wave1[selection(), 1], n = 100)
     })
     
-    ### TABLE WAVE 2 
+    
+    
+    #### TABLE WAVE 2a 
+    output$table_w2a <- renderReactable({
+      reactable(wave2a,
+                pagination = FALSE, 
+                searchable = TRUE,
+                selection = 'multiple',
+                onClick = "select", 
+                highlight = TRUE,
+                groupBy = c("Measure type", "Measure"),
+                columns = list(
+                  Readme = colDef(cell = function(value) {
+                    htmltools::tags$a(href = value, target = "_blank", value)
+                  })))
+    })
+    
+    observeEvent(input$group_both_w2a, {
+      output$table_w2a <- renderReactable({
+        reactable(wave2a,
+                  pagination = FALSE, 
+                  searchable = TRUE,
+                  selection = 'multiple',
+                  onClick = "select", 
+                  highlight = TRUE,
+                  groupBy = c("Measure type", "Measure"),
+                  columns = list(
+                    Readme = colDef(cell = function(value) {
+                      htmltools::tags$a(href = value, target = "_blank", value)
+                    })))
+      })
+    })
+    
+    observeEvent(input$group_not_w2a, {
+      output$table_w2a <- renderReactable({
+        reactable(wave2a,
+                  pagination = FALSE, 
+                  searchable = TRUE,
+                  selection = 'multiple',
+                  onClick = "select", 
+                  highlight = TRUE,
+                  columns = list(
+                    Readme = colDef(cell = function(value) {
+                      htmltools::tags$a(href = value, target = "_blank", value)
+                    })))
+      })
+    })
+    
+    
+    selection_w2a <- reactive({
+      getReactableState("table_w2a", "selected")
+    })
+    
+    output$selected_w2a <- renderPrint({
+      req(selection_w2a())
+      print(wave2a[selection_w2a(), 1], n = 100)
+    })
+    
+    
+    
+    ### TABLE WAVE 2b
     
     output$table_w2 <- renderReactable({
       reactable(wave2,
