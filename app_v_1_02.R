@@ -50,7 +50,7 @@ ui <- fluidPage(theme = shinytheme("yeti"),
                            tags$h3("What is SIGMA?"),
                            HTML("<p> This is the interactive codebook for the <a href='https://gbiomed.kuleuven.be/english/research/50000666/50000673/cpp/research-1/social-interaction/sigma/index.htm'>SIGMA study</a>. SIGMA is a three-wave intensive longitudinal study of child and adolescent mental health. 1,913 Flemish children and adolescents from the general population took part in the first wave of the SIGMA study. 
                                 The SIGMA study used retrospective self-report questionnaires (via tablets), Experience Sampling (via smartphones), physiological measures (via wearables) and experimental measures (PCE).
-                                The current version of the codebook includes Wave 1 (2018-2019), Wave 2a (TODO: year), Wave COVID-19 (2020) and Wave 2b (2021). The data for the last wave are currently being collected. 
+                                The current version of the codebook includes Wave 1 (2018-2019), Wave 2a (2020), Wave COVID-19 (2020) and Wave 2b (2021). The data for the last wave are currently being collected. 
                                 For more information about the study procedure and sample characteristics, please refer to the <a href='https://psyarxiv.com/jp2fk/'>study protocol</a>.</p>"),
                            HTML("<p> <a href='https://osf.io/xwvc5/'>Click here</a> to access the SIGMA repository on the Open Science Framework. The repository contains details about the measures and the studies that used the SIGMA data.</p>"),
                            
@@ -127,13 +127,10 @@ tabPanel("Codebook: Wave 2a", fluid = TRUE,
         You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
         </p>"),
                                     tags$h4("Wave 2a sample"), 
-                                    HTML("TODO"),
+                                    HTML("The Wave 2a sample was collected in January and February 2020, before the COVID measures took place in Belgium. The sampling for W2a followed the original plan of sampling Wave 1 participants 2 years after their respective Wave 1 test dates. The plans for Wave 2 testing were interrupted by the COVID measures, and it only resumed in January 2021 (Wave 2b). 97 adolescents participated in SIGMA Wave 2a."),
                                     tags$h4("New questionnaires"), 
-                                    HTML("<p> The following questionnaires were added to the Wave 2a (compared to Wave 1):
-                <ul>
-                <li> TODO </li>
-                </ul>
-                </p>")
+                                    HTML("<p> The IPPA and DIDS questionnaires were removed from Wave 2a (compared to Wave 1), and MSPSS and ECR were added.</p>"
+                )
                        ),
                        
                        mainPanel(
@@ -158,7 +155,7 @@ tabPanel("Codebook: Wave COVID", fluid = TRUE,
         You can copy-paste the list into the <a href = 'https://redcap.gbiomed.kuleuven.be/surveys/?s=WDYAFAHWK4' >DROPS abstract submission form  </a> .
         </p>"),
                         tags$h4("Wave COVID sample"), 
-                        HTML("The Wave COVID data were collected during the first COVID lockdown in Belgium, between April and May 2020. 173 adolescents (all of whom previously participated in Wave 1) took part in the study."),
+                        HTML("<p> The Wave COVID data were collected during the first COVID lockdown in Belgium, between April and May 2020 (that is, between Wave 2a and 2b). The Wave COVID was an improptu wave that was not a part of the initial sampling plan. 173 adolescents (all of whom previously participated in Wave 1) took part in the study. More information about Wave COVID can be found in <a href = 'https://psyarxiv.com/5nfp2/' > this paper.  </a>  </p> "),
                         tags$h4("Changes in item wordings"),
                         HTML("<p> The wordings of the following questionnaires contains a time-reference to the start of the COVID pandemic measures (i.e., asking 'Since the start of the COVID measures ...', instead of 'Have you ever?'): 
                 <ul>

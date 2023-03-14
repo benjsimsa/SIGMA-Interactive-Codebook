@@ -54,10 +54,10 @@ write_xlsx(datacovid, here:::here("wavecovid_public_r.xlsx"))
 
 
 #### Part 2: Find out which items were included in which waves 
-data1 = read_excel(here:::here("wave1_public.xlsx"))
-data2a = read_excel(here:::here("wave2a_public.xlsx"))
-data2 = read_excel(here:::here("wave2b_public.xlsx"))
-datacovid = read_excel(here:::here("wavecovid_public_r.xlsx"))
+data1 = read_excel(here:::here("wave1_public_final.xlsx"))
+data2a = read_excel(here:::here("wave2a_public_final.xlsx"))
+data2 = read_excel(here:::here("wave2b_public_final.xlsx"))
+datacovid = read_excel(here:::here("wavecovid_public_final.xlsx"))
 
 
 
